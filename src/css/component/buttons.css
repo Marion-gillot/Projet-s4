@@ -1,9 +1,7 @@
-/* Modificateur pour les boutons version "dark" */
-.btn--dark {
-    border-color: var(--gray-black);
-    background-color: var(--gray-black);
-    color: var(--gray-white);
-  }
-  .btn--dark:hover {
-    box-shadow: none;
-  }
+.btn_contact {
+    width: 220px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: #111;
+}

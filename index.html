@@ -22,6 +22,21 @@
                 <div><a href="#" class="link_items">Projets</a></div> 
                 <div><a href="#" class="link_items">À propos</a></div> 
             </nav> 
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+      <span class="menu-btn__bar"></span>
+    </button>
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+      <ul class="menu__list list-unstyled">
+        <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
+        <li class="menu__item"><a class="menu__link" href="agenda.html">Agenda</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item menu__item--btn"><a class="menu__link" href="inscription.html">S'inscrire</a></li>
+      </ul>
+    </nav>
         </header> 
 
 
@@ -50,80 +65,85 @@
     <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
 
     <form class="form container" action="#">
-        <p class="form__intro">Pré-inscriptions au Conservatoire à Rayonnement Départemental de Belfort pour l'année scolaire 2020-2021</p>
-        <p class="form__input">
+        <div class="form__input">
+            <label for="lastname">Nom<br>
+              <input type="text" id="lastname" name="last-name" value="Saissisez votre nom">
+            </label>
+        </div>
+
+          <div class="form__input">
           <label for="firstname">Prénom<br>
-            <input type="text" id="firstname" name="first-name" value="">
+            <input type="text" id="firstname" name="first-name" value="Saisissez votre prénom">
           </label>
-        </p>
-        <p class="form__input">
-          <label for="lastname">Nom<br>
-            <input type="text" id="lastname" name="last-name" value="">
+        </div>
+
+        <div class="form__input">
+          <label for="e-mail">E-mail<br>
+            <input type="email" id="email" name="email" value="Saisissez votre e-mail">
           </label>
-        </p>
-        <p class="form__input">
-          <label for="firstname">Email<br>
-            <input type="email" id="email" name="email" value="">
-          </label>
-        </p>
-        <p class="form__input">
-          <label for="birthday">Date de naissance<br>
-            <input type="date" id="birthday" name="birthday" value="">
-          </label>
-        </p>
-        <p class="form__input">
-          <label for="address">Adresse<br>
-            <input type="text" id="address" name="address" value="">
-          </label>
-        </p>
-        <p class="form__input">
-          <label for="school">Établissement scolaire et classe à la rentrée<br>
-            <input type="text" id="school" name="school" value="">
-          </label>
-        </p>
-        <p class="form__select">
-          <label for="activity">Activité souhaitée<br>
-            <select id="activity" name="activity">
-              <option value="">---</option>
-              <option value="musique">musique</option>
-              <option value="danse">danse</option>
-              <option value="théâtre">théâtre</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <button class="btn btn--dark" type="submit">Se pré-inscrire</button>
-        </p>
+        </div>
+
+        <div class="form__input">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" value="Écrivez votre message ici...">
+        </div>
+
+        <button class="btn_contact" type="button">ENVOYEZ</button>
+         
       </form>
 
+      <footer class="footer">
 
+        <img class="footer__logo" src="public/icon/icon_logo.svg" alt="Logo du portfolio de Marion Gillot">
+    
+        <div class="footer__contact">
+            <h3 class="footer__title">Marion Gillot</h3>
+            <p><a href="tel:0384542727">07 82 94 35 03</a></p>
+            <p><a href="mailto:marion.gillot29@gmail.com">marion.gillot29@gmail.com</a></p>
+        </div>
+    
+        <div class="footer__social">
+            <h3 class="footer__title">Me suivre</h3>
+          <ul class="footer__list list-unstyled">
+            <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/icon_facebook.svg" alt="icone facebook"></a></li>
+            <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
+            <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
+          </ul>
+        </div>
+        
+      </footer>
 
 
     </main>
 </body>
 
 <script>
-// var textWrapper = document.querySelector('.ml14 .letters');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelector('.ml14 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-// anime.timeline()
-//   .add({
-//     targets: '.ml14 .line',
-//     scaleX: [0,1],
-//     opacity: [0.5,1],
-//     easing: "easeInOutExpo",
-//     duration: 900
-//   }).add({
-//     targets: '.ml14 .letter',
-//     opacity: [0,1],
-//     translateX: [40,0],
-//     translateZ: 0,
-//     scaleX: [0.3, 1],
-//     easing: "easeOutExpo",
-//     duration: 800,
-//     offset: '-=600',
-//     delay: (el, i) => 150 + 25 * i
-//   });
+anime.timeline()
+  .add({
+    targets: '.ml14 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 900
+  }).add({
+    targets: '.ml14 .letter',
+    opacity: [0,1],
+    translateX: [40,0],
+    translateZ: 0,
+    scaleX: [0.3, 1],
+    easing: "easeOutExpo",
+    duration: 800,
+    offset: '-=600',
+    delay: (el, i) => 150 + 25 * i
+  });
+
+
+
+
+  
 </script>
 
 </html>
