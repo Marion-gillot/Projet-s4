@@ -34,12 +34,6 @@
   transform: translate(-50%, -50%);
 }
 
-#svgWrap_1,
-#svgWrap_2,
-div{
-  animation: hueRotate 6s ease-in-out 3s infinite;
-}
-
 #id1_1,
 #id2_1,
 #id3_1{

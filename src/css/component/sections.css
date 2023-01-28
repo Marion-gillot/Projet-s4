@@ -1,0 +1,24 @@
+/* Éléments se superposant lors d'un format téléphone */
+.section_grid {
+    margin-left: 3%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+    /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
+    @media (min-width: 768px) {
+        .section_grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+    @media (max-width: 768px) {
+        .section_grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+

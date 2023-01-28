@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     transition: all .3s ease-in-out;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .header--atTop {

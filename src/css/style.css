@@ -33,5 +33,6 @@ La règle @import permet d'importer ici tous les fichiers css utilisés.
 @import "component/buttons.css";
 @import "component/hero.css";
 @import "component/404.css";
+@import "component/sections.css";
 
 

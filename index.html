@@ -15,7 +15,6 @@
 
 <body x-data="{ atTop: true }">
 
-
   <header class="header" 
         @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
         :class="{ 'header--atTop' : !atTop }">
@@ -42,60 +41,72 @@
 
 <main>
 
-        <div class="hero">
-            <h1 class="ml14">
-                <span class="text-wrapper">
-                <span class="letters">DIGITAL DESIGNER
-                    CREATIVE </span>
-                <span class="line"></span>
-                </span>
-            </h1>
+      <div class="section_grid">
+        <div>
+          <h1 class="hero__title">
+              <span class="text-wrapper">
+              <span class="letters">DESIGNER</span>
+              <span class="letters">NUMÉRIQUE</span>
+              <span class="letters">CRÉATIF</span>
+              <span class="line"></span>
+              </span>
+          </h1>
         </div>
-          
-        <h4>Marion Gillot</h4>
-        <p>Je m'efforce de créer tous les projets avec la création d'approches graphiques,
-            ainsi qu'avec la conception de systèmes modernes, dans un style propre et minimaliste.</p>
-
-        <p>PROJETS</p>
-
-        <img src="public/img/projets/work-expo2025.webp" alt="affiche sur l'exposition universelle 2025 à tokyo">
-        <img src="public/img/projets/work-affiche-film.webp" alt="affiche de film The Psychoptah">
-        <img src="public/img/projets/work-carte.webp" alt="Carte postale sur le thème de l'artiste Cassandre">
-        <img src="public/img/projets/work-noffta.webp" alt="Site internet qui génère des NFT en ligne">
-
-    <p>CONTACT</p>
-    <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
-
-    <form class="form container" action="#">
-        <div class="form__input">
-            <label for="lastname">Nom<br>
-              <input type="text" id="lastname" name="last-name" value="Saissisez votre nom">
-            </label>
-        </div>
-
-          <div class="form__input">
-          <label for="firstname">Prénom<br>
-            <input type="text" id="firstname" name="first-name" value="Saisissez votre prénom">
-          </label>
-        </div>
-
-        <div class="form__input">
-          <label for="e-mail">E-mail<br>
-            <input type="email" id="email" name="email" value="Saisissez votre e-mail">
-          </label>
-        </div>
-
-        <div class="form__input">
-            <label for="message">Message</label>
-            <input type="text" id="message" name="message" value="Écrivez votre message ici...">
-        </div>
-
-        <button class="btn_contact" type="button">ENVOYEZ</button>
          
-      </form>
+        <div class="chapo">
+          <h4 class="chapo__title">Marion Gillot</h4>
+          <p class="chapo__text">Je m'efforce de créer tous les projets avec la création d'approches graphiques,
+              ainsi qu'avec la conception de systèmes modernes, dans un style propre et minimaliste.</p>
+        </div>
+      </div>
 
+        <h1 class="title__transform">PROJETS</h1>
 
-
+        <div class="image_container">
+          <img src="public/img/projets/work-expo2025.webp" class="image" alt="affiche sur l'exposition universelle 2025 à tokyo">
+          <img src="public/img/projets/work-affiche-film.webp" class="image" alt="affiche de film The Psychoptah">
+          <img src="public/img/projets/work-carte.webp" class="image" alt="Carte postale sur le thème de l'artiste Cassandre">
+          <img src="public/img/projets/work-noffta.webp" class="image" alt="Site internet qui génère des NFT en ligne">
+        </div>
+      
+        <h1 class="title__transform">CONTACT</h1>
+        
+        <div class="section_grid">
+          <div class="text__contact">
+            <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
+          </div>
+          <div class="form__contact">
+            <form class="form container" action="#">
+              <div class="form__input">
+                  <label for="lastname">Nom<br>
+                    <input type="text" id="lastname" name="last-name" value="Saissisez votre nom">
+                  </label>
+              </div>
+  
+                <div class="form__input">
+                <label for="firstname">Prénom<br>
+                  <input type="text" id="firstname" name="first-name" value="Saisissez votre prénom">
+                </label>
+              </div>
+  
+              <div class="form__input">
+                <label for="e-mail">E-mail<br>
+                  <input type="email" id="email" name="email" value="Saisissez votre e-mail">
+                </label>
+              </div>
+  
+              <div class="form__input">
+                  <label for="message">Message</label>
+                  <input type="text" id="message" name="message" value="Écrivez votre message ici...">
+              </div>
+  
+              <button class="btn_contact" type="button">ENVOYEZ</button>
+              
+            </form>
+          </div>
+        </div>
+        
+    
 
 
       <footer class="footer">
@@ -124,18 +135,18 @@
 </body>
 
 <script>
-var textWrapper = document.querySelector('.ml14 .letters');
+var textWrapper = document.querySelector('.hero__title .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline()
   .add({
-    targets: '.ml14 .line',
+    targets: '.hero__title .line',
     scaleX: [0,1],
     opacity: [0.5,1],
     easing: "easeInOutExpo",
     duration: 900
   }).add({
-    targets: '.ml14 .letter',
+    targets: '.hero__title .letter',
     opacity: [0,1],
     translateX: [40,0],
     translateZ: 0,

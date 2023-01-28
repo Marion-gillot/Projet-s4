@@ -1,6 +1,46 @@
 /* Page d'accueil */
+.hero__title {
+    font-weight: 500;
+    font-size: 8vw;
+    margin: 0; 
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1
+  }
 
-.hero_home {
-    margin-left: 10%;
-    margin-right: 10%;
+  /* Animation du texte */
+  .hero__title .text-wrapper {
+    position: relative;
+    display: grid;
+  }
+
+  .hero__title .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+
+  .hero__title .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+.chapo {
+    padding-top: 25%;
+    padding-left: 20%;
 }
+
+    .chapo__title {
+        flex: 1;
+        }
+
+    .chapo__text {
+        font-size: var(--text-xl);
+        font-weight: 300;
+        line-height: 1.5;
+    }
