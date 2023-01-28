@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+     <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+     <script src="./src/js/fonctions.js"></script>
+</head>
+
+<body>
+
+  <header class="header" 
+        @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+
+        <a href="/">
+          <img class="header__logo" src="public/icon/icon_logo.svg" alt="logo portfolio">
+        </a>
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
+            <li class="menu__item"><a class="menu__link" href="aboutme.html">À propos</a></li>
+          </ul>
+        </nav>
+  
+  </header>
+
+<main>
+        <div class="hero">
+            <h1 class="ml14">
+                <span class="text-wrapper">
+                <span class="letters">A PROPOS DE MOI</span>
+                <span class="line"></span>
+                </span>
+            </h1>
+        </div>
+
+        <h4>Qui suis-je ?</h4>
+        <p>Je m'appelle Marion Gillot, j'ai 19 ans, et souhaite travailler dans le domaine du web.
+            Actuellement étudiante en MMI, ( métier du multimédia et de l'internet ), j'ai pu acquérir des compétences 
+            sur 3 axes principaux, dans la communication, le design, et le développement.</p>
+
+        <h4>Ce que je fais</h4>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+            'Content here, content here', making it look like readable English.</p>
+
+
+        <div class="apropos_objectifs">
+            <h4>Quels sont mes objectifs ?</h4>
+            <p>Mon objectif principal est de prendre davantage d'expérience dans tous les domaines, et de ne cesser d'apprendre. 
+            Mais quelques objectifs restent tout de même incontournables. Je voudrais prendre de l'expérience dans le domaine que je préfère, 
+            c'est à dire le design, ainsi que le montage vidéo.</p>  
+            <p>Le second est de me former dans la gestion de projet, dans le but de proposer mes services à l'avenir.</p>  
+        </div>
+        
+
+        <p>EXPÉRIENCES</p>
+          
+
+      <footer class="footer">
+
+        <img class="footer__logo" src="public/icon/icon_logo.svg" alt="Logo du portfolio de Marion Gillot">
+    
+        <div class="footer__contact">
+            <h3 class="footer__title">Marion Gillot</h3>
+            <p><a href="tel:0384542727">07 82 94 35 03</a></p>
+            <p><a href="mailto:marion.gillot29@gmail.com">marion.gillot29@gmail.com</a></p>
+        </div>
+    
+        <div class="footer__social">
+            <h3 class="footer__title">Me suivre</h3>
+          <ul class="footer__list list-unstyled">
+            <li><a href="https://facebook.com" aria-label="facebook"><img src="public/icon/icon_facebook.svg" alt="icone facebook"></a></li>
+            <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
+            <li><a href="https://twitter.com" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
+          </ul>
+        </div>
+        
+      </footer>
+
+
+    </main>
+</body>
+
+<script>
+var textWrapper = document.querySelector('.ml14 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline()
+  .add({
+    targets: '.ml14 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 900
+  }).add({
+    targets: '.ml14 .letter',
+    opacity: [0,1],
+    translateX: [40,0],
+    translateZ: 0,
+    scaleX: [0.3, 1],
+    easing: "easeOutExpo",
+    duration: 800,
+    offset: '-=600',
+    delay: (el, i) => 150 + 25 * i
+  });
+
+</script>
+
+</html>
+
+

@@ -7,10 +7,10 @@
 
 /* Les règles typographiques générales qui s'appliquent à tout le site */
 body {
-  font-family: var(--font-sans-serif);
-  font-size: var(--text-md);
+  font-family: var(--font-work-sans);
+  font-size: var(--body);
   line-height: 1.6;
-  background-color: var(--gray-white);
+  background-color: var(--impure-white);
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
@@ -35,3 +35,5 @@ button {
     padding-left: var(--space3x);
     padding-right: var(--space3x);
   }
+
+  

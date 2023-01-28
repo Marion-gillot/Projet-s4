@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Accueil</title>
-    <link rel="stylesheet" href="src/css/style.css" />
-    <script src="https://animejs.com/lib/anime.min.js"></script>
-     <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
-     <script src="./src/js/fonctions.js"></script>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 
 <body>
-    <main>
 
-        <header class="header">
-            <nav class="items"> 
-                <div><a href="#" class="link_items">Projets</a></div> 
-                <div><a href="#" class="link_items">À propos</a></div> 
-            </nav> 
 
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-            @pointerdown="menuIsOpen = !menuIsOpen" 
-            :class="menuIsOpen && 'menu-btn--open'">
-      <span class="menu-btn__bar"></span>
-    </button>
-    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-      <ul class="menu__list list-unstyled">
-        <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
-        <li class="menu__item"><a class="menu__link" href="agenda.html">Agenda</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-        <li class="menu__item menu__item--btn"><a class="menu__link" href="inscription.html">S'inscrire</a></li>
-      </ul>
-    </nav>
-        </header> 
+  <header class="header" 
+        @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
 
+        <a href="/">
+          <img class="header__logo" src="public/icon/icon_logo.svg" alt="logo portfolio">
+        </a>
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
+            <li class="menu__item"><a class="menu__link" href="aboutme.html">À propos</a></li>
+          </ul>
+        </nav>
+  
+  </header>
+
+<main>
 
         <div class="hero">
             <h1 class="ml14">
@@ -91,6 +93,10 @@
         <button class="btn_contact" type="button">ENVOYEZ</button>
          
       </form>
+
+
+
+
 
       <footer class="footer">
 
