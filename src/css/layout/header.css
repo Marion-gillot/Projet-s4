@@ -1,5 +1,5 @@
 .header {
-    top: 2%;
+    top: 0;
     position: sticky;
     width: 100%;
     z-index: 2;
@@ -11,9 +11,11 @@
   }
 
   .header--atTop {
-    background-color: var(--gray-white);
+    background-color: var(--impure-white);
   }
   
   .header__logo {
     display: block;
   }
+
+
