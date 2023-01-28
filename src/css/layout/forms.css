@@ -1,3 +1,4 @@
+/* Formulaire */
 .form {
     padding-top: 10%;
     padding-bottom: 20%;
@@ -25,8 +26,19 @@
     color: var(--impure-black);
     margin-top: var(--space3x);
     display: block;
+    border-bottom: black solid 1px;
   }
   
-  .form button {
-    margin-top: var(--space3x);
-  }
+
+/* Éléments se superposant lors d'un format téléphone */
+
+.text__contact {
+  font-size: 2vw;
+  font-weight: 300;
+  padding-left: 15%;
+  padding-top: 30%;
+}
+
+.form__contact {
+padding-left: 10%;
+}
