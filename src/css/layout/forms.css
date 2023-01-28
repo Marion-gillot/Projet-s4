@@ -1,0 +1,33 @@
+.form {
+    background-color: var(--impure-white);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: var(--space4x);
+  }
+  
+  .form__input input,
+  .form__select select {
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--gray-400);
+    width: 100%;
+    padding: var(--space1x) 0;
+  }
+  
+  .form__input input:focus,
+  .form__select select:focus {
+    outline: 0;
+  }
+  
+  .form label {
+    color: var(--gray-800);
+    margin-top: var(--space3x);
+    display: block;
+  }
+  
+  .form button {
+    margin-top: var(--space3x);
+  }

@@ -1,0 +1,9 @@
+/* Modificateur pour les boutons version "dark" */
+.btn--dark {
+    border-color: var(--gray-black);
+    background-color: var(--gray-black);
+    color: var(--gray-white);
+  }
+  .btn--dark:hover {
+    box-shadow: none;
+  }

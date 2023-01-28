@@ -35,12 +35,66 @@
             </h1>
         </div>
           
+        <h4>Marion Gillot</h4>
+        <p>Je m'efforce de créer tous les projets avec la création d'approches graphiques,
+            ainsi qu'avec la conception de systèmes modernes, dans un style propre et minimaliste.</p>
 
+        <p>PROJETS</p>
 
+        <img src="public/img/projets/work-expo2025.webp" alt="affiche sur l'exposition universelle 2025 à tokyo">
+        <img src="public/img/projets/work-affiche-film.webp" alt="affiche de film The Psychoptah">
+        <img src="public/img/projets/work-carte.webp" alt="Carte postale sur le thème de l'artiste Cassandre">
+        <img src="public/img/projets/work-noffta.webp" alt="Site internet qui génère des NFT en ligne">
 
+    <p>CONTACT</p>
+    <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
 
-
-
+    <form class="form container" action="#">
+        <p class="form__intro">Pré-inscriptions au Conservatoire à Rayonnement Départemental de Belfort pour l'année scolaire 2020-2021</p>
+        <p class="form__input">
+          <label for="firstname">Prénom<br>
+            <input type="text" id="firstname" name="first-name" value="">
+          </label>
+        </p>
+        <p class="form__input">
+          <label for="lastname">Nom<br>
+            <input type="text" id="lastname" name="last-name" value="">
+          </label>
+        </p>
+        <p class="form__input">
+          <label for="firstname">Email<br>
+            <input type="email" id="email" name="email" value="">
+          </label>
+        </p>
+        <p class="form__input">
+          <label for="birthday">Date de naissance<br>
+            <input type="date" id="birthday" name="birthday" value="">
+          </label>
+        </p>
+        <p class="form__input">
+          <label for="address">Adresse<br>
+            <input type="text" id="address" name="address" value="">
+          </label>
+        </p>
+        <p class="form__input">
+          <label for="school">Établissement scolaire et classe à la rentrée<br>
+            <input type="text" id="school" name="school" value="">
+          </label>
+        </p>
+        <p class="form__select">
+          <label for="activity">Activité souhaitée<br>
+            <select id="activity" name="activity">
+              <option value="">---</option>
+              <option value="musique">musique</option>
+              <option value="danse">danse</option>
+              <option value="théâtre">théâtre</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <button class="btn btn--dark" type="submit">Se pré-inscrire</button>
+        </p>
+      </form>
 
 
 
@@ -49,27 +103,27 @@
 </body>
 
 <script>
-var textWrapper = document.querySelector('.ml14 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// var textWrapper = document.querySelector('.ml14 .letters');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline()
-  .add({
-    targets: '.ml14 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.ml14 .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  });
+// anime.timeline()
+//   .add({
+//     targets: '.ml14 .line',
+//     scaleX: [0,1],
+//     opacity: [0.5,1],
+//     easing: "easeInOutExpo",
+//     duration: 900
+//   }).add({
+//     targets: '.ml14 .letter',
+//     opacity: [0,1],
+//     translateX: [40,0],
+//     translateZ: 0,
+//     scaleX: [0.3, 1],
+//     easing: "easeOutExpo",
+//     duration: 800,
+//     offset: '-=600',
+//     delay: (el, i) => 150 + 25 * i
+//   });
 </script>
 
 </html>
