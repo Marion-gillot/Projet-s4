@@ -60,6 +60,10 @@
         </div>
       </div>
 
+      <div id="textContainer">
+        <h1 id="text">Mon Texte</h1>
+      </div>
+
         <h1 class="title__transform">PROJETS</h1>
 
         <div class="image_container">
@@ -116,7 +120,7 @@
         <div>
           <img class="footer__logo" src="public/icon/icon_logo_white.svg" alt="Logo du portfolio de Marion Gillot">
         </div>
-        
+
         <div class="footer__contact">
             <h3 class="footer__title">Marion Gillot</h3>
             <p><a href="tel:0384542727">07 82 94 35 03</a></p>
@@ -139,32 +143,29 @@
 </body>
 
 <script>
-var textWrapper = document.querySelector('.hero__title .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-  .add({
-    targets: '.hero__title .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.hero__title .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  });
-
-
-
+  var textWrapper = document.querySelector('.hero__title .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
   
-</script>
+  anime.timeline()
+    .add({
+      targets: '.hero__title .line',
+      scaleX: [0,1],
+      opacity: [0.5,1],
+      easing: "easeInOutExpo",
+      duration: 900
+    }).add({
+      targets: '.hero__title .letter',
+      opacity: [0,1],
+      translateX: [40,0],
+      translateZ: 0,
+      scaleX: [0.3, 1],
+      easing: "easeOutExpo",
+      duration: 800,
+      offset: '-=600',
+      delay: (el, i) => 150 + 25 * i
+    });
+  
+  </script>
 
 </html>
 
