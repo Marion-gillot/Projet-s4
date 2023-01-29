@@ -60,11 +60,7 @@
         </div>
       </div>
 
-      <div id="textContainer">
-        <h1 id="text">Mon Texte</h1>
-      </div>
-
-        <h1 class="title__transform">PROJETS</h1>
+      <div class="text">PROJETS</div>
 
         <div class="image_container">
           <img src="public/img/projets/work-expo2025.webp" class="image" alt="affiche sur l'exposition universelle 2025 à tokyo">
@@ -73,7 +69,8 @@
           <img src="public/img/projets/work-noffta.webp" class="image" alt="Site internet qui génère des NFT en ligne">
         </div>
       
-        <h1 class="title__transform">CONTACT</h1>
+        <div class="text">CONTACT</div>
+       
         
         <div class="section_grid">
           <div class="text__contact">
@@ -143,28 +140,29 @@
 </body>
 
 <script>
-  var textWrapper = document.querySelector('.hero__title .letters');
-  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-  
-  anime.timeline()
-    .add({
-      targets: '.hero__title .line',
-      scaleX: [0,1],
-      opacity: [0.5,1],
-      easing: "easeInOutExpo",
-      duration: 900
-    }).add({
-      targets: '.hero__title .letter',
-      opacity: [0,1],
-      translateX: [40,0],
-      translateZ: 0,
-      scaleX: [0.3, 1],
-      easing: "easeOutExpo",
-      duration: 800,
-      offset: '-=600',
-      delay: (el, i) => 150 + 25 * i
-    });
-  
+
+
+
+    var text = document.querySelector('.text');
+
+window.addEventListener('scroll', function () {
+  var scrollPos = window.scrollY + window.innerHeight;
+  var textPos = text.offsetTop + text.offsetHeight;
+
+  if (scrollPos > textPos) {
+    text.classList.remove('big');
+    text.classList.add('small');
+  } else if (scrollPos < textPos - text.offsetHeight) {
+    text.classList.remove('small');
+    text.classList.remove('big');
+  } else {
+    text.classList.remove('small');
+    text.classList.add('big');
+  }
+});
+
+
+
   </script>
 
 </html>

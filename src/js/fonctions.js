@@ -28,17 +28,3 @@ anime.timeline({loop: true})
   });
 
 
-
-
-  
-  window.onscroll = function() {
-    var textContainer = document.getElementById("textContainer");
-    var text = document.getElementById("text");
-    var y = textContainer.scrollTop;
-    
-    if (y > 200) {
-      text.style.fontSize = "20px";
-    } else {
-      text.style.fontSize = "50px";
-    }
-  }

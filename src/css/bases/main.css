@@ -37,27 +37,18 @@ button {
 }
 
 /* Animation des titres Projets et Contact */
-.title__transform {
+
+.text {
   font-family: 'Work Sans';
   text-align: center;
   font-size: 20vw;
   transition: font-size 0.5s;
-  margin: 0; 
-  padding-top: 0; 
-  padding-bottom: 0
 }
 
-#textContainer {
-  top: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
+.text.big {
+  font-size: 20vw;
 }
 
-#text {
-  font-size: 50px;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  transition: all 0.5s;
+.text.small {
+  font-size: 10vw;
 }
