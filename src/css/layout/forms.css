@@ -1,6 +1,5 @@
 /* Formulaire */
 .form {
-    padding-top: 10%;
     padding-bottom: 20%;
     margin-bottom: 0;
     margin-top: var(--space4x);
@@ -29,16 +28,27 @@
     border-bottom: black solid 1px;
   }
   
+.button__contact {
+  display: flex;
+  justify-content: center;
+}
 
-/* Éléments se superposant lors d'un format téléphone */
+button.btn_contact {
+  margin: 20px auto;
+}
 
+/* Texte */
 .text__contact {
-  font-size: 2vw;
+  font-size: 3vw;
   font-weight: 300;
-  padding-left: 15%;
-  padding-top: 30%;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
 
-.form__contact {
-padding-left: 10%;
-}
+  @media (min-width: 768px) {
+    .text__contact {
+      font-size: 1.5vw;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+    }
+  }

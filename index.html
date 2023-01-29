@@ -15,7 +15,7 @@
 
 <body x-data="{ atTop: true }">
 
-  <header class="header" 
+ <header class="header" 
         @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
         :class="{ 'header--atTop' : !atTop }">
 
@@ -36,8 +36,8 @@
             <li class="menu__item"><a class="menu__link" href="aboutme.html">À propos</a></li>
           </ul>
         </nav>
-  
-  </header>
+  </header> 
+
 
 <main>
 
@@ -78,31 +78,32 @@
           <div class="form__contact">
             <form class="form container" action="#">
               <div class="form__input">
-                  <label for="lastname">Nom<br>
-                    <input type="text" id="lastname" name="last-name" value="Saissisez votre nom">
+                  <label for="lastname">Nom
+                    <input type="text" id="lastname" name="last-name" placeholder="Saissisez votre nom">
                   </label>
               </div>
   
                 <div class="form__input">
-                <label for="firstname">Prénom<br>
-                  <input type="text" id="firstname" name="first-name" value="Saisissez votre prénom">
+                <label for="firstname">Prénom
+                  <input type="text" id="firstname" name="first-name" placeholder="Saisissez votre prénom">
                 </label>
               </div>
   
               <div class="form__input">
-                <label for="e-mail">E-mail<br>
-                  <input type="email" id="email" name="email" value="Saisissez votre e-mail">
+                <label for="e-mail">E-mail
+                  <input type="email" id="email" name="email" placeholder="Saisissez votre e-mail">
                 </label>
               </div>
   
               <div class="form__input">
                   <label for="message">Message
-                  <input type="text" id="message" name="message" value="Écrivez votre message ici...">
+                  <input type="text" id="message" name="message" placeholder="Écrivez votre message ici...">
                 </label>
               </div>
   
-              <button class="btn_contact" type="button">ENVOYEZ</button>
-              
+              <div class="button__contact">
+                <button class="btn_contact" type="button">ENVOYEZ</button>
+              </div>
             </form>
           </div>
         </div>
@@ -112,8 +113,10 @@
 
       <footer class="footer">
 
-        <img class="footer__logo" src="public/icon/icon_logo_white.svg" alt="Logo du portfolio de Marion Gillot">
-    
+        <div>
+          <img class="footer__logo" src="public/icon/icon_logo_white.svg" alt="Logo du portfolio de Marion Gillot">
+        </div>
+        
         <div class="footer__contact">
             <h3 class="footer__title">Marion Gillot</h3>
             <p><a href="tel:0384542727">07 82 94 35 03</a></p>
@@ -157,7 +160,6 @@ anime.timeline()
     offset: '-=600',
     delay: (el, i) => 150 + 25 * i
   });
-
 
 
 

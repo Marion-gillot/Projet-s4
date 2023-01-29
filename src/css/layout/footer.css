@@ -2,6 +2,10 @@
     background-color: var(--impure-black);
     color: var(--impure-white);
     padding: var(--space4x) var(--space3x);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
   }
   
   footer a {
@@ -32,3 +36,11 @@
   .footer > *:not(:first-child) {
     margin-top: var(--space3x);
   }
+
+
+  @media (max-width: 767px) {
+    .footer {
+      grid-template-columns: 1fr;
+    }
+  }
+
