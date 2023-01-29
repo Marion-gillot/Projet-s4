@@ -1,3 +1,39 @@
+/*Page home avec la vidéo d'animation*/
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-top: -7%;
+}
+
+.background-video {
+position: relative;
+margin-bottom: 20%;
+}
+
+.video-overlay {
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: darkgray;
+font-size: 3vw;
+text-align: center;
+width: 100%;
+height: 100%;
+}
+
+
+.chapo {
+  font-weight: 300;
+  font-size: 2vw;
+  width: 70%;
+  margin: auto;
+}
+  
+
+/*Autres pages */
 .hero__title {
     font-weight: 500;
     font-size: 10vw;
@@ -29,12 +65,4 @@
     line-height: 1em;
   }
 
-    .chapo__title {
-        flex: 1;
-        }
 
-    .chapo__text {
-        font-size: var(--text-xl);
-        font-weight: 300;
-        line-height: 1.5;
-    }

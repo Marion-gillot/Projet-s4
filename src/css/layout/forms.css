@@ -11,7 +11,7 @@
     appearance: none;
     background: none;
     border: none;
-    border-bottom: 1px solid var(--gray-400);
+    border-bottom: 1px solid var(--impure-white);
     width: 100%;
     padding: var(--space1x) 0;
   }
@@ -22,10 +22,10 @@
   }
   
   .form label {
-    color: var(--impure-black);
+    color: var(--impure-white);
     margin-top: var(--space3x);
     display: block;
-    border-bottom: black solid 1px;
+    border-bottom: white solid 1px;
   }
   
 .button__contact {

@@ -10,7 +10,8 @@ body {
   font-family: var(--font-work-sans);
   font-size: var(--body);
   line-height: 1.6;
-  background-color: var(--impure-white);
+  background-color: black;
+  color: var(--impure-white);
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
@@ -43,6 +44,7 @@ button {
   text-align: center;
   font-size: 20vw;
   transition: font-size 0.5s;
+  margin-bottom: 10%;
 }
 
 .text.big {
@@ -51,4 +53,5 @@ button {
 
 .text.small {
   font-size: 10vw;
+  margin-bottom: 10%;
 }

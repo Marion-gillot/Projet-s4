@@ -7,11 +7,10 @@
     display: flex;
     justify-content: space-between;
     transition: all .3s ease-in-out;
-    margin-bottom: 5%;
   }
 
   .header--atTop {
-    background-color: var(--impure-white);
+    background-color: var(--impure-black);
   }
   
   .header__logo {
