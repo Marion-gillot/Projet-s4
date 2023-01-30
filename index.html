@@ -79,7 +79,7 @@
         <source src="https://dl.dropboxusercontent.com/s/yzzt3g74an6j3lk/Header%20video%20web%201080.mp4?dl=0" type="video/mp4" alt="vidéo animation sombre">
       </video>
         <div class="video-overlay">
-            <h1 class="title">GRAPHIC DESIGNER/WEB DESIGNER</h1>
+            <h1 class="hero__home__title">GRAPHIC DESIGNER/WEB DESIGNER</h1>
             <h1 class="chapo">Marion Gilllot - Graphiste / UI-UX / Web Designer située en France, spécialisée dans la création 
               d'identité visuelle et de designs web uniques et innovants.</h1>
         </div>
@@ -96,8 +96,7 @@
           <img src="public/img/projets/work-noffta.webp" class="image" alt="Site internet qui génère des NFT en ligne">
         </div>
       
-        <div class="text">CONTACT</div>
-       
+      <div class="slide-in-text">CONTACT</div>
         
         <div class="section_grid">
           <div class="text__contact">
@@ -190,6 +189,22 @@ window.addEventListener('scroll', function () {
 
 
 
+const slideInText = document.querySelector('.slide-in-text');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      slideInText.style.visibility = 'visible';
+      slideInText.classList.remove('slide-out-text');
+      slideInText.classList.add('slide-in-text');
+    } else {
+      slideInText.classList.remove('slide-in-text');
+      slideInText.classList.add('slide-out-text');
+    }
+  });
+});
+
+observer.observe(slideInText);
   </script>
 
 </html>

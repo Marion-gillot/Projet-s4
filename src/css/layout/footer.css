@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--impure-black);
     color: var(--impure-white);
-    padding: var(--space4x) var(--space3x);
+    padding: var(--space4x) var(--space4x);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
