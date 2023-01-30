@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
-
 .wrap{
   position: absolute;
   left: 50%;
@@ -16,10 +14,10 @@
   text-transform: uppercase;
   transform: translate(-50%, -50%);
   display: block;
-  color: #12000a;
+  color: var(--impure_white);
   font-weight: 300;
   font-family: 'Work sans';
-  text-shadow: 0px 0px 4px #12000a;
+  text-shadow: 0px 0px 4px var(--impure_white);
   animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
 }
 
@@ -37,7 +35,7 @@
 #id1_1,
 #id2_1,
 #id3_1{
-  stroke: #ff005d;
+  stroke: var(--impure-white);
   stroke-width: 3px;
   fill: transparent;
   filter: url(#glow);
@@ -86,58 +84,58 @@
 }
 
 @keyframes flicker1{
-  0%  {stroke: #ff005d;}
+  0%  {stroke: var(--impure-white);}
   1%  {stroke: transparent;}
   3%  {stroke: transparent;}
-  4%  {stroke: #ff005d;}
-  6%  {stroke: #ff005d;}
+  4%  {stroke: var(--impure-white);}
+  6%  {stroke: var(--impure-white);}
   7%  {stroke: transparent;}
   13% {stroke: transparent;}
-  14% {stroke: #ff005d;}
-  100%{stroke: #ff005d;}
+  14% {stroke: var(--impure-white);}
+  100%{stroke: var(--impure-white);}
 }
 
 @keyframes flicker2{
-  0%  {stroke: #ff005d;}
-  50% {stroke: #ff005d;}
+  0%  {stroke: var(--impure-white);}
+  50% {stroke: var(--impure-white);}
   51% {stroke: transparent;}
   61% {stroke: transparent;}
-  62% {stroke: #ff005d;}
-  100%{stroke: #ff005d;}
+  62% {stroke: var(--impure-white);}
+  100%{stroke: var(--impure-white);}
 }
 
 @keyframes flicker3{
-  0%  {stroke: #ff005d;}
+  0%  {stroke: var(--impure-white);}
   1%  {stroke: transparent;}
   10% {stroke: transparent;}
-  11% {stroke: #ff005d;}
-  40% {stroke: #ff005d;}
+  11% {stroke: var(--impure-white);}
+  40% {stroke: var(--impure-white);}
   41% {stroke: transparent;}
   45% {stroke: transparent;}
-  46% {stroke: #ff005d;}
-  100%{stroke: #ff005d;}
+  46% {stroke: var(--impure-white);}
+  100%{stroke: var(--impure-white);}
 }
 
 @keyframes flicker4{
-  0%  {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  30% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  31% {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  32% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  36% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  37% {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  41% {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  42% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  85% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  86% {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  95% {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  96% {color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
-  100%{color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
+  0%  {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  30% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  31% {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  32% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  36% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  37% {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  41% {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  42% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  85% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  86% {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  95% {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  96% {color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
+  100%{color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
 }
 
 @keyframes fadeInText{
-  1%  {color: #12000a;text-shadow:0px 0px 4px #12000a;}
-  70% {color: #ff005d;text-shadow:0px 0px 14px #ff005d;}
-  100%{color: #ff005d;text-shadow:0px 0px 4px #ff005d;}
+  1%  {color: var(--impure_white);text-shadow:0px 0px 4px var(--impure_white);}
+  70% {color: var(--impure-white);text-shadow:0px 0px 14px var(--impure-white);}
+  100%{color: var(--impure-white);text-shadow:0px 0px 4px var(--impure-white);}
 }
 
 @keyframes hueRotate{
