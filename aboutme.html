@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="typography, animation, on-scroll, gsap, ScrollTrigger" />
     <title>À propos</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="https://animejs.com/lib/anime.min.js"></script>
      <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
      <script src="./src/js/fonctions.js"></script>
+     <script src="./src/js/index.js"></script>
+     <link rel="stylesheet" href="https://use.typekit.net/cvn8slu.css">
+     <link rel="stylesheet" type="text/css" href="css/base.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>     <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+      supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+      </script>
 </head>
 
 <body>
@@ -78,27 +87,36 @@
 
       <div class="section__margin">
         <h3>Qui suis-je ?</h3>
-        <p>Je m'appelle Marion Gillot, j'ai 19 ans, et souhaite travailler dans le domaine du web.
-            Actuellement étudiante en MMI, ( métier du multimédia et de l'internet ), j'ai pu acquérir des compétences 
-            sur 3 axes principaux, dans la communication, le design, et le développement.</p>
+        <p>Je m’appelle Marion Gillot, et j’aime le design. Je suis passionnée, spécialisée dans la création de designs uniques et esthétiques. 
+          Mon objectif principal est de fournir des solutions visuelles efficaces pour aider mes clients à atteindre leurs objectifs de marketing et de communication..</p>
+
+        <p>Étant en deuxième année de MMI métier multimédia et de l’interet, j’ai acquéris des expériences, notamment grâce à mon alternance en montage vidéo, mise en page de documents. 
+          J'ai développé une expertise en matière de branding, de conception graphique, de conception web et de conception de produits. Je suis capable de travailler sur des projets 
+          allant des logos aux sites Web en passant par les campagnes publicitaires, les packaging et les stratégies de marque.</p>
+
 
         <h3>Ce que je fais</h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-            'Content here, content here', making it look like readable English.</p>
+        <ul>
+          <li>Design de site web responsive</li>
+          <li>Conception de sites web personnalisés</li>
+          <li>Intégration de CMS (WordPress)</li>
+          <li>Design d'interface utilisateur</li>
+        </ul>
+
+      <p>Lorsque je ne suis pas derrière mon écran, j’aime explorer de nouvelles tendances en matière de design, 
+        apprendre de nouvelles technologies et me tenir informée des dernières tendances du secteur.</p>
+
+      <p>Si vous êtes à la recherche d'une designer passionnée et talentueuse pour aider à amener votre marque ou votre entreprise au niveau supérieur, 
+        n'hésitez pas à me contacter pour discuter de vos projets. Je suis impatiente de travailler avec vous pour donner vie à vos idées et à vos visions.</p>
 
 
-        <div class="apropos_objectifs">
-            <h3>Quels sont mes objectifs ?</h3>
-            <p>Mon objectif principal est de prendre davantage d'expérience dans tous les domaines, et de ne cesser d'apprendre. 
-            Mais quelques objectifs restent tout de même incontournables. Je voudrais prendre de l'expérience dans le domaine que je préfère, 
-            c'est à dire le design, ainsi que le montage vidéo.</p>  
-            <p>Le second est de me former dans la gestion de projet, dans le but de proposer mes services à l'avenir.</p>  
-        </div>
-        
 
-        <p>EXPÉRIENCES</p>
+
       </div>   
+
+
+
+    
 
       <footer class="footer">
 
@@ -123,7 +141,8 @@
 
 
     </main>
-</body>
+</body> 
+
 
 <script>
 
@@ -149,6 +168,11 @@ anime.timeline()
     offset: '-=600',
     delay: (el, i) => 150 + 25 * i
   });
+
+
+
+
+
 
 </script>
 

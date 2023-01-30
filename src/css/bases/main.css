@@ -41,7 +41,17 @@ h3 {
   font-size: 2vw;
 }
 
-
+/* annuler la mise en forme des liens */
+a {
+  font-family: 'mulish';
+  text-decoration: none;
+  color: #000000;
+  }
+  
+  ul {
+  list-style: none;
+  font-family: 'mulish';
+  }
 
 /* Animation des titres Projets et Contact */
 .text {
