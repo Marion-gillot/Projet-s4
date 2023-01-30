@@ -21,6 +21,10 @@
   .footer__list img {
     filter: invert(60%);
   }
+
+  .footer__logo {
+    width: 20%;
+  }
   
   .footer__title {
     margin-top: 0;
