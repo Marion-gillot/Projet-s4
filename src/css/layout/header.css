@@ -1,12 +1,17 @@
-.header {
+/* Header mobile */
+.mobile-header {
     top: 0;
     position: sticky;
     width: 100%;
     z-index: 2;
     padding: var(--space2x) var(--space3x);
-    display: flex;
     justify-content: space-between;
     transition: all .3s ease-in-out;
+  }
+
+  .header__bar__mobile {
+    display: flex;
+    justify-content: inherit;
   }
 
   .header--atTop {
@@ -16,4 +21,66 @@
   .header__logo {
     display: block;
   }
- 
+
+
+/* Header desktop */
+  .desktop-header {
+    display: flex;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+
+  .navigation {
+    display: flex;
+    list-style: none;
+  }
+
+  .navigation li {
+    margin-right: 20px;
+  }
+
+  .navigation a {
+    font-size: 18px;
+    color: var(--impure-white);
+    text-decoration: none;
+  }
+
+  .header__end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space2x);
+  }
+
+  #language-select {
+    background-color: transparent;
+    border: 1px solid var(--impure-white);
+    color: var(--impure-white);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+
+/* Responsive du header */
+  .mobile-header {
+    display: block;
+  }
+  
+  .desktop-header {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .mobile-header {
+      display: none;
+    }
+  
+    .desktop-header {
+      display: flex;
+    }
+  }

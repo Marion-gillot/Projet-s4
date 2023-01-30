@@ -15,12 +15,12 @@
 
 <body>
 
-  <header class="header" 
-        @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
-        :class="{ 'header--atTop' : !atTop }">
+  <header>
+    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
+      <div class="header__bar__mobile"> 
         <a href="/">
-          <img class="header__logo" src="public/icon/icon_logo_black.svg" alt="logo portfolio">
+          <img class="header__logo" src="public/icon/icon_logo_white.svg" alt="logo portfolio">
         </a>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -35,8 +35,38 @@
             <li class="menu__item"><a class="menu__link" href="aboutme.html">À propos</a></li>
           </ul>
         </nav>
-  
-  </header>
+      </div>
+    </div>
+
+  <div class="desktop-header">
+
+    <div class="header__start">
+      <a href="#" class="header__logo">
+        <img src="public/icon/icon_logo_white.svg" alt="logo du portfolio" class="header__logo">
+      </a>
+    </div>
+
+    <div class="header__end">
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">PROJETS</a></li>
+          <li><a href="#">À PROPOS</a></li>
+        </ul>
+      </nav>
+
+    <div>
+      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
+    </div>
+
+    <select id="language-select">
+      <option value="english">EN</option>
+      <option value="french">FR</option>
+      <option value="spanish">ESP</option>
+    </select>
+    </div>
+  </div>
+      
+</header> 
 
 <main>
         <div class="hero">
