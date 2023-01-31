@@ -26,6 +26,13 @@
 
 /* Page à propos */    
 .section__margin {
-    margin-left: 30%;
-    margin-right: 30%;
+    max-width: 40%;
+    margin: auto;
 }
+
+    /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+    @media (max-width: 768px) {
+        .section__margin {
+            max-width: 80%;
+        }
+    }
