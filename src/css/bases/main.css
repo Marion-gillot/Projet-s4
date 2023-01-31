@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   background-color: black;
   color: var(--impure-white);
+  transition: all 0.5s ease-in-out;
 }
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
@@ -48,10 +49,14 @@ a {
   color: #000000;
   }
   
-  ul {
+  a:hover {
+    opacity: 0.7;
+  }
+
+ul {
   list-style: none;
   font-family: 'mulish';
-  }
+}
 
 /* Animation des titres Projets et Contact */
 .text {

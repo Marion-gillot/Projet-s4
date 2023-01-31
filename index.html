@@ -51,7 +51,7 @@
       <div class="header__end">
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">PROJETS</a></li>
+            <li><a href="index.html" >PROJETS</a></li>
             <li><a href="aboutme.html">À PROPOS</a></li>
           </ul>
         </nav>
@@ -207,6 +207,16 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(slideInText);
+
+
+setTimeout(function () {            
+  $("#loading").addClass("animated fadeOut");            
+  setTimeout(function () {                
+    $("#loading").removeClass("animated fadeOut");                
+    $("#loading").css("display", "none");                
+    $("#box").css("display", "none");            
+  }, 2000);        }, 1300);
+
   </script>
 
 </html>

@@ -60,54 +60,35 @@ line-height: 1;
 }
   
 
-/*Autres pages */
+.fade-in-text {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* page à prospos */
+.hero__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .hero__about__title {
-    font-weight: 500;
-    font-size: 10vw;
-    margin-top: 5%; 
-    padding-left: 5%;
-    padding-bottom: 0;
-    line-height: 1;
-    text-align: center;
-  }
+  margin-left: 20px;
+  font-size: 5vw;
+  font-weight: bold;
+}
 
-  /* Animation du texte */
-  .hero__title .text-wrapper {
-    position: relative;
-    display: grid;
-  }
-
-  .hero__title .line {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-    transform-origin: 100% 100%;
-    bottom: 0;
-  }
-
-  .hero__title .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-
-
-
-
-  /* page home */
-
-  .fade-in-text {
-    opacity: 0;
-    animation: fade-in 1s forwards;
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.hero__about__profil {
+  height: auto;
+  width: auto;
+}

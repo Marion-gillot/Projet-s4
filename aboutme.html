@@ -71,13 +71,13 @@
 </header> 
 
 <main>
-        <div class="hero">
-            <h1 class="hero__about__title">
-                <span class="text-wrapper">
-                <span class="letters">A PROPOS</span>
-            </h1>
-        </div>
 
+      <div class="hero__about">
+        <h1 class="hero__about__title">A PROPOS</h1>
+        <img src="public/img/exemple.png" alt="exemple de photo de profil en format png" class="hero__about__profil">        
+      </div>
+      
+   
       <div class="section__margin">
         <h3>Qui suis-je ?</h3>
         <p>Je m’appelle Marion Gillot, et j’aime le design. Je suis passionnée, spécialisée dans la création de designs uniques et esthétiques. 
@@ -138,33 +138,6 @@
 
 
 <script>
-
-/* Animation titre À propos */
-var textWrapper = document.querySelector('.hero__about__title .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-  .add({
-    targets: '.hero__about__title .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.hero__about__title .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  });
-
-
-
-
 
 
 </script>

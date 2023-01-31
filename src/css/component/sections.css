@@ -1,11 +1,10 @@
-/* Éléments se superposant lors d'un format téléphone */
+/* Formulaire de contact */
 .section_grid {
     margin-left: 3%;
     margin-right: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
-    margin-bottom: 20%;
     z-index: 2;
 }
 
@@ -24,7 +23,9 @@
     }
 
 
+
+/* Page à propos */    
 .section__margin {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
