@@ -27,6 +27,12 @@ figcaption {
 
 .image {
   width: 100%; /* remplir la colonne */
+  padding: 0.5vw;
+  transition: all 0.5s;
+}
+
+.image:hover {
+  transform: scale(1.02);
 }
 
 /* Changer la mise en page pour les écrans de téléphone */

@@ -189,7 +189,17 @@ window.addEventListener('scroll', function () {
   }
 });
 
-
+/* Animation des images de projets */
+const myImage = document.getElementById("myImage");
+  
+  myImage.addEventListener("mouseover", function() {
+    this.style.transform = "scale(1.5)";
+  });
+  
+  myImage.addEventListener("mouseout", function() {
+    this.style.transform = "scale(1)";
+  });
+  
 /* Animation mot Contact */
 const slideInText = document.querySelector('.slide-in-text');
 
