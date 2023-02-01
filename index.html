@@ -99,47 +99,6 @@
           <img src="public/img/projets/work-noffta.jpg" class="image" alt="Site internet qui génère des NFT en ligne">
         </div>
       
-      <div class="title__contact">CONTACT</div>
-        
-        <div class="section__grid">
-          <div class="text__contact">
-            <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
-          </div>
-          <div class="form__contact">
-            <form class="form container" action="#">
-              <div class="form__input">
-                  <label for="lastname">Nom
-                    <input type="text" id="lastname" name="last-name" placeholder="Saissisez votre nom">
-                  </label>
-              </div>
-  
-                <div class="form__input">
-                <label for="firstname">Prénom
-                  <input type="text" id="firstname" name="first-name" placeholder="Saisissez votre prénom">
-                </label>
-              </div>
-  
-              <div class="form__input">
-                <label for="e-mail">E-mail
-                  <input type="email" id="email" name="email" placeholder="Saisissez votre e-mail">
-                </label>
-              </div>
-  
-              <div class="form__input">
-                  <label for="message">Message
-                  <input type="text" id="message" name="message" placeholder="Écrivez votre message ici...">
-                </label>
-              </div>
-  
-              <div class="button__contact">
-                <button class="btn_contact" type="button">ENVOYEZ</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        
-    
-
 
       <footer class="footer">
 
@@ -186,25 +145,6 @@ window.addEventListener('scroll', function () {
   } else {
     title__projets.classList.remove('small');
     title__projets.classList.add('big');
-  }
-});
-
-/* Animation mot Projets */
-    var title__contact = document.querySelector('.title__contact');
-
-window.addEventListener('scroll', function () {
-  var scrollPos = window.scrollY + window.innerHeight;
-  var title__contactPos = title__contact.offsetTop + title__contact.offsetHeight;
-
-  if (scrollPos > title__contactPos) {
-    title__contact.classList.remove('big');
-    title__contact.classList.add('small');
-  } else if (scrollPos < title__contactPos - title__contact.offsetHeight) {
-    title__contact.classList.remove('small');
-    title__contact.classList.remove('big');
-  } else {
-    title__contact.classList.remove('small');
-    title__contact.classList.add('big');
   }
 });
 

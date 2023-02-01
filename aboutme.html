@@ -91,11 +91,10 @@
               allant des logos aux sites Web en passant par les campagnes publicitaires, les packaging et les stratégies de marque.</p>
           </div>
 
-        <div class="about__compétences">
-            <h3>Ce que je fais</h3>
-        </div>
 
-</div>
+            <h3>Ce que je fais</h3>
+
+        </div>
             <section>
               <div class="container__card">
                 <div class="card">
@@ -191,20 +190,61 @@
         <div class="section__margin">
 
             <div class="about__anectodes">
-                <p>Lorsque je ne suis pas derrière mon écran, j’aime explorer de nouvelles tendances en matière de design, 
-                  apprendre de nouvelles technologies et me tenir informée des dernières tendances du secteur.</p>
+              <h3>3 Choses à savoir sur moi</h3>
+                <div class="about__number">
+                  <h3 class="number">1</h3>
+                  <p>Lorsque je ne suis pas derrière mon écran, j’aime explorer de nouvelles tendances en matière de design.</p>
+                </div>
+                <div class="about__number">
+                  <h3 class="number">2</h3>
+                  <p>J'aime beaucoup le sport, cela me permet de me vider l'esprit !</p>
+                </div>
+                <div class="about__number">
+                  <h3 class="number">3</h3>
+                  <p>Ma série favorite est de loin Peaky Blinders.</p>
+                </div>
             </div>
+
 
             <div class="about__contact">
+              <h3>Prenons rendez-vous !</h3>
                 <p>Si vous êtes à la recherche d'une designer passionnée et talentueuse pour aider à amener votre marque ou votre entreprise au niveau supérieur, 
                   n'hésitez pas à me contacter pour discuter de vos projets. Je suis impatiente de travailler avec vous pour donner vie à vos idées et à vos visions.</p>
-            </div>
-
+    
+                    <div class="form__contact">
+                      <form class="form container" action="#">
+                        <div class="form__input">
+                            <label for="lastname">Nom
+                              <input type="text" id="lastname" name="last-name" placeholder="Saissisez votre nom">
+                            </label>
+                        </div>
+            
+                          <div class="form__input">
+                          <label for="firstname">Prénom
+                            <input type="text" id="firstname" name="first-name" placeholder="Saisissez votre prénom">
+                          </label>
+                        </div>
+            
+                        <div class="form__input">
+                          <label for="e-mail">E-mail
+                            <input type="email" id="email" name="email" placeholder="Saisissez votre e-mail">
+                          </label>
+                        </div>
+            
+                        <div class="form__input">
+                            <label for="message">Message
+                            <text type="text" id="message" name="message" placeholder="Écrivez votre message ici...">
+                          </label>
+                        </div>
+            
+                        <div class="button__contact">
+                          <button class="btn_contact" type="button">ENVOYEZ</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
         </div>   
       
-
-
-
 
       <footer class="footer">
 
@@ -233,7 +273,24 @@
 
 
 <script>
+/* Animation mot contact */
+var title__contact = document.querySelector('.title__contact');
 
+window.addEventListener('scroll', function () {
+  var scrollPos = window.scrollY + window.innerHeight;
+  var title__contactPos = title__contact.offsetTop + title__contact.offsetHeight;
+
+  if (scrollPos > title__contactPos) {
+    title__contact.classList.remove('big');
+    title__contact.classList.add('small');
+  } else if (scrollPos < title__contactPos - title__contact.offsetHeight) {
+    title__contact.classList.remove('small');
+    title__contact.classList.remove('big');
+  } else {
+    title__contact.classList.remove('small');
+    title__contact.classList.add('big');
+  }
+});
 </script>
 
 </html>

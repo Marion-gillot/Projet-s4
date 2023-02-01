@@ -69,3 +69,21 @@ ul {
   margin-bottom: 30%;
 }
 
+.about__anectodes {
+  margin-top: 30%;
+}
+
+.about__number {
+  display: flex;
+  gap: var(--space3x);
+  align-items: center;
+}
+
+.about__contact {
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+
+.number {
+  color: var(--gray);
+}
