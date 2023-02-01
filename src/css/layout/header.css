@@ -31,10 +31,10 @@
   .desktop-header {
     display: flex;
     top: 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
     z-index: 2;
-    padding: var(--space4x) var(--space5x);
+    padding: var(--space4x);
     justify-content: space-between;
   }
 
@@ -91,3 +91,11 @@ width: 90%;
       display: flex;
     }
   }
+
+.header__btn__mail {
+  color: var(--impure-black);
+  background-color: var(--impure-white);
+  padding: var(--space1x);
+  border-radius: 5px;
+
+}
