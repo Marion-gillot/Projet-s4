@@ -64,5 +64,8 @@ ul {
   font-family: 'mulish';
 }
 
-
+/* Page à propos */
+.about__description {
+  margin-bottom: 30%;
+}
 
