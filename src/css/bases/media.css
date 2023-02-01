@@ -20,7 +20,7 @@ figcaption {
 }
 
 /* Présentation des projets */
-.image_container {
+.image__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans larges */
 }
@@ -37,7 +37,7 @@ figcaption {
 
 /* Changer la mise en page pour les écrans de téléphone */
 @media (max-width: 768px) {
-  .image_container {
+  .image__container {
     grid-template-columns: 1fr; /* une colonne pour les écrans de téléphone */
   }
 }

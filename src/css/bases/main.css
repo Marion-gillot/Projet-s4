@@ -37,6 +37,12 @@ button {
   padding-left: var(--space3x);
   padding-right: var(--space3x);
 }
+ 
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
 
 h3 {
   font-size: 30px;
@@ -57,53 +63,4 @@ a {
 ul {
   list-style: none;
   font-family: 'mulish';
-}
-
-/* Animation des titres Projets et Contact */
-.text {
-  font-family: 'Work Sans';
-  text-align: center;
-  font-size: 20vw;
-  transition: font-size 0.5s;
-  margin-bottom: 10%;
-}
-
-.text.big {
-  font-size: 20vw;
-}
-
-.text.small {
-  font-size: 10vw;
-  margin-bottom: 10%;
-}
-
-
-.slide-in-text {
-  font-size: 8vw;
-  position: relative;
-  left: -100%;
-  visibility: hidden;
-  animation: slide-in 1s forwards;
-}
-
-@keyframes slide-in {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-.slide-out-text {
-  animation: slide-out 1s forwards;
-}
-
-@keyframes slide-out {
-  from {
-    left: 50%;
-  }
-  to {
-    left: -100%;
-  }
 }

@@ -1,0 +1,98 @@
+/* Animation Projets  */
+.title__projets {
+    font-family: 'Work Sans';
+    text-align: center;
+    font-size: 20vw;
+    transition: font-size 0.5s;
+    margin-bottom: 10%;
+  }
+  
+  .title__projets.big {
+    font-size: 20vw;
+  }
+  
+  .title__projets.small {
+    font-size: 6vw;
+    margin-bottom: 10%;
+  }
+  
+  
+  .slide-in-titl.title__projets {
+    font-size: 8vw;
+    position: relative;
+    left: -100%;
+    visibility: hidden;
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  .slide-out-titl.title__projets {
+    animation: slide-out 1s forwards;
+  }
+  
+  @keyframes slide-out {
+    from {
+      left: 50%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+
+  /* Animation Contact */
+.title__contact {
+    font-family: 'Work Sans';
+    text-align: center;
+    font-size: 20vw;
+    transition: font-size 0.5s;
+    margin-bottom: 10%;
+  }
+  
+  .title__contact {
+    font-size: 20vw;
+  }
+  
+  .title__contact.small {
+    font-size: 6vw;
+    margin-bottom: 10%;
+  }
+  
+  
+  .slide-in-title__contact {
+    font-size: 8vw;
+    position: relative;
+    left: -100%;
+    visibility: hidden;
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  .slide-out-title__contact {
+    animation: slide-out 1s forwards;
+  }
+  
+  @keyframes slide-out {
+    from {
+      left: 50%;
+    }
+    to {
+      left: -100%;
+    }
+  }

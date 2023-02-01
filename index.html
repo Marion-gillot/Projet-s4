@@ -44,7 +44,7 @@
 
       <div class="header__start">
         <a href="index.html" class="header__logo">
-          <img src="public/icon/icon_logo_white.svg" alt="logo du portfolio" class="header__logo">
+          <img src="public/icon/icon_logo_white.svg" alt="logo du portfolio">
         </a>
       </div>
   
@@ -60,7 +60,7 @@
         <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
       </div>
 
-      <select id="language-select">
+      <select id="header__language__select">
         <option value="english">EN</option>
         <option value="french">FR</option>
         <option value="spanish">ESP</option>
@@ -76,31 +76,32 @@
 
 <main>
 			
-    <div class="background-video">
+    <div class="hero__home__video">
       <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video">
         <source src="https://dl.dropboxusercontent.com/s/yzzt3g74an6j3lk/Header%20video%20web%201080.mp4?dl=0" type="video/mp4" alt="vidéo animation sombre">
       </video>
-        <div class="video-overlay">
+        <div class="hero__home__text">
             <h1 class="hero__home__title">GRAPHIC DESIGNER/WEB DESIGNER</h1>
-            <h1 class="chapo">Marion Gilllot - Graphiste / UI-UX / Web Designer située en France, spécialisée dans la création 
+            <h1 class="hero__home__chapo">Marion Gilllot - Graphiste / UI-UX / Web Designer située en France, spécialisée dans la création 
               d'identité visuelle et de designs web uniques et innovants.</h1>
         </div>
     </div>
 
      
 
-      <div class="text">PROJETS</div>
+      <div class="title__projets">PROJETS</div>
 
-        <div class="image_container">
+
+        <div class="image__container">
           <img src="public/img/projets/work-expo2025.jpg" class="image" alt="affiche sur l'exposition universelle 2025 à tokyo">
           <img src="public/img/projets/work-affiche-film.jpg" class="image" alt="affiche de film The Psychoptah">
           <img src="public/img/projets/work-carte.jpg" class="image" alt="Carte postale sur le thème de l'artiste Cassandre">
           <img src="public/img/projets/work-noffta.jpg" class="image" alt="Site internet qui génère des NFT en ligne">
         </div>
       
-      <div class="slide-in-text">CONTACT</div>
+      <div class="title__contact">CONTACT</div>
         
-        <div class="section_grid">
+        <div class="section__grid">
           <div class="text__contact">
             <p>Vous souhaitez me contacter ? Veuillez remplir ce formulaire ! Vous obtiendrez une réponse dans les 48h !</p>
           </div>
@@ -170,22 +171,40 @@
 <script>
 
 /* Animation mot Projets */
-
-    var text = document.querySelector('.text');
+    var title__projets = document.querySelector('.title__projets');
 
 window.addEventListener('scroll', function () {
   var scrollPos = window.scrollY + window.innerHeight;
-  var textPos = text.offsetTop + text.offsetHeight;
+  var title__projetsPos = title__projets.offsetTop + title__projets.offsetHeight;
 
-  if (scrollPos > textPos) {
-    text.classList.remove('big');
-    text.classList.add('small');
-  } else if (scrollPos < textPos - text.offsetHeight) {
-    text.classList.remove('small');
-    text.classList.remove('big');
+  if (scrollPos > title__projetsPos) {
+    title__projets.classList.remove('big');
+    title__projets.classList.add('small');
+  } else if (scrollPos < title__projetsPos - title__projets.offsetHeight) {
+    title__projets.classList.remove('small');
+    title__projets.classList.remove('big');
   } else {
-    text.classList.remove('small');
-    text.classList.add('big');
+    title__projets.classList.remove('small');
+    title__projets.classList.add('big');
+  }
+});
+
+/* Animation mot Projets */
+    var title__contact = document.querySelector('.title__contact');
+
+window.addEventListener('scroll', function () {
+  var scrollPos = window.scrollY + window.innerHeight;
+  var title__contactPos = title__contact.offsetTop + title__contact.offsetHeight;
+
+  if (scrollPos > title__contactPos) {
+    title__contact.classList.remove('big');
+    title__contact.classList.add('small');
+  } else if (scrollPos < title__contactPos - title__contact.offsetHeight) {
+    title__contact.classList.remove('small');
+    title__contact.classList.remove('big');
+  } else {
+    title__contact.classList.remove('small');
+    title__contact.classList.add('big');
   }
 });
 
@@ -199,34 +218,6 @@ const myImage = document.getElementById("myImage");
   myImage.addEventListener("mouseout", function() {
     this.style.transform = "scale(1)";
   });
-  
-/* Animation mot Contact */
-const slideInText = document.querySelector('.slide-in-text');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      slideInText.style.visibility = 'visible';
-      slideInText.classList.remove('slide-out-text');
-      slideInText.classList.add('slide-in-text');
-    } else {
-      slideInText.classList.remove('slide-in-text');
-      slideInText.classList.add('slide-out-text');
-    }
-  });
-});
-
-observer.observe(slideInText);
-
-
-setTimeout(function () {            
-  $("#loading").addClass("animated fadeOut");            
-  setTimeout(function () {                
-    $("#loading").removeClass("animated fadeOut");                
-    $("#loading").css("display", "none");                
-    $("#box").css("display", "none");            
-  }, 2000);        }, 1300);
-
   </script>
 
 </html>

@@ -60,7 +60,7 @@
     gap: var(--space3x);
   }
 
-  #language-select {
+  #header__language__select {
     background-color: transparent;
     border: 1px solid var(--impure-white);
     color: var(--impure-white);
