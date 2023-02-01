@@ -38,7 +38,7 @@ button {
   padding-right: var(--space3x);
 }
  
-
+/* Titres */
 h2 {
   font-size: 40px;
   text-align: center;
@@ -48,8 +48,7 @@ h3 {
   font-size: 30px;
 }
 
-
-/* annuler la mise en forme des liens */
+/* Annuler la mise en forme des liens */
 a {
   font-family: 'mulish';
   text-decoration: none;
@@ -64,3 +63,6 @@ ul {
   list-style: none;
   font-family: 'mulish';
 }
+
+
+
