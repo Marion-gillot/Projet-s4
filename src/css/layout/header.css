@@ -62,15 +62,14 @@
 
   #header__language__select {
     background-color: transparent;
-    border: 1px solid var(--impure-white);
     color: var(--impure-white);
-    border-radius: 4px;
     padding: 0.5rem;
   }
 
 
 .header__sun {
 width: 80%;
+color: var(--impure-white);
 }
 
 /* Responsive du header */

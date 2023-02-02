@@ -16,7 +16,7 @@
     <script src="src/js/index.js"></script>
 </head>
 
-<body x-data="{ atTop: true }">
+<body x-data="{ atTop: true }" >
 
   <header>
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
@@ -57,9 +57,9 @@
         </ul>
       </nav>
 
-    <div>
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
-    </div>
+      <button onclick="lightMode()">
+        <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
+    </button>
 
     <select id="header__language__select">
       <option value="english">EN</option>
@@ -85,7 +85,7 @@
         <source src="https://dl.dropboxusercontent.com/s/yzzt3g74an6j3lk/Header%20video%20web%201080.mp4?dl=0" type="video/mp4" alt="vidéo animation sombre">
       </video>
         <div class="hero__home__text">
-          <h1 class="hero__home__chapo">PORTFOLIO</h1>
+          <p class="hero__home__chapo">PORTFOLIO</p>
             <h1 class="hero__home__title">GRAPHISTE<br> WEB/DESIGNER</h1>
             <h1 class="hero__home__chapo">MARION GILLOT</h1>
         </div>
@@ -186,6 +186,14 @@ const myImage = document.getElementById("myImage");
     this.style.transform = "scale(1)";
   });
 
+
+
+
+
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light");
+}
 
   </script>
 

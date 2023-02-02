@@ -5,16 +5,21 @@
   box-sizing: border-box;
 }
 
-/* Les règles typographiques générales qui s'appliquent à tout le site */
+/* Réglages body et light mode */
+
 body {
   font-family: var(--font-work-sans);
   font-size: var(--body);
   line-height: 1.6;
-  background-color: black;
+  background-color: var(--impure-black);
   color: var(--impure-white);
-  transition: all 0.5s ease-in-out;
 }
 
+.light {
+  background-color: var(--impure-white);
+  color: var(--impure-black);
+}
+ 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {
   -webkit-appearance: none;

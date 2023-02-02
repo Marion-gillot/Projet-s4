@@ -1,9 +1,8 @@
 :root {
-
 /* Color styles */
 --impure-white: #FBFBFB;
---impure-black: #1D1D1D;
---gray: #969696;
+--impure-black: #0F0F0F;
+--gray: #595959;
 
 /* Text-size styles */
 --h1: 50px;

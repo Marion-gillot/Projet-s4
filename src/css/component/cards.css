@@ -10,18 +10,18 @@
 }
 
 .container__card .card {
-	position: relative;
-	border: 5 var(--impure-white);
-	width: 300px;
+    position: relative;
+    border: 5 var(--impure-white);
+    width: 300px;
     height: 460px;
-	background: var(--impure-black);
-	margin: 20px;
-	box-shadow: 0 0px 120px var(--impure-black);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
+    background: #000000;
+    margin: 20px;
+    box-shadow: 0 8px 12px var(--impure-white);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .container__card .card .content {
