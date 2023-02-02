@@ -32,3 +32,4 @@ Spanizer
   };
   spanizeLetters.init();
 })(jQuery);
+
