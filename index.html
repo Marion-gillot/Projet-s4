@@ -57,8 +57,11 @@
         </ul>
       </nav>
 
-      <button onclick="lightMode()">
+    <button onclick="lightMode()">
         <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
+    </button>
+    <button onclick="darkMode()">
+      <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__moon">
     </button>
 
     <select id="header__language__select">
@@ -81,8 +84,11 @@
 <main>
 			
     <div class="hero__home__video">
-      <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video">
-        <source src="https://dl.dropboxusercontent.com/s/yzzt3g74an6j3lk/Header%20video%20web%201080.mp4?dl=0" type="video/mp4" alt="vidéo animation sombre">
+      <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_dark">
+        <source src="public/video/hero_video_dark.mp4" type="video/mp4">      
+      </video>
+      <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_light">
+        <source src="public/video/hero_light_video.mp4" type="video/mp4">      
       </video>
         <div class="hero__home__text">
           <p class="hero__home__chapo">PORTFOLIO</p>
@@ -194,6 +200,27 @@ function lightMode() {
    var element = document.body;
    element.classList.toggle("light");
 }
+
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark");
+}
+
+
+
+
+
+
+const toggleModeButton = document.getElementById("light");
+const lightModeVideo = document.querySelector(".hero__video_light");
+const darkModeVideo = document.querySelector(".hero__video__dark");
+let isLightMode = true;
+
+toggleModeButton.addEventListener("click", () => {
+  isLightMode = !isLightMode;
+  lightModeVideo.style.display = isLightMode ? "block" : "none";
+  darkModeVideo.style.display = isLightMode ? "none" : "block";
+});
 
   </script>
 

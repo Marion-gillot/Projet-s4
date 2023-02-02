@@ -1,0 +1,36 @@
+.light {
+    background-color: var(--impure-white);
+    color: var(--impure-black);
+  }
+  
+  .light h3 {
+    color: var(--impure-black);
+  }
+
+  .light .text__card {
+    color: var(--impure-white);
+  }
+
+  .light label {
+    color: var(--impure-black);
+  }
+
+  .light input {
+    color: var(--impure-black);
+  }
+
+  .light .btn_contact {
+    border: var(--impure-black);
+    color: var(--impure-white);
+    background: var(--impure-black);
+
+}
+
+
+
+
+
+.dark {
+  background-color: var(--impure-black);
+  color: var(--impure-white);
+}

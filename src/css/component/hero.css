@@ -117,3 +117,25 @@ line-height: 1;
   margin: auto;
 }
 
+
+
+
+
+
+
+
+.light .hero__video_dark {
+ display: none;
+}
+
+.light .hero__video_light {
+  display: block;
+}
+
+.dark .hero__video_dark {
+  display: block;
+}
+
+.dark .hero__video_light {
+  display: none;
+}

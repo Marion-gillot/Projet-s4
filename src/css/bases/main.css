@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Réglages body et light mode */
+/* Réglages body */
 
 body {
   font-family: var(--font-work-sans);
@@ -15,35 +15,6 @@ body {
   color: var(--impure-white);
 }
 
-.light {
-  background-color: var(--impure-white);
-  color: var(--impure-black);
-}
- 
-/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
-button {
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-}
-  
-/* Pour enlever l'apparence par défaut des listes */
-.list-unstyled {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-  
-/* Classe générique permettant de définir les marges sur les cotés */
-.container {
-  padding-left: var(--space3x);
-  padding-right: var(--space3x);
-}
- 
-/* Titres */
 h2 {
   font-size: 40px;
   text-align: center;
@@ -71,10 +42,33 @@ ul {
   font-family: 'mulish';
 }
 
-
 u {
   color: var(--impure-white);
 }
+ 
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+  
+/* Pour enlever l'apparence par défaut des listes */
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+/* Classe générique permettant de définir les marges sur les cotés */
+.container {
+  padding-left: var(--space3x);
+  padding-right: var(--space3x);
+}
+
 /* Page home */
 .link__contact {
   text-align: center;

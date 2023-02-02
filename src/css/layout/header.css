@@ -29,12 +29,13 @@
 
 /* Header desktop */
   .desktop-header {
+    background-color: #000;
     display: flex;
     top: 0;
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: var(--space4x);
+    padding: 2%;
     justify-content: space-between;
   }
 
@@ -64,13 +65,19 @@
     background-color: transparent;
     color: var(--impure-white);
     padding: 0.5rem;
+    border-radius: 5px;
   }
 
-
+/* Light et Dark mode */
 .header__sun {
-width: 80%;
-color: var(--impure-white);
+  width: 80%;
+  color: var(--impure-white);
 }
+
+.header__moon {
+  width: 70%;
+  color: var(--impure-white);
+  }
 
 /* Responsive du header */
   .mobile-header {
@@ -96,5 +103,5 @@ color: var(--impure-white);
   background-color: var(--impure-white);
   padding: var(--space1x);
   border-radius: 5px;
-
+  border: #000;
 }
