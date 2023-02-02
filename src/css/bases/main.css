@@ -42,10 +42,12 @@ button {
 h2 {
   font-size: 40px;
   text-align: center;
+  color: var(--impure-white);
 }
 
 h3 {
   font-size: 30px;
+  color: var(--impure-white);
 }
 
 /* Annuler la mise en forme des liens */
@@ -62,6 +64,17 @@ a {
 ul {
   list-style: none;
   font-family: 'mulish';
+}
+
+
+u {
+  color: var(--impure-white);
+}
+/* Page home */
+.link__contact {
+  text-align: center;
+margin:20%;
+color: var(--impure-white);
 }
 
 /* Page à propos */

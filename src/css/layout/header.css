@@ -22,7 +22,7 @@
 /* Même propriétées pour le header mobile que le header desktop */
   .header__logo {
     display: block;
-    width: 70%;
+    width: 50%;
     margin: 5%;
   }
 
@@ -70,7 +70,7 @@
 
 
 .header__sun {
-width: 90%;
+width: 80%;
 }
 
 /* Responsive du header */
