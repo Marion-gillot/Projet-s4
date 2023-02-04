@@ -26,11 +26,31 @@
 
 }
 
-
-
-
-
 .dark {
   background-color: var(--impure-black);
   color: var(--impure-white);
 }
+
+
+
+
+/* 
+.light .hero__video_dark {
+  display: none;
+ }
+ 
+ .light .hero__video_light {
+   display: block;
+ }
+ 
+ .dark .hero__video_dark {
+   display: block;
+ }
+ 
+ .dark .hero__video_light {
+   display: none;
+ }
+ */
+
+
+ 

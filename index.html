@@ -57,12 +57,13 @@
         </ul>
       </nav>
 
+
     <button onclick="lightMode()">
         <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
     </button>
-    <button onclick="darkMode()">
-      <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__moon">
-    </button>
+    <!-- <button onclick="darktMode()">
+      <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__sun">
+  </button> -->
 
     <select id="header__language__select">
       <option value="english">EN</option>
@@ -87,9 +88,9 @@
       <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_dark">
         <source src="public/video/hero_video_dark.mp4" type="video/mp4">      
       </video>
-      <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_light">
+      <!-- <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_light">
         <source src="public/video/hero_light_video.mp4" type="video/mp4">      
-      </video>
+      </video> -->
         <div class="hero__home__text">
           <p class="hero__home__chapo">PORTFOLIO</p>
             <h1 class="hero__home__title">GRAPHISTE<br> WEB/DESIGNER</h1>
@@ -109,13 +110,18 @@
           <img src="public/img/projets/work-noffta.jpg" class="image" alt="Site internet qui génère des NFT en ligne">
         </div>
       
-
+        
+      <a href="aboutme.html#sectioncontact">
         <div class="link__contact">
-          <a href="#contact">
             <h3>Transformez votre vision en réalité grâce à ma passion en webdesign.</h3>
-            <u>Contactez-moi dès maintenant pour une expérience utilisateur unique et un site web 100% personnalisé et sur mesure.</u>
-          </a>
+           <button class="btn_contact">Contacter</button>
         </div>
+      </a>
+
+
+
+
+
 
       
 
@@ -201,26 +207,22 @@ function lightMode() {
    element.classList.toggle("light");
 }
 
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark");
-}
 
 
 
 
 
 
-const toggleModeButton = document.getElementById("light");
-const lightModeVideo = document.querySelector(".hero__video_light");
-const darkModeVideo = document.querySelector(".hero__video__dark");
-let isLightMode = true;
+// const toggleModeButton = document.getElementById("light");
+// const lightModeVideo = document.querySelector(".hero__video_light");
+// const darkModeVideo = document.querySelector(".hero__video__dark");
+// let isLightMode = true;
 
-toggleModeButton.addEventListener("click", () => {
-  isLightMode = !isLightMode;
-  lightModeVideo.style.display = isLightMode ? "block" : "none";
-  darkModeVideo.style.display = isLightMode ? "none" : "block";
-});
+// toggleModeButton.addEventListener("click", () => {
+//   isLightMode = !isLightMode;
+//   lightModeVideo.style.display = isLightMode ? "block" : "none";
+//   darkModeVideo.style.display = isLightMode ? "none" : "block";
+// });
 
   </script>
 

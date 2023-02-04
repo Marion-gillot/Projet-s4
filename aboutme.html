@@ -56,6 +56,8 @@
           <li><a href="aboutme.html">À PROPOS</a></li>
         </ul>
       </nav>
+      
+      
 
       <button onclick="lightMode()">
         <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
@@ -212,7 +214,7 @@
             </div>
 
 
-          <div id="contact">
+          <div id="sectioncontact">
             <div class="about__contact">
               <h3>Prenons rendez-vous !</h3>
                 <p>Si vous êtes à la recherche d'une designer passionnée et talentueuse pour aider à amener votre marque ou votre entreprise au niveau supérieur, 
@@ -253,13 +255,7 @@
           </div>
         </div>   
       
-        <div class="cont">  
-          <button class="btn">
-            <span>Submit</span>
-            <img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62">
-          </button>
-          </div>
-
+      
 
       <footer class="footer">
 
@@ -312,9 +308,17 @@ window.addEventListener('scroll', function () {
 
 
 function lightMode() {
-   var element = document.body;
-   element.classList.toggle("light");
-}
+    var element = document.body;
+    element.classList.toggle("light");
+ }
+
+ function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+ }
+
+
+
 </script>
 
 </html>
