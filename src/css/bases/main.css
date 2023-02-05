@@ -99,3 +99,15 @@ color: var(--impure-white);
 .number {
   color: var(--gray);
 }
+
+/* Conditions juridiques */
+
+
+.title__juridique {
+margin-bottom: 10%;
+}
+
+
+.text__juridique {
+  margin-top: 10%;
+}

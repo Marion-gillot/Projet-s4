@@ -30,6 +30,7 @@
 /* Header desktop */
   .desktop-header {
     background-color: #000;
+    top: 0;
     display: flex;
     position: fixed;
     width: 100%;
@@ -55,7 +56,7 @@
 
 
   .header__start {
-gap: 4%;
+    gap: 4%;
   }
 
   .header__end {
