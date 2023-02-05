@@ -44,18 +44,16 @@
   <div class="desktop-header">
 
     <div class="header__start">
-      <a href="index.html" class="header__logo">
-        <img src="public/icon/icon_logo_white.svg" alt="logo du portfolio">
-      </a>
-    </div>
-
-    <div class="header__end">
       <nav>
         <ul class="navigation">
           <li><a href="index.html">PROJETS</a></li>
-          <li><a href="aboutme.html">À PROPOS</a></li>
+          <li><a href="aboutme.html">À PROPOS / CONTACT</a></li>
         </ul>
       </nav>
+    </div>
+
+    <div class="header__end">
+
 
 
     <button onclick="lightMode()">
@@ -101,6 +99,13 @@
      
 
       <div class="title__projets">PROJETS</div>
+
+  
+      <div class="scroll-text">
+        <p class="p">J'aime le design... et le design.</p>
+      </div>
+        
+
 
 
         <div class="image__container">
@@ -202,15 +207,51 @@ const myImage = document.getElementById("myImage");
 
 
 
-function lightMode() {
-   var element = document.body;
-   element.classList.toggle("light");
+
+  const scrollText = document.querySelector('.scroll-text');
+let lastScroll = 0;
+
+window.addEventListener('scroll', function () {
+  const currentScroll = window.scrollY;
+  if (isInViewport(scrollText)) {
+    if (currentScroll > lastScroll) {
+      scrollText.querySelector('p').style.animationPlayState = 'running';
+    } else {
+      scrollText.querySelector('p').style.animationPlayState = 'paused';
+    }
+  } else {
+    scrollText.querySelector('p').style.animationPlayState = 'paused';
+  }
+  lastScroll = currentScroll;
+});
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
 
 
 
 
+
+
+
+
+
+
+
+/* Light Mode */
+
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light");
+}
 
 
 // const toggleModeButton = document.getElementById("light");
@@ -223,6 +264,10 @@ function lightMode() {
 //   lightModeVideo.style.display = isLightMode ? "block" : "none";
 //   darkModeVideo.style.display = isLightMode ? "none" : "block";
 // });
+
+
+
+
 
   </script>
 

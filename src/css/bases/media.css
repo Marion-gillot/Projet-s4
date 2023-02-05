@@ -23,6 +23,7 @@ figcaption {
 .image__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans larges */
+  margin-top: 10%;
 }
 
 .image {
