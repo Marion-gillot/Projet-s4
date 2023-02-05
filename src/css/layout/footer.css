@@ -2,12 +2,14 @@
     background-color: black;
     color: var(--impure-white);
     padding: var(--space4x) var(--space4x);
+  }
+  
+  .footer_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    
   }
-  
+
   footer a {
     color: var(--gray-400);
     text-decoration: none;
@@ -22,9 +24,13 @@
     filter: invert(60%);
   }
 
-  .footer__logo {
-    width: 20%;
-  }
+.footer__license {
+  font-size: 10px;
+  font-weight: 200;
+  float: right;
+  width: 100%;
+  display: block;
+}
   
   .footer__title {
     margin-top: 0;
@@ -43,8 +49,14 @@
 
 
   @media (max-width: 767px) {
-    .footer {
+    .footer_grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .footer__license {
+      text-align: center;
     }
   }
 
