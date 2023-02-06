@@ -18,19 +18,30 @@ figcaption {
     box-sizing: border-box;
 }
 
-/* Présentation des projets */
-.image__container {
+
+
+.grand-poster {
+width: 100%;
+}
+
+
+/* Taille des images des projets */
+.poster {
+  width: 68%;
+
+}
+
+
+
+
+
+
+/* Autre présentation des projets */
+/* .image__container {
   margin-top: 10%;
   width: 90%;
   margin: auto;
-}
-
-.image {
-margin-bottom: 5%;
-margin-top: 5%;
-}
-
-
+} */
 /* 
 .overlay-outer {
   position: relative;

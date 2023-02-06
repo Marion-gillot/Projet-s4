@@ -49,27 +49,19 @@
 
 
 /* Page projets */
+.container__works {
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+
+
 .section__grid__works {
-    border: 1px solid white;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
-    border-radius: 20px;
-    padding: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5%;
-    z-index: 2;
-    align-items: center;
-    margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: var(--space2x)
 }
 
 
-    /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
-    @media (min-width: 768px) {
-        .section__grid__works {
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-    }
 
     /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
     @media (max-width: 768px) {
@@ -78,3 +70,7 @@
         }
     }
 
+.grid__works {
+display: flex;
+gap: var(--space2x);
+}
