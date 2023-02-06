@@ -1,5 +1,5 @@
 /* Animation Projets  */
-.title__projets {
+/* .title__projets {
     font-family: 'Work Sans';
     text-align: center;
     font-size: 20vw;
@@ -44,39 +44,4 @@
     to {
       left: -100%;
     }
-  }
-
-
-  #instructions {
-    position: absolute;
-    color: #666;
-    bottom: 0;
-    padding-bottom: 6px;
-    font-family: sans-serif;
-    width: 100%;
-    text-align: center;
-    pointer-events: none;
-  }
-  
-  /* .scroll-text {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-  }
-  
-  .p {
-    width: 50%;
-    animation: scroll-animation 10s linear forwards;
-  }
-  
-  @keyframes scroll-animation {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
   } */
-
-
-  

@@ -1,3 +1,4 @@
+/* LIGHT MODE */
 .light {
     background-color: var(--impure-white);
     color: var(--impure-black);
@@ -26,12 +27,11 @@
 
 }
 
+/* DARK MODE */
 .dark {
   background-color: var(--impure-black);
   color: var(--impure-white);
 }
-
-
 
 
 /* 

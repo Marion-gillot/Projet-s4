@@ -6,7 +6,6 @@
 }
 
 /* Réglages body */
-
 body {
   font-family: var(--font-work-sans);
   font-size: var(--body);
@@ -44,10 +43,6 @@ ul {
   font-family: 'mulish';
 }
 
-u {
-  color: var(--impure-white);
-}
- 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {
   -webkit-appearance: none;
@@ -71,12 +66,6 @@ button {
   padding-right: var(--space3x);
 }
 
-/* Page home */
-.link__contact {
-  text-align: center;
-margin:20%;
-color: var(--impure-white);
-}
 
 /* Page à propos */
 .about__description {
@@ -102,13 +91,10 @@ color: var(--impure-white);
   color: var(--gray);
 }
 
-/* Conditions juridiques */
-
-
+/* Page conditions */
 .title__juridique {
 margin-bottom: 10%;
 }
-
 
 .text__juridique {
   margin-top: 10%;
