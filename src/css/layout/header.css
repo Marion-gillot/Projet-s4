@@ -48,7 +48,7 @@
   }
 
   .navigation a {
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: var(--impure-white);
     text-decoration: none;
   }
@@ -71,6 +71,7 @@
     color: var(--impure-white);
     padding: 0.5rem;
     border-radius: 5px;
+    font-size: 0.8vw;
   }
 
 /* Light et Dark mode */
@@ -109,6 +110,7 @@
   padding: var(--space1x);
   border-radius: 5px;
   border: #000;
+  font-size: 0.8vw;
 }
 
 
