@@ -12,17 +12,16 @@
   .header__bar__mobile {
     display: flex;
     justify-content: inherit;
+    margin-top: 3%;
   }
 
   .header--atTop {
     background-color: var(--impure-black);
   }
   
-
-/* Même propriétées pour le header mobile que le header desktop */
-  .header__logo {
+  .header__logo__mode {
     display: block;
-    width: 50%;
+    width: 100%;
     margin: 5%;
   }
 
