@@ -67,6 +67,18 @@ button {
 }
 
 
+/* Page Projets */
+.title__works {
+  color: var(--impure-white);
+  font-size: 30px;
+  margin: 0;
+}
+
+.description__works {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /* Page à propos */
 .about__description {
   margin-bottom: 30%;

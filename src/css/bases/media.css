@@ -20,15 +20,23 @@ figcaption {
 
 /* Présentation des projets */
 .image__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les écrans larges */
   margin-top: 10%;
+  width: 90%;
+  margin: auto;
 }
 
+.image {
+margin-bottom: 5%;
+margin-top: 5%;
+}
+
+
+/* 
 .overlay-outer {
   position: relative;
   overflow: hidden;
-  margin-bottom: -2%;
+  margin-bottom: 12%;
+  margin-top: 12%;
 }
 
 .overlay {
@@ -83,11 +91,5 @@ figcaption {
 
 .fadeIn_bottom {
   top: 80%;
-}
+} */
 
-/* Changer la mise en page pour les écrans de téléphone */
-@media (max-width: 768px) {
-  .image__container {
-    grid-template-columns: 1fr; /* une colonne pour les écrans de téléphone */
-  }
-}
