@@ -51,6 +51,10 @@
 /* Page projets */
 
 .section__grid__works {
+    border: 1px solid white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
+    border-radius: 20px;
+    padding: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
@@ -58,6 +62,8 @@
     align-items: center;
     margin-bottom: 10%;
 }
+
+
     /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
     @media (min-width: 768px) {
         .section__grid__works {
