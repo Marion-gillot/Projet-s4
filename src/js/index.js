@@ -37,15 +37,3 @@ Spanizer
 
 
 
-var toggle_btn = document.getElementById('theme-btn');
-var body = document.getElementsByTagName('body')[0];
-var light_theme_class = 'light';
-
-toggle_btn.addEventListener('click', function() {
- if (body.classList.contains(light_theme_class)) {
- body.classList.remove(light_theme_class);
-}
- else {
- body.classList.add(light_theme_class);
-}
-});

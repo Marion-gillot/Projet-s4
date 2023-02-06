@@ -7,7 +7,6 @@
     gap: 5%;
     z-index: 2;
 }
-
     /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
     @media (min-width: 768px) {
         .section__grid {
@@ -22,12 +21,14 @@
         }
     }
 
-
-
 /* Page à propos */    
 .section__margin {
     max-width: 40%;
     margin: auto;
+}
+
+.section__center {
+    text-align: center;
 }
 
     /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
@@ -43,3 +44,4 @@
     margin: 20%;
 
   }
+
