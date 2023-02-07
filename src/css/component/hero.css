@@ -9,7 +9,11 @@ video {
 .hero__home__video {
   position: relative;
   margin-bottom: 20%;
+  object-fit: cover;
+  
 }
+
+
 
 .hero__home__text {
   position: absolute;

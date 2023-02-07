@@ -29,6 +29,10 @@ figcaption {
   margin-bottom: 50%;
 }
 
+.image {
+  border: none;
+}
+
 .grid__works__3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;

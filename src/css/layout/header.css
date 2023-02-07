@@ -25,20 +25,7 @@
     margin: 5%;
   }
 
-  /* .header__icons {
-    display: none;
-  }
-  
-  .header__icons--open {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    right: var(--space3x);
-    top: 50%;
-    transform: translateY(-50%);
-  }
-   */
+
 /* Header desktop */
   .desktop-header {
     background-color: #000;
@@ -101,6 +88,7 @@
 /* Responsive du header */
   .mobile-header {
     display: block;
+    position: fixed;
   }
   
   .desktop-header {

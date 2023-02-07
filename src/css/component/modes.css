@@ -4,7 +4,11 @@
     color: var(--impure-black);
   }
   
-  .light h3 {
+  .light h3, h2 {
+    color: var(--impure-black);
+  }
+
+  .light h1{
     color: var(--impure-black);
   }
 
@@ -33,6 +37,19 @@
   color: var(--impure-white);
   border: 1rem;
   border: 1px solid  var(--impure-black);
+}
+
+
+.light .image {
+   border: 1px solid var(--impure-black);
+}
+
+.light .form__input input {
+  border-bottom: 1px solid var(--impure-black);
+}
+
+.light .form__input textarea {
+  border-bottom: 1px solid var(--impure-black);
 }
 
 /* DARK MODE */
