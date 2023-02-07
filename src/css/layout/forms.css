@@ -4,7 +4,7 @@
     margin-top: var(--space4x);
   }
   
-  .form__input input,
+  .form__input input, 
   .form__select select {
     -webkit-appearance: none;
     appearance: none;
@@ -13,6 +13,7 @@
     border-bottom: 1px solid var(--impure-white);
     width: 100%;
     padding: var(--space1x) 0;
+    color: var(--impure-white);
   }
   
   .form__input input:focus,
@@ -20,11 +21,31 @@
     outline: 0;
   }
   
+  .form textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--impure-white);
+    width: 100%;
+    padding: var(--space1x) 0;
+    color: var(--impure-white);
+  }
+
+  .form__input__message {
+    min-height: 200px;
+    overflow: auto;
+  }
+
+  .form__input textarea:focus {
+    outline: none;
+
+  }
+  
   .form label {
     color: var(--impure-white);
     margin-top: var(--space3x);
     display: block;
-    border-bottom: white solid 1px;
   }
   
 .button__contact {

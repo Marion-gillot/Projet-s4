@@ -2,7 +2,6 @@
 img {
     max-width: 100%;
     height: auto;
-
   }
   
 figure {
@@ -18,76 +17,53 @@ figcaption {
     box-sizing: border-box;
 }
 
+
+/* Page projets */
+.container__works {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15%;
+  }
+
+.work {
+  margin-bottom: 50%;
+}
+
+.grid__works__3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: var(--space2x);
+}
+
+.grid__works__2 {
+  display: flex;
+  gap: 7.3%;
+}
+
+.grid__works__2 > div:last-child {
+  justify-self: end;
+}
+
+/* Responsive des images */
+@media only screen and (max-width: 1024px) {
+  .grid__works__2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid__works__3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .grid__works__2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid__works__3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .img_resp {
   display: block;
   width: 100%;
 }
-
-/* Autre présentation des projets */
-/* .image__container {
-  margin-top: 10%;
-  width: 90%;
-  margin: auto;
-} */
-/* 
-.overlay-outer {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 12%;
-  margin-top: 12%;
-}
-
-.overlay {
-  background-color: ghostwhite ;
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-
-.a:hover .overlay {
-  opacity: 0.7;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.overlay-outer:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details h3 {
-  color: var(--impure-black);
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p {
-  color: var(--impure-black);
-  font-size: 0.8em;
-}
-
-.fadeIn_bottom {
-  top: 80%;
-} */
-

@@ -51,7 +51,7 @@
     display: block;
     line-height: 60px;
     transition: margin 0.4s;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
+    box-shadow: 0 0 5px var(--impure-white), 0 0 10px var(--impure-white), 0 0 15px var(--impure-white), 0 0 20px var(--impure-white);
     color: var(--impure-white);
     border: 1rem;
     border: 1px solid  var(--impure-white);

@@ -33,6 +33,7 @@
 }
   
   .footer__title {
+    color: #fff;
     margin-top: 0;
     text-transform: uppercase;
     font-size: var(--text-sm);

@@ -7,21 +7,21 @@ video {
 }
 
 .hero__home__video {
-position: relative;
-margin-bottom: 20%;
+  position: relative;
+  margin-bottom: 20%;
 }
 
 .hero__home__text {
-position: absolute;
-top: 80%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: var(--gray);
-font-size: 3vw;
-text-align: center;
-width: 100%;
-height: 100%;
-line-height: 1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gray);
+  font-size: 3vw;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
 }
 
 .hero__home__title {

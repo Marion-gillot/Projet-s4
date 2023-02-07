@@ -27,6 +27,14 @@
 
 }
 
+.light  .face-button .face-primary,
+.face-button .face-secondary {
+  background-color: var(--impure-black);
+  color: var(--impure-white);
+  border: 1rem;
+  border: 1px solid  var(--impure-black);
+}
+
 /* DARK MODE */
 .dark {
   background-color: var(--impure-black);

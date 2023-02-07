@@ -1,4 +1,4 @@
-/* Card */
+/* Cards page à propros */
 .container__card {
 	position: relative;
 	z-index: 1;
@@ -14,7 +14,7 @@
     border: 5 var(--impure-white);
     width: 300px;
     height: 460px;
-    background: #000000;
+    background: var(--impure-black);
     margin: 20px;
     box-shadow: 0 8px 12px var(--impure-white);
     border-radius: 15px;
@@ -54,7 +54,7 @@
 }
 
 .container__card .card .content .contentBx h3 {
-	color: #fff;
+	color: var(--impure-white);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 500;
@@ -90,6 +90,6 @@
 }
 
 .container__card .card .sci p a {
-	color: #fff;
+	color: var(--impure-white);
 	font-size: 20px;
 }
