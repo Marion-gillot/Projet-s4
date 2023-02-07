@@ -18,8 +18,10 @@ figcaption {
     box-sizing: border-box;
 }
 
-
-
+.img_resp {
+  display: block;
+  width: 100%;
+}
 
 /* Autre présentation des projets */
 /* .image__container {
