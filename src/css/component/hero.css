@@ -120,3 +120,8 @@ video {
   margin: auto;
 }
 
+
+.hero__work {
+  margin: 25%;
+  text-align: center;
+}

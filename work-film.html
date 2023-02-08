@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
     <link rel="stylesheet" type="text/css" href="src/scss/main.css">
     <link src="src/js/index.js"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
@@ -85,6 +86,15 @@
 <main>
 			
 
+  <div class="hero__work">
+    <h1 class="text__animation__cascade">
+      <span class="text-wrapper">
+        <span class="letters">The psychopath</span>
+      </span>
+    </h1>
+
+  </div>
+
 
 
 
@@ -119,3 +129,83 @@
     </main>
 </body>
 </html>
+
+<script>
+  /* Light Mode */
+
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light");
+}
+
+// const toggleModeButton = document.getElementById("light");
+// const lightModeVideo = document.querySelector(".hero__video_light");
+// const darkModeVideo = document.querySelector(".hero__video__dark");
+// let isLightMode = true;
+
+// toggleModeButton.addEventListener("click", () => {
+//   isLightMode = !isLightMode;
+//   lightModeVideo.style.display = isLightMode ? "block" : "none";
+//   darkModeVideo.style.display = isLightMode ? "none" : "block";
+// });
+
+const cursor = document.getElementById('cursor');
+document.documentElement.addEventListener("mousemove", evt => {
+  cursor.style.display = 'inline-block';
+  cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
+  cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
+});
+
+document.documentElement.addEventListener("mouseleave", evt => {
+  cursor.style.display = 'none';
+});
+
+
+
+  // définir la hauteur maximale de la barre de progression
+window.onload = () => {
+    // Ecouteur d'évènement sur scroll
+    window.addEventListener("scroll", () => {
+        // Calcul de la hauteur "utile" du document
+        let hauteur = document.documentElement.scrollHeight - window.innerHeight
+
+        // Récupération de la position verticale
+        let position = window.scrollY
+
+        // Récupération de la largeur de la fenêtre
+        let largeur = document.documentElement.clientWidth
+
+        // Calcul de la largeur de la barre
+        let barre = position / hauteur * largeur
+
+        // Modification du CSS de la barre
+        document.getElementById("progress").style.width = barre+"px"
+    })
+}
+
+
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.text__animation__cascade .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+var observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      anime.timeline({loop: false})
+        .add({
+          targets: '.text__animation__cascade .letter',
+          translateY: ["1.1em", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i
+        });
+      observer.disconnect();
+    }
+  });
+});
+observer.observe(textWrapper);
+
+
+
+
+</script>

@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
   <link rel="stylesheet" type="text/css" href="src/scss/main.css">
   <link src="src/js/index.js"></link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
@@ -99,6 +101,7 @@
     </div>
 
     
+    <div id="progress"></div>
 
       <span id="cursor">
         <svg height="30" width="30">
@@ -107,10 +110,20 @@
       </span>
 
 
-      <h1 class="intro">Hello World</h1>
+      <div class="section__center">
+        <h1 class="text__animation__cascade">
+          <span class="text-wrapper">
+            <span class="letters">Hello world</span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="animation__title">
+        <h1 class="an2">Welcome to my univers</h1>
+      </div>
 
 
-      <div id="progress"></div>
+    
 
 
   <div class="container__works"> 
@@ -214,6 +227,50 @@
 </html>
 
 <script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.an2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.an2 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.an2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+
+
+
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.text__animation__cascade .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+var observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      anime.timeline({loop: false})
+        .add({
+          targets: '.text__animation__cascade .letter',
+          translateY: ["1.1em", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i
+        });
+      observer.disconnect();
+    }
+  });
+});
+observer.observe(textWrapper);
+  
 
 // définir la hauteur maximale de la barre de progression
 window.onload = () => {
