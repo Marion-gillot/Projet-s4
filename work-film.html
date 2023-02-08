@@ -2,19 +2,19 @@
 <html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
-  <title>Projets</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
-  <meta name="keywords" content="portfolio, design, webdesigner, graphit, web">
-  
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="src/css/style.css">
-  <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
-  <link rel="stylesheet" type="text/css" href="src/scss/main.css">
-  <link src="src/js/index.js"></link>
-  <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Affiche The psychopath</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
+    <meta name="keywords" content="portfolio, design, webdesigner, graphit, web">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
+    <link rel="stylesheet" type="text/css" href="src/scss/main.css">
+    <link src="src/js/index.js"></link>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <body x-data="{ atTop: true }" >
@@ -208,65 +208,3 @@
     </main>
 </body>
 </html>
-
-<script>
-
-// /* Animation mot Projets */
-//     var title__projets = document.querySelector('.title__projets');
-
-// window.addEventListener('scroll', function () {
-//   var scrollPos = window.scrollY + window.innerHeight;
-//   var title__projetsPos = title__projets.offsetTop + title__projets.offsetHeight;
-
-//   if (scrollPos > title__projetsPos) {
-//     title__projets.classList.remove('big');
-//     title__projets.classList.add('small');
-//   } else if (scrollPos < title__projetsPos - title__projets.offsetHeight) {
-//     title__projets.classList.remove('small');
-//     title__projets.classList.remove('big');
-//   } else {
-//     title__projets.classList.remove('small');
-//     title__projets.classList.add('big');
-//   }
-// });
-
-
-
-
-
-/* Light Mode */
-
-function lightMode() {
-   var element = document.body;
-   element.classList.toggle("light");
-}
-
-// const toggleModeButton = document.getElementById("light");
-// const lightModeVideo = document.querySelector(".hero__video_light");
-// const darkModeVideo = document.querySelector(".hero__video__dark");
-// let isLightMode = true;
-
-// toggleModeButton.addEventListener("click", () => {
-//   isLightMode = !isLightMode;
-//   lightModeVideo.style.display = isLightMode ? "block" : "none";
-//   darkModeVideo.style.display = isLightMode ? "none" : "block";
-// });
-
-const cursor = document.getElementById('cursor');
-document.documentElement.addEventListener("mousemove", evt => {
-  cursor.style.display = 'inline-block';
-  cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
-  cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
-});
-
-document.documentElement.addEventListener("mouseleave", evt => {
-  cursor.style.display = 'none';
-});
-
-
-
-  </script>
-
-
-
-
