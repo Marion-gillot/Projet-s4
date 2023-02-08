@@ -17,6 +17,13 @@
 
 <body>
     <main>
+
+      <span id="cursor">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa"/>
+        </svg>
+      </span>
+      
         <svg id="svgWrap_2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 700 250">
           <g>
             <path id="id3_2" d="M195.7 232.67h-37.1V149.7H27.76c-2.64 0-5.1-.5-7.36-1.49-2.27-.99-4.23-2.31-5.88-3.96-1.65-1.65-2.95-3.61-3.89-5.88s-1.42-4.67-1.42-7.22V29.62h36.82v82.98H158.6V29.62h37.1v203.05z"/>
@@ -51,3 +58,22 @@
 </html>
 
 
+<script>
+  const cursor = document.getElementById('cursor');
+document.documentElement.addEventListener("mousemove", evt => {
+  const x = event.clientX;
+  const y = event.clientY;
+  cursor.style.left = `${x - cursor.offsetWidth / 2}px`;
+  cursor.style.top = `${y - cursor.offsetHeight / 2}px`;
+  const root = document.documentElement;
+  cursor.style.setProperty('display', 'inline-block');
+  setTimeout(() => {
+    root.style.setProperty('--cursorX', mouseX);
+    root.style.setProperty('--cursorY', mouseY);
+  }, 160);
+});
+
+document.documentElement.addEventListener("mouseleave", evt => {
+  cursor.style.setProperty('display', 'none');
+});
+</script>

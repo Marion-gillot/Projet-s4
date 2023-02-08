@@ -16,10 +16,6 @@
   color: $accentColor;
   overflow: hidden;
   
-  .icon {
-    margin-right: 6px;
-  }
-  
   .face-primary,
   .face-secondary {
     display: block;
@@ -37,3 +33,6 @@
     margin-top: -$height;
   }
 }
+
+
+

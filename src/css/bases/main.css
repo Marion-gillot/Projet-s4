@@ -13,6 +13,8 @@ body {
   background-color: var(--impure-black);
   color: var(--impure-white);
   margin: 0;
+  cursor: none;
+  
 }
 
 p { font-size: 16px; margin: 0;}
@@ -22,7 +24,7 @@ h3 {font-size: 30px; color: var(--impure-white);}
 
 /* Annuler la mise en forme des liens */
 a {font-family: var(--font-work-sans); text-decoration: none;} 
-  a:hover { opacity: 0.7; }
+  a:hover { opacity: 0.7; cursor: none; }
 
 ul {list-style: none; font-family: var(--font-work-sans);}
 
@@ -34,7 +36,8 @@ button {
   border: none;
   background: none;
   padding: 0;
-  cursor: pointer;
+  cursor: none
+
 }
   
 /* Pour enlever l'apparence par défaut des listes */
@@ -109,6 +112,13 @@ button {
 .title__juridique {
 margin-bottom: 10%;
 text-align: center;
+color: var(--impure-white);
+}
+
+.light .title__juridique {
+  margin-bottom: 10%;
+text-align: center;
+color: var(--impure-black);
 }
 
 .text__juridique {

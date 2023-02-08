@@ -75,6 +75,7 @@
     padding: 0.5rem;
     border-radius: 5px;
     font-size: 13px;
+    cursor: none;
   }
 
 /* Light et Dark mode */

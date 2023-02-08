@@ -87,6 +87,11 @@
         <img src="public/img/exemple.png" alt="exemple de photo de profil en format png" class="hero__about__profil">        
       </div>
       
+      <span id="cursor">
+        <svg height="30" width="30">
+          <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa"/>
+        </svg>
+      </span>
    
       <div class="section__margin">
 
@@ -274,7 +279,7 @@
             </div>
             </div>
     
-              <a href="conditions.html"><span class="footer__license">© 2023 | Tous droits réservés.</span></a>
+            <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
             
       </footer>
 
@@ -306,7 +311,23 @@ function lightMode() {
 
 
 
+ const cursor = document.getElementById('cursor');
+document.documentElement.addEventListener("mousemove", evt => {
+  const x = event.clientX;
+  const y = event.clientY;
+  cursor.style.left = `${x - cursor.offsetWidth / 2}px`;
+  cursor.style.top = `${y - cursor.offsetHeight / 2}px`;
+  const root = document.documentElement;
+  cursor.style.setProperty('display', 'inline-block');
+  setTimeout(() => {
+    root.style.setProperty('--cursorX', mouseX);
+    root.style.setProperty('--cursorY', mouseY);
+  }, 160);
+});
 
+document.documentElement.addEventListener("mouseleave", evt => {
+  cursor.style.setProperty('display', 'none');
+});
 
 
 </script>
