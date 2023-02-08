@@ -55,7 +55,11 @@
 
 
   .header__start {
-    gap: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space3x);
+    margin-left: 2%;
   }
 
   .header__end {
@@ -87,7 +91,6 @@
 
 /* Responsive du header */
   .mobile-header {
-    display: block;
     position: fixed;
   }
   
