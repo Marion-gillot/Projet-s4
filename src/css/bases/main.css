@@ -56,16 +56,27 @@ button {
   display: grid;
   margin-bottom: 5%;
   width: 100%;
-  font-size: 30px;
   font-weight: 800;
 }
+
+.title_work {
+   font-size: 4.5vw;
+   font-family: var(--font-anton);
+   margin: 0;
+}
+
+@media (max-width: 530px) {
+  .title_work {
+    font-size: 30px;
+  }
+}
+
 
 .ligne {
   background-color: var(--impure-white);
   height: 1px;
   width: 100%;
 }
-
 
 
 /* Page à propos */
