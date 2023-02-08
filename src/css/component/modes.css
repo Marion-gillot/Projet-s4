@@ -50,7 +50,24 @@
 
 .light .form__input textarea {
   border-bottom: 1px solid var(--impure-black);
+  color: var(--impure-black);
 }
+
+.light .ligne {
+  background-color: var(--impure-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* DARK MODE */
 .dark {
