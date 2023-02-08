@@ -65,6 +65,7 @@
     }
   
 
+
     :root {
       --cursorX: 0;
       --cursorY: 0;
@@ -98,3 +99,13 @@
     }
 
     
+
+    #progress{
+      background-color: var(--impure-white);
+      height: 3px;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999; /* Peut être important si vous avez un menu en position fixe */
+    }

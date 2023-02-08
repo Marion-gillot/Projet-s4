@@ -26,6 +26,16 @@ h3 {font-size: 30px; color: var(--impure-white);}
 a {font-family: var(--font-work-sans); text-decoration: none;} 
   a:hover { opacity: 0.7; cursor: none; }
 
+  a:not(img) {
+    font-family: var(--font-work-sans);
+    text-decoration: none;
+  }
+  
+  a:not(img):hover {
+    opacity: 0.7;
+    cursor: none;
+  }
+
 ul {list-style: none; font-family: var(--font-work-sans);}
 
 
@@ -54,6 +64,11 @@ button {
 }
 
 /* Page Projets */
+.intro {
+  text-align: center;
+  margin: 30%;
+}
+
 .titles__works {
   color: var(--impure-white);
   display: grid;
