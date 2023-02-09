@@ -125,3 +125,12 @@ video {
   margin: 25%;
   text-align: center;
 }
+
+
+
+.hero__home__down {
+  padding: 2%;
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}

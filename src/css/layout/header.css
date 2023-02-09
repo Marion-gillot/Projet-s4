@@ -27,7 +27,7 @@
 
 /* Header desktop */
   .desktop-header {
-    background-color: transparent;
+    background-color: var(--impure-black);
     top: 0;
     display: flex;
     position: fixed;
