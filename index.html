@@ -85,33 +85,35 @@
 
 
 <main>
+  <div id="progress"></div>
+
+  <span id="cursor">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa"/>
+    </svg>
+  </span>
 			
-    <div class="hero__home__video">
-   <!-- <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_light">
-        <source src="public/video/hero_light_video.mp4" type="video/mp4">      
-      </video> -->
-      <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_dark">
-        <source src="public/video/hero_video_dark.mp4" type="video/mp4">      
-      </video>
-      <div class="hero__home__text">
-        <h1 class="hero__home__title">GRAPHISTE<br> WEB/DESIGNER</h1>
-        <h1 class="hero__home__chapo">MARION GILLOT</h1>
-      
-        <div class="hero__home__down" style="display: flex; justify-content: space-between;">
-          <p>PORTFOLIO</p>
-          <p>2023</p>
-        </div>
-      </div>
-    </div>
 
-    
-    <div id="progress"></div>
+          <div class="hero__home__video">
+        <!-- <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_light">
+              <source src="public/video/hero_light_video.mp4" type="video/mp4">      
+            </video> -->
+            <video  data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover" class="hero__video_dark">
+              <source src="public/video/hero__video__apropos.mp4" type="video/mp4">      
+            </video>
+            <div class="hero__home__text">
+              <h1 class="hero__home__title">GRAPHISTE<br> WEB/DESIGNER</h1>
+              <h1 class="hero__home__chapo">MARION GILLOT</h1>
+            
+              <div class="hero__home__down" style="display: flex; justify-content: space-between;">
+                <p>PORTFOLIO</p>
+                <p>2023</p>
+              </div>
+            </div>
+          </div>
 
-      <span id="cursor">
-        <svg height="30" width="30">
-          <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa"/>
-        </svg>
-      </span>
+
+
 
 
       <div class="section__center">
@@ -122,22 +124,28 @@
         </h1>
       </div>
 
+
+
+
       <div class="animation__title">
         <h1 class="an2">Bienvenue dans mon univers</h1>
       </div>
 
 
 
-  <div class="container__works">
-    <div class="grid____works">
-      <img src="public/img/projets/work_carte_visite.jpg" class="image" alt="projet de la carte de visite">
-      <img src="public/img/projets/work_album.jpg" class="image" alt="projet album">
-      <img src="public/img/projets/work_reve.jpg" class="image" alt="projet reve">
-      <img src="public/img/projets/work_carte.jpg" class="image" alt="projet carte postale">
-        <img src="public/img/projets/work_expo2025.jpg" class="image" alt="projet Exposition 2025">
-        <img src="public/img/projets/work_film.jpg" class="image" alt="projet The psychopath">
-    </div>
-  </div>
+
+
+      <div class="container__works">
+        <div class="grid____works">
+          <img src="public/img/projets/work_carte_visite.jpg" class="image" alt="projet de la carte de visite">
+          <img src="public/img/projets/work_album.jpg" class="image" alt="projet album">
+          <img src="public/img/projets/work_reve.jpg" class="image" alt="projet reve">
+          <img src="public/img/projets/work_carte.jpg" class="image" alt="projet carte postale">
+            <img src="public/img/projets/work_expo2025.jpg" class="image" alt="projet Exposition 2025">
+            <img src="public/img/projets/work_film.jpg" class="image" alt="projet The psychopath">
+        </div>
+      </div>
+
 
 
       <div class="section__center">
@@ -158,8 +166,6 @@
           </div>
       </div>
     </div>
-
-
 
 
 
@@ -196,32 +202,23 @@
 <script>
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.an2');
-var observer = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(function(entry) {
-    if (entry.isIntersecting) {
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-  
-      anime.timeline({loop: false})
-        .add({
-          targets: '.an2 .letter',
-          translateY: [-100,0],
-          easing: "easeOutExpo",
-          duration: 1400,
-          delay: (el, i) => 30 * i
-        }).add({
-          targets: '.an2',
-          opacity: 1,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-  
-      observer.disconnect();
-    }
-  });
-});
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-observer.observe(textWrapper);
+anime.timeline({loop: false})
+  .add({
+    targets: '.an2 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.an2',
+    opacity: 1,
+    duration: 1,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
 
 
 

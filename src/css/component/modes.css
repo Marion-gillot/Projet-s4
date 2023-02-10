@@ -39,11 +39,6 @@
   border: 1px solid  var(--impure-black);
 }
 
-
-.light .image {
-   border: 1px solid var(--impure-black);
-}
-
 .light .form__input input {
   border-bottom: 1px solid var(--impure-black);
 }
@@ -57,6 +52,10 @@
   background-color: var(--impure-black);
 }
 
+
+.light .hero__home__text {
+color: var(--impure-white);
+}
 
 
 
