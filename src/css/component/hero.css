@@ -1,5 +1,5 @@
 /*Page home avec la vidéo d'animation*/
-video {
+/* video {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -8,24 +8,20 @@ video {
 
 .hero__home__video {
   position: relative;
-  margin-bottom: 20%;
   object-fit: cover;
   
+} */
+
+.hero__home {
+  top: 0;
+  margin-bottom: 10%;
 }
 
 
-
 .hero__home__text {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--gray);
-  font-size: 3vw;
-  text-align: center;
-  width: 100%;
-  height: 100%;
   line-height: 1;
+  margin-top: 20%;
+  padding-left: 10%;
 }
 
 .hero__home__title {
@@ -46,10 +42,6 @@ video {
 .hero__home__chapo {
   font-weight: 300;
   font-size: 1.5vw;
-  width: 50%;
-  margin: auto;
-  color: #fff;
-  margin-top: 2%;
   opacity: 0;
   animation: fade-in 5s forwards;
 }
@@ -129,8 +121,8 @@ video {
 
 
 .hero__home__down {
-  padding: 2%;
-  margin-top: 15%;
+  padding: 4%;
+  margin-top: 13%;
   display: flex;
   justify-content: space-between;
 }

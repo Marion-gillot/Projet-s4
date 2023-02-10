@@ -27,7 +27,7 @@
 
 /* Header desktop */
   .desktop-header {
-    background-color: var(--impure-black);
+    background-color: transparent;
     top: 0;
     display: flex;
     position: fixed;
@@ -52,6 +52,10 @@
     text-decoration: none;
   }
 
+  .light .navigation a {
+    color: var(--impure-black);
+  }
+
 
   .header__start {
     display: flex;
@@ -72,11 +76,18 @@
   #header__language__select {
     background-color: transparent;
     color: var(--impure-white);
-    padding: 0.5rem;
+    padding: 0.5vh;
     border: 0.5px solid var(--impure-white);
     border-radius: 5px;
     font-size: 13px;
     cursor: none;
+  }
+
+  .light   #header__language__select {
+    background-color: transparent;
+    color: var(--impure-black);
+    border: 0.5px solid var(--impure-black);
+
   }
 
 /* Light et Dark mode */

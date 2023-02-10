@@ -21,16 +21,6 @@
 }
 
 
-.btn-download {
-    width: 220px;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    color: var(--impure-black);
-    background: var(--impure-white);
-    font-weight: 700;
-}
-
 
 .face-button {
     border: 1px solid  var(--impure-black);
@@ -43,6 +33,7 @@
     background: var(--impure-black);
     border: 1rem;
     border-color: var(--impure-black);
+    border-radius: 5px;
     overflow: hidden;
   }
 
@@ -64,4 +55,6 @@
   .face-button:hover .face-primary {
     margin-top: -64px;
   }
+  
+
   
