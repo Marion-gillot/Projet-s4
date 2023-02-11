@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="src/scss/main.css">
     <link src="src/js/index.js"></link>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.6.0/dist/gsap.min.js"></script>
 </head>
 
 <body x-data="{ atTop: true }" >
@@ -85,7 +88,7 @@
 <main>
 			
 
-
+  <div id="canvas"></div>
 
 
 
@@ -122,6 +125,12 @@
 
 
 <script>
+
+
+
+
+
+
   /* Light Mode */
 
 function lightMode() {

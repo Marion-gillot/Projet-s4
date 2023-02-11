@@ -119,7 +119,14 @@ color: var(--impure-black);
 
 
 
-
-
-
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 

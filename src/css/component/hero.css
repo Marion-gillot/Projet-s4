@@ -72,17 +72,15 @@
 
 /* page à prospos */
 .hero__about {
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   margin-bottom: 10%;
-  margin-left: 3%;
-  margin-right: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5%;
   z-index: 2;
+  margin-right: 10%;
 }
 
 
