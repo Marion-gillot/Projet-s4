@@ -28,7 +28,7 @@
 /* Header desktop */
   .desktop-header {
     background-color: transparent;
-    top: 0;
+    top: 2%;
     display: flex;
     position: fixed;
     width: 100%;
@@ -110,7 +110,7 @@
     display: none;
   }
   
-  @media only screen and (min-width: 768px) {
+   @media only screen and (min-width: 768px) {
     .mobile-header {
       display: none;
     }
@@ -118,7 +118,7 @@
     .desktop-header {
       display: flex;
     }
-  }
+  } 
 
 .header__btn__mail {
   color: var(--impure-black);

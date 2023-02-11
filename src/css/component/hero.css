@@ -12,16 +12,45 @@
   
 } */
 
+/* Bulle multicolor */
+.bubble {
+  z-index: -99999;
+  position: relative;
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+
+
+/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+@media (min-width: 1500px) {
+  .bubble {
+     display: none;
+  }
+}
+
+
 .hero__home {
   top: 0;
   margin-bottom: 10%;
+  display: grid;
 }
 
 
 .hero__home__text {
   line-height: 1;
-  margin-top: 20%;
-  padding-left: 10%;
+  margin-top: 22%;
+  padding-left: 8%;
 }
 
 .hero__home__title {
@@ -41,9 +70,10 @@
 
 .hero__home__chapo {
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 20px;
   opacity: 0;
   animation: fade-in 5s forwards;
+  margin-top: 5%;
 }
 
 @keyframes fade-in {

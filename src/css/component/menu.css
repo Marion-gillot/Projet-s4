@@ -18,6 +18,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   .menu--open {
     visibility: visible;
     opacity: 1;
+    z-index: 3;
   }
   
   /* Mise en forme des éléments du menu */
