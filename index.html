@@ -101,7 +101,7 @@
               <h1 class="hero__home__chapo">Bonjour ! Je suis Marion Gillot.</h1>
             </div>
 
-            <div class="bubble"></div>
+         
           </div>
             <div class="hero__home__down" style="display: flex; justify-content: space-between;">
                 <p>PORTFOLIO</p>
@@ -114,19 +114,44 @@
        <div class="titles__works">
              <h3 class="title_work">Works.</h3>
              <span class="ligne"></span>
-           </div>
-
-
-
+             <div id="filter">
+              <button class="filter-button" data-filter="all">All</button>
+              <button class="filter-button" data-filter="category1">Carte</button>
+              <button class="filter-button" data-filter="category2">Affiche</button>
+              <button class="filter-button" data-filter="category3">Dessin</button>
+            </div>
+     
 
       <div class="container__works">
         <div class="grid____works">
-          <img src="public/img/projets/work_carte_visite.jpg" class="image" alt="projet de la carte de visite">
-          <img src="public/img/projets/work_album.jpg" class="image" alt="projet album">
-          <img src="public/img/projets/work_reve.jpg" class="image" alt="projet reve">
-          <img src="public/img/projets/work_carte.jpg" class="image" alt="projet carte postale">
-            <img src="public/img/projets/work_expo2025.jpg" class="image" alt="projet Exposition 2025">
-           <a href="work-noffta.html"> <img src="public/img/projets/work_film.jpg" class="image" alt="projet The psychopath"></a>
+          <div class="item category1">
+              <img src="public/img/projets/work_carte_visite.jpg" class="image" alt="projet de la carte de visite">
+          </div>
+
+          <div class="item category2">
+               <img src="public/img/projets/work_album.jpg" class="image" alt="projet album">
+          </div>
+
+          <div class="item category3">
+              <img src="public/img/projets/work_reve.jpg" class="image" alt="projet reve">
+          </div>
+
+          <div class="item category1">
+              <img src="public/img/projets/work_carte.jpg" class="image" alt="projet carte postale">
+          </div>
+          
+          <div class="item category2">
+              <img src="public/img/projets/work_expo2025.jpg" class="image" alt="projet Exposition 2025">
+          </div>
+
+
+          <div class="item category2">
+              <a href="work-noffta.html"> 
+                <img src="public/img/projets/work_film.jpg" class="image" alt="projet The psychopath">
+              </a>
+          </div>
+
+          </div>
         </div>
       </div>
 
@@ -184,6 +209,34 @@
 </html>
 
 <script>
+
+
+var filterButtons = document.querySelectorAll('.filter-button');
+
+filterButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    var filterValue = button.getAttribute('data-filter');
+    var items = document.querySelectorAll('.item');
+
+    items.forEach(function(item) {
+      if (filterValue === 'all') {
+        item.classList.add('show');
+      } else {
+        item.classList.remove('show');
+        if (item.classList.contains(filterValue)) {
+          item.classList.add('show');
+        }
+      }
+    });
+  });
+});
+
+// ajouter la classe "show" à tous les éléments "item"
+document.querySelectorAll('.item').forEach(function(item) {
+  item.classList.add('show');
+});
+
+
 
 
 

@@ -14,7 +14,7 @@
 
 /* Bulle multicolor */
 .bubble {
-  z-index: -99999;
+  z-index: -10;
   position: relative;
   opacity: 1;
   width: 300px;

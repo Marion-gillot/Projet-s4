@@ -39,4 +39,5 @@ La règle @import permet d'importer ici tous les fichiers css utilisés.
 @import "component/animations.css";
 @import "component/cards.css";
 @import "component/modes.css";
+@import "component/filtre.css";
 

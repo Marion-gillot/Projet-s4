@@ -1,0 +1,20 @@
+#filter {
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  
+  .filter-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .item {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
