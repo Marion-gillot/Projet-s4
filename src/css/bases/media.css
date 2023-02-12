@@ -52,3 +52,61 @@ figcaption {
 }
 
 
+
+
+
+
+
+/* Animation des images de projets */
+.overlay-outer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -2%;
+}
+
+.overlay {
+  background-color: ghostwhite ;
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+
+.a:hover .overlay {
+  opacity: 0.7;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.overlay-outer:hover .content-details {
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #000;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+
+.fadeIn_bottom {
+  top: 80%;
+}
