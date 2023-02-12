@@ -110,3 +110,20 @@ figcaption {
 .fadeIn_bottom {
   top: 80%;
 }
+
+
+
+
+
+.img__about {
+  display: flex;
+  max-width: 45%;
+  gap: 5%;
+}
+
+/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+@media (max-width: 1000px) {
+  .img__about {
+     display: none;
+  }
+}

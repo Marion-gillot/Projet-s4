@@ -109,24 +109,15 @@
   margin-bottom: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  z-index: 2;
+  gap: 5%;
   margin-right: 10%;
-}
-
-
-  /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
-  @media (min-width: 768px) {
-    .hero__about {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
 @media (max-width: 768px) {
-    .hero__about {
-        grid-template-columns: 1fr;
-        height: 100vh;
-    }
+  .hero__about {
+   margin-top: 30%;
+  }
 }
 
 .hero__about__title {
