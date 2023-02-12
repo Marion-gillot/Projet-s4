@@ -37,6 +37,10 @@
     justify-content: space-between;
   }
 
+  .light .desktop-header {
+    background-color: var(--impure-white);
+  }
+
   .navigation {
     display: flex;
     list-style: none;
@@ -52,10 +56,9 @@
     text-decoration: none;
   }
 
-  .light .navigation a {
-    color: var(--impure-black);
-  }
-
+.light .navigation a, li {
+  color: var(--impure-black);
+}
 
   .header__start {
     display: flex;
@@ -98,7 +101,7 @@
 
 .header__moon {
   width: 70%;
-  color: var(--impure-white);
+  color: var(--impure-black);
   }
 
 /* Responsive du header */

@@ -57,16 +57,7 @@
     <button onclick="lightMode()">
       <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
   </button>
-  <!-- <button onclick="darktMode()">
-    <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__sun">
-</button> -->
-
-    <!-- <div>
-      <a href="mailto:mgillot.pro@gmail.com">
-      <button class="header__btn__mail" target="_blank" >mgillot.pro@gmail.com</button>
-      </a>
-    </div> -->
-      
+ 
     </div>
 
     <div class="header__end">
@@ -115,7 +106,7 @@
              <h3 class="title_work">Works.</h3>
              <span class="ligne"></span>
              <div id="filter">
-              <button class="filter-button" data-filter="all">All</button>
+              <button class="filter-button" data-filter="all">Tout</button>
               <button class="filter-button" data-filter="category1">Carte</button>
               <button class="filter-button" data-filter="category2">Affiche</button>
               <button class="filter-button" data-filter="category3">Dessin</button>
@@ -125,32 +116,43 @@
       <div class="container__works">
         <div class="grid____works">
           <div class="item category1">
+            <a href="work-carte-visite.html">
               <img src="public/img/projets/work_carte_visite.jpg" class="image" alt="projet de la carte de visite">
+            </a>
           </div>
 
           <div class="item category2">
+            <a href="work-album.html">
                <img src="public/img/projets/work_album.jpg" class="image" alt="projet album">
+            </a>
           </div>
 
           <div class="item category3">
+            <a href="work-reve.html">
               <img src="public/img/projets/work_reve.jpg" class="image" alt="projet reve">
+            </a>
           </div>
 
           <div class="item category1">
+            <a href="work-carte.html">
               <img src="public/img/projets/work_carte.jpg" class="image" alt="projet carte postale">
+            </a>
           </div>
           
           <div class="item category2">
+            <a href="work-expo.html">
               <img src="public/img/projets/work_expo2025.jpg" class="image" alt="projet Exposition 2025">
+            </a>
           </div>
 
 
           <div class="item category2">
-              <a href="work-noffta.html"> 
+              <a href="work-film.html"> 
                 <img src="public/img/projets/work_film.jpg" class="image" alt="projet The psychopath">
               </a>
           </div>
 
+	
           </div>
         </div>
       </div>
@@ -239,7 +241,21 @@ document.querySelectorAll('.item').forEach(function(item) {
 
 
 
+const sunButton = document.querySelector('.header__start button:first-of-type');
+const moonButton = document.querySelector('.header__start button:last-of-type');
 
+const icon = document.querySelector('.header__sun');
+
+function switchIcon(event) {
+  if (event.target === moonButton) {
+    icon.src = 'public/icon/icon_sun.svg';
+  } else if (event.target === sunButton) {
+    icon.src = 'public/icon/icon_moon.svg';
+  }
+}
+
+moonButton.addEventListener('click', switchIcon);
+sunButton.addEventListener('click', switchIcon);
 
 
   // Wrap every letter in a span
@@ -322,16 +338,10 @@ function lightMode() {
    element.classList.toggle("light");
 }
 
-// const toggleModeButton = document.getElementById("light");
-// const lightModeVideo = document.querySelector(".hero__video_light");
-// const darkModeVideo = document.querySelector(".hero__video__dark");
-// let isLightMode = true;
 
-// toggleModeButton.addEventListener("click", () => {
-//   isLightMode = !isLightMode;
-//   lightModeVideo.style.display = isLightMode ? "block" : "none";
-//   darkModeVideo.style.display = isLightMode ? "none" : "block";
-// });
+
+
+
 
 const cursor = document.getElementById('cursor');
 document.documentElement.addEventListener("mousemove", evt => {
