@@ -36,8 +36,8 @@ a {font-family: var(--font-work-sans); text-decoration: none; }
     cursor: none;
   }
 
-ul {list-style: none; font-family: var(--font-work-sans);}
-
+ul {list-style: none; font-family: var(--font-work-sans); color: var(--impure-white);}
+li { color: var(--impure-white);}
 
 /* Permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {

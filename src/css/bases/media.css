@@ -10,6 +10,7 @@ figure {
 
 figcaption {
   font-size: var(--text-sm);
+
   color: var(--gray-600);
 }
 
@@ -22,7 +23,6 @@ figcaption {
   margin-top: 5%;
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
 }
 
 .grid____works {

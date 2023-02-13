@@ -31,7 +31,7 @@
 
 .section__center {
     text-align: center;
-    margin-bottom: 10%;
+    margin: 10%;
 }
 
     /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
@@ -41,8 +41,8 @@
         }
     }
 
-.partie-1 {
-    margin-bottom: 6.5%;
+.partie-2 {
+    margin-top: 6.5%;
 }
 
 /* Page conditions d'utilisations du site */

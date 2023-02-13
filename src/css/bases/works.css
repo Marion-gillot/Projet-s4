@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: repeat(2, 20%);    
     grid-template-rows: auto;
+    gap: 5%;
   }
 
 .mini-info ul {
@@ -39,4 +40,29 @@
 }
   
 
+
+.flex__text {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);    
+  align-items: center;
+}
+
+@media (max-width: 790px) {
+  .flex__text {
+    grid-template-columns: 1fr ;
+  }
+}
+
   
+.flex__img_text {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);    
+  gap: 10%;
+  align-items: center;
+}
+
+.flex__img_text li {
+color: var(--impure-white);
+}
