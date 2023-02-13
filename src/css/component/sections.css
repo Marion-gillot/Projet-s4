@@ -41,13 +41,14 @@
         }
     }
 
+.partie-1 {
+    margin-bottom: 6.5%;
+}
 
 /* Page conditions d'utilisations du site */
 .section__juridique {
     margin: 20%;
   }
-
-
 
 
   .titles__works {
@@ -73,12 +74,32 @@
     }
    }
    
-   
-   
-   
+ 
    .ligne {
     background-color: var(--impure-white);
     height: 1px;
     width: 100%;
    }
    
+
+/* Page home */
+.section__grid__home {
+    margin-left: 3%;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 2;
+}
+    /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
+    @media (min-width: 768px) {
+        .section__grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+    @media (max-width: 768px) {
+        .section__grid {
+            grid-template-columns: 1fr;
+        }
+    }

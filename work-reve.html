@@ -87,7 +87,14 @@
 
 <main>
 			
+  <div class="hero__work">
+    <h1 class="text__animation__cascade">
+      <span class="text-wrapper">
+        <span class="letters">1 mot, 1 image</span>
+      </span>
+    </h1>
 
+  </div>
   
 
 
@@ -126,43 +133,7 @@
 
 <script>
 
-
-
-
-
-
-  /* Light Mode */
-
-function lightMode() {
-   var element = document.body;
-   element.classList.toggle("light");
-}
-
-// const toggleModeButton = document.getElementById("light");
-// const lightModeVideo = document.querySelector(".hero__video_light");
-// const darkModeVideo = document.querySelector(".hero__video__dark");
-// let isLightMode = true;
-
-// toggleModeButton.addEventListener("click", () => {
-//   isLightMode = !isLightMode;
-//   lightModeVideo.style.display = isLightMode ? "block" : "none";
-//   darkModeVideo.style.display = isLightMode ? "none" : "block";
-// });
-
-const cursor = document.getElementById('cursor');
-document.documentElement.addEventListener("mousemove", evt => {
-  cursor.style.display = 'inline-block';
-  cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
-  cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
-});
-
-document.documentElement.addEventListener("mouseleave", evt => {
-  cursor.style.display = 'none';
-});
-
-
-
-  // définir la hauteur maximale de la barre de progression
+// définir la hauteur maximale de la barre de progression
 window.onload = () => {
     // Ecouteur d'évènement sur scroll
     window.addEventListener("scroll", () => {
@@ -182,6 +153,30 @@ window.onload = () => {
         document.getElementById("progress").style.width = barre+"px"
     })
 }
+
+
+/* Light Mode */
+
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light");
+}
+
+
+
+/* Curseur */
+const cursor = document.getElementById('cursor');
+document.documentElement.addEventListener("mousemove", evt => {
+  cursor.style.display = 'inline-block';
+  cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
+  cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
+});
+
+document.documentElement.addEventListener("mouseleave", evt => {
+  cursor.style.display = 'none';
+});
+
+
 
 
   // Wrap every letter in a span

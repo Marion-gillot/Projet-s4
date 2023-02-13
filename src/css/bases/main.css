@@ -17,7 +17,7 @@ body {
   
 }
 
-p { font-size: 16px; margin: 0;}
+p { font-size: 16px; margin: 0; font-weight: 300}
 h1 {font-size: 5vw; color: var(--impure-white);}
 h2 {font-size: 40px; color: var(--impure-white);}
 h3 {font-size: 30px; color: var(--impure-white);}

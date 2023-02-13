@@ -42,21 +42,23 @@
 
 .hero__home {
   top: 0;
-  margin-bottom: 10%;
   display: grid;
+  grid-template-rows: 2;
+
 }
 
 
 .hero__home__text {
   line-height: 1;
-  margin-top: 22%;
-  padding-left: 8%;
+
 }
 
 .hero__home__title {
   opacity: 0;
   animation: fade-in 5s forwards;
-  margin: 0;
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 400;
 }
 
 @keyframes fade-in {
@@ -70,10 +72,13 @@
 
 .hero__home__chapo {
   font-weight: 300;
-  font-size: 20px;
+  float: right;
+  margin-right: 4%;
+  margin-top: 15%;
+  font-size: 3.5vw;
   opacity: 0;
   animation: fade-in 5s forwards;
-  margin-top: 5%;
+  color: var(--impure-white);
 }
 
 @keyframes fade-in {
@@ -85,6 +90,12 @@
   }
 }
   
+.hero__home__down {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .fade-in-text {
   opacity: 0;
@@ -100,35 +111,15 @@
   }
 }
 
-/* page à prospos */
+/* page à propos */
 .hero__about {
-  margin-top: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
-  margin-right: 10%;
+  margin:10%
 }
 
-/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
-@media (max-width: 768px) {
-  .hero__about {
-   margin-top: 30%;
-  }
-}
 
 .hero__about__title {
   font-size: 5vw;
-  text-align: center;
-}
-
-.hero__about__profil {
-  height: auto;
-  width: auto;
-  margin: auto;
+  font-weight: 400;
 }
 
 
@@ -139,9 +130,3 @@
 
 
 
-.hero__home__down {
-  padding: 4%;
-  margin-top: 13%;
-  display: flex;
-  justify-content: space-between;
-}
