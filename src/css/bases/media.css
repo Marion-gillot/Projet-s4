@@ -17,7 +17,6 @@ figcaption {
     box-sizing: border-box;
 }
 
-
 /* Page projets */
 .container__works {
   margin-top: 5%;
@@ -51,12 +50,6 @@ figcaption {
   }
 }
 
-
-
-
-
-
-
 /* Animation des images de projets */
 .overlay-outer {
   position: relative;
@@ -76,7 +69,6 @@ figcaption {
   opacity: 0;
   transition: all 0.4s ease-in-out 0s;
 }
-
 
 .a:hover .overlay {
   opacity: 0.7;
@@ -106,20 +98,12 @@ figcaption {
   text-transform: uppercase;
 }
 
-
 .fadeIn_bottom {
   top: 80%;
 }
 
 
-
-
-
-.img__about {
-  display: flex;
-  max-width: 45%;
-  gap: 5%;
-}
+/* Photo de profil dans le hero de la page home */
 
 /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
 @media (max-width: 1000px) {
@@ -128,9 +112,15 @@ figcaption {
   }
 }
 
-
 .profil__home {
   max-width: 40%;
   float: right;
   margin-right: 10%;
+}
+
+/* Disposition des images dans les pages de présentations des projets */
+.flex__img {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
