@@ -4,8 +4,18 @@
     color: var(--impure-black);
   }
   
-  .light h3, h2 {
+  .light h3 {
     color: var(--impure-black);
+  }
+
+  .light li {
+    color: var(--impure-black);
+  }
+
+
+  .light h2 {
+    color: var(--impure-black);
+
   }
 
   .light h1{
