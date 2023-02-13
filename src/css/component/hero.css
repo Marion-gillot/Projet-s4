@@ -73,8 +73,6 @@
 .hero__home__chapo {
   font-weight: 300;
   float: right;
-  margin-right: 4%;
-  margin-top: 15%;
   font-size: 3.5vw;
   opacity: 0;
   animation: fade-in 5s forwards;
@@ -94,6 +92,8 @@
   padding: 4%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
 }
 
 

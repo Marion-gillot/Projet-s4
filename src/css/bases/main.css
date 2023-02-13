@@ -62,6 +62,9 @@ button {
   padding-right: var(--space3x);
 }
 
+.gras {
+  font-weight: 700;
+}
 /* Page Projets */
 .intro {
   text-align: center;

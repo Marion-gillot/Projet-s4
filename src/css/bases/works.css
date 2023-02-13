@@ -66,3 +66,25 @@
 .flex__img_text li {
 color: var(--impure-white);
 }
+
+
+.other {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.other p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.other__arrow {
+  display: flex;
+  gap: 6%;
+}
