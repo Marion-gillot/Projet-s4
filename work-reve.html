@@ -86,16 +86,37 @@
 
 
 <main>
-			
-  <div class="hero__work">
-    <h1 class="text__animation__cascade">
-      <span class="text-wrapper">
-        <span class="letters">1 mot, 1 image</span>
-      </span>
-    </h1>
+  <div id="progress"></div>
 
-  </div>
-  
+  <span id="cursor">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa"/>
+    </svg>
+  </span>
+			
+
+
+<div class="content-description">
+    <div class="mini-info">
+            <ul>
+                <li><h3 class="no-line">Années</h3>
+                <p>2018</p></li>
+            </ul>
+            <ul>
+                <li><h3 class="no-line">Deliverables</h3>
+                        <p>UX</p>
+                        <p>Visual Design</p>
+                        <p>Creative Direction</p>
+                        <p>Development</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Hassle-free time tracking with Toggl</h2>
+            <p>Our challenge was to help develop a more ownable and distinctive brand that would reflect the organisation's values. We created a framework, design language, and site coupled with new assets that would help the brand stand-out, be noticed, and get results.</p>
+       </div>
+</div> 
 
 
 
@@ -157,6 +178,31 @@ window.onload = () => {
 
 /* Light Mode */
 
+
+// définir la hauteur maximale de la barre de progression
+window.onload = () => {
+    // Ecouteur d'évènement sur scroll
+    window.addEventListener("scroll", () => {
+        // Calcul de la hauteur "utile" du document
+        let hauteur = document.documentElement.scrollHeight - window.innerHeight
+
+        // Récupération de la position verticale
+        let position = window.scrollY
+
+        // Récupération de la largeur de la fenêtre
+        let largeur = document.documentElement.clientWidth
+
+        // Calcul de la largeur de la barre
+        let barre = position / hauteur * largeur
+
+        // Modification du CSS de la barre
+        document.getElementById("progress").style.width = barre+"px"
+    })
+}
+
+
+/* Light Mode */
+
 function lightMode() {
    var element = document.body;
    element.classList.toggle("light");
@@ -164,7 +210,9 @@ function lightMode() {
 
 
 
-/* Curseur */
+
+
+
 const cursor = document.getElementById('cursor');
 document.documentElement.addEventListener("mousemove", evt => {
   cursor.style.display = 'inline-block';
@@ -175,6 +223,11 @@ document.documentElement.addEventListener("mousemove", evt => {
 document.documentElement.addEventListener("mouseleave", evt => {
   cursor.style.display = 'none';
 });
+
+
+
+
+
 
 
 

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <title>Carte de visite</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
+    <meta name="keywords" content="portfolio, design, webdesigner, graphit, web">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
+    <link rel="stylesheet" type="text/css" href="src/scss/main.css">
+    <link src="src/js/index.js"></link>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }" >
+
+  <header>
+    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+
+      <div class="header__bar__mobile"> 
+        <button onclick="lightMode()">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+        </button>
+        
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+          <ul class="menu__list list-unstyled">
+            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
+            <li class="menu__item"><a class="menu__link" href="aboutme.html">À propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="desktop-header">
+
+    <div class="header__start">
+
+    <select id="header__language__select">
+      <option value="english">EN</option>
+      <option value="french">FR</option>
+      <option value="spanish">ESP</option>
+    </select>
+
+    <button onclick="lightMode()">
+      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
+  </button>
+  <!-- <button onclick="darktMode()">
+    <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__sun">
+</button> -->
+
+    <!-- <div>
+      <a href="mailto:mgillot.pro@gmail.com">
+      <button class="header__btn__mail" target="_blank" >mgillot.pro@gmail.com</button>
+      </a>
+    </div> -->
+      
+    </div>
+
+    <div class="header__end">
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">PROJETS</a></li>
+          <li><a href="aboutme.html">À PROPOS / CONTACT</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+      
+</header> 
+
+
+<main>
+			
+  <div class="content-description">
+    <div class="mini-info">
+            <ul>
+                <li><h3 class="no-line">Années</h3>
+                <p>2022</p></li>
+            </ul>
+            <ul>
+                <li><h3 class="no-line">Deliverables</h3>
+                        <p>UX</p>
+                        <p>Visual Design</p>
+                        <p>Creative Direction</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h2>Affiche exposition universelle 2025</h2>
+            <p>The concept expressed in the poster is the future city living in harmony with the 
+              environment, the well-being of nature and animals, saving lives.</p>
+       </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>
+
+<script>
+
+  // définir la hauteur maximale de la barre de progression
+  window.onload = () => {
+      // Ecouteur d'évènement sur scroll
+      window.addEventListener("scroll", () => {
+          // Calcul de la hauteur "utile" du document
+          let hauteur = document.documentElement.scrollHeight - window.innerHeight
+  
+          // Récupération de la position verticale
+          let position = window.scrollY
+  
+          // Récupération de la largeur de la fenêtre
+          let largeur = document.documentElement.clientWidth
+  
+          // Calcul de la largeur de la barre
+          let barre = position / hauteur * largeur
+  
+          // Modification du CSS de la barre
+          document.getElementById("progress").style.width = barre+"px"
+      })
+  }
+  
+  
+  /* Light Mode */
+  
+  
+  // définir la hauteur maximale de la barre de progression
+  window.onload = () => {
+      // Ecouteur d'évènement sur scroll
+      window.addEventListener("scroll", () => {
+          // Calcul de la hauteur "utile" du document
+          let hauteur = document.documentElement.scrollHeight - window.innerHeight
+  
+          // Récupération de la position verticale
+          let position = window.scrollY
+  
+          // Récupération de la largeur de la fenêtre
+          let largeur = document.documentElement.clientWidth
+  
+          // Calcul de la largeur de la barre
+          let barre = position / hauteur * largeur
+  
+          // Modification du CSS de la barre
+          document.getElementById("progress").style.width = barre+"px"
+      })
+  }
+  
+  
+  /* Light Mode */
+  
+  function lightMode() {
+     var element = document.body;
+     element.classList.toggle("light");
+  }
+  
+  
+  
+  
+  
+  
+  const cursor = document.getElementById('cursor');
+  document.documentElement.addEventListener("mousemove", evt => {
+    cursor.style.display = 'inline-block';
+    cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
+    cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
+  });
+  
+  document.documentElement.addEventListener("mouseleave", evt => {
+    cursor.style.display = 'none';
+  });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    // Wrap every letter in a span
+  var textWrapper = document.querySelector('  .text__animation__cascade .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '  .text__animation__cascade .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 750,
+      delay: (el, i) => 50 * i
+    }).add({
+      targets: '  .text__animation__cascade',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+  </script>

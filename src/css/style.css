@@ -24,6 +24,7 @@ La règle @import permet d'importer ici tous les fichiers css utilisés.
 /* Bases */
 @import "bases/main.css";
 @import "bases/media.css";
+@import "bases/works.css";
 
 /* Layout */
 @import "layout/header.css";
