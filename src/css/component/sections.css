@@ -85,13 +85,12 @@
 /* Page home */
 .section__grid__home {
     margin-left: 3%;
-    margin-top: 7%;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 2;
-    align-items: center;
+    align-items: start;
     align-content: center;
-    margin-top: 10%;
 }
     /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
     @media (min-width: 768px) {

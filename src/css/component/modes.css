@@ -62,16 +62,24 @@
   background-color: var(--impure-black);
 }
 
-
 .light .hero__home__text {
 color: var(--impure-white);
 }
 
+.light .container__card .card {
+  border: 1px  var(--impure-black);
+  background: var(--gray-2);
+  box-shadow: 0 8px 12px var(--impure-white);
+  color: var(--impure-black);
+}
 
+.light .container__card .card .content .contentBx h3 {
+	color: var(--impure-black);
+}
 
-
-
-
+.light .container__card p  {
+	color: var(--impure-black);
+}
 
 
 
