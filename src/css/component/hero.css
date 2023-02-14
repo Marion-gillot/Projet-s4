@@ -56,7 +56,7 @@
 .hero__home__title {
   opacity: 0;
   margin: 0;
-  animation: fade-in 5s forwards;
+  animation: fade-in 3s forwards;
   font-size: 5vw;
   line-height: 1;
   font-weight: 400;
@@ -76,7 +76,7 @@
   float: right;
   font-size: 3.5vw;
   opacity: 0;
-  animation: fade-in 5s forwards;
+  animation: fade-in 3s forwards;
   color: var(--impure-white);
 }
 
@@ -95,8 +95,17 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 12%;
+  animation: fade-in 3s forwards;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fade-in-text {
   opacity: 0;
