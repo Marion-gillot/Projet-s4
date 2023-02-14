@@ -52,7 +52,8 @@
   .navigation a {
     font-size: 13px;
     color: var(--impure-white);
-    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
 .light .navigation a, li {
