@@ -88,3 +88,7 @@ color: var(--impure-white);
   display: flex;
   gap: 6%;
 }
+
+.other__arrow p {
+  color: var(--impure-white);
+}

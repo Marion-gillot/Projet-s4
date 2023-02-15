@@ -81,7 +81,9 @@ color: var(--impure-white);
 	color: var(--impure-black);
 }
 
-
+.light .fa-arrow-down:before {
+  color: var(--impure-black);
+}
 
 
 /* DARK MODE */

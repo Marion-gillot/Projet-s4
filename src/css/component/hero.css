@@ -59,7 +59,7 @@
   animation: fade-in 3s forwards;
   font-size: 5vw;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 @keyframes fade-in {
@@ -72,7 +72,7 @@
 }
 
 .hero__home__chapo {
-  font-weight: 400;
+  font-weight: 600;
   float: right;
   font-size: 3.5vw;
   opacity: 0;

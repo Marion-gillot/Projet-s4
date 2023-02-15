@@ -45,7 +45,7 @@
       </div>
     </div>
 
-  <div class="desktop-header">
+  <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
 
     <div class="header__start">
 
@@ -58,16 +58,7 @@
     <button onclick="lightMode()">
       <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
   </button>
-  <!-- <button onclick="darktMode()">
-    <img src="public/icon/icon_moon.svg" alt="logo du mode dark" class="header__sun">
-</button> -->
-
-    <!-- <div>
-      <a href="mailto:mgillot.pro@gmail.com">
-      <button class="header__btn__mail" target="_blank" >mgillot.pro@gmail.com</button>
-      </a>
-    </div> -->
-      
+ 
     </div>
 
     <div class="header__end">
@@ -99,7 +90,7 @@
 <div class="content-description">
     <div class="mini-info">
             <ul>
-                <li><h3 class="no-line">Années</h3>
+                <li><h3 class="no-line">Année</h3>
                 <p>2018</p></li>
             </ul>
             <ul>
@@ -119,6 +110,22 @@
 </div> 
 
 
+
+<div class="other">
+  <div class="other__arrow">
+    <a href="work-album.html">
+      <img src="public/icon/icon_arrow-back.svg" alt="icône de flèche : projet précèdent">
+      <p>Projet précèdent</p>
+    </a>
+  </div>
+ 
+  <div class="other__arrow">
+    <a href="work-carte.html">
+      <p>Projet suivant</p>
+      <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
+    </a>
+  </div>
+</div>
 
 
 

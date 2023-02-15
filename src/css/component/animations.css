@@ -152,8 +152,9 @@
 }
 
 .fa-arrow-down:before {
-  color: #fff;
+  color: var(--impure-white);
 }
+
 
 .arrow__text {
   text-transform: uppercase;
