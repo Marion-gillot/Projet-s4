@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--space3x);
+    gap: var(--space2x);
     margin-left: 2%;
   }
 
@@ -82,7 +82,7 @@
     background-color: transparent;
     color: var(--impure-black);
     padding: 0.5vh;
-    border: 0.5px solid var(--impure-black);
+    border: 1px solid var(--impure-black);
     border-radius: 5px;
     font-size: 13px;
     cursor: none;
@@ -104,8 +104,8 @@
 }
 
 .header__moon {
-  width: 70%;
-  color: var(--impure-white);
+  width: 80%;
+  color: var(--impure-black);
   }
 
 /* Responsive du header */
