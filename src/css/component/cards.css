@@ -11,12 +11,11 @@
 
 .container__card .card {
     position: relative;
-    border: 5 var(--impure-white);
+    border: 5 var(--impure-black);
     width: 300px;
     height: 460px;
-    background: var(--impure-black);
+    background: var(--gray-2);
     margin: 20px;
-    box-shadow: 0 8px 12px var(--impure-white);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -54,7 +53,7 @@
 }
 
 .container__card .card .content .contentBx h3 {
-	color: var(--impure-white);
+	color: var(--impure-black);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 500;
@@ -90,6 +89,6 @@
 }
 
 .container__card .card .sci p a {
-	color: var(--impure-white);
+	color: var(--impure-black);
 	font-size: 20px;
 }

@@ -23,8 +23,10 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <button onclick="lightMode()">
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+        <button onclick="black
+   Mode()">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
+   ">
         </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -52,9 +54,9 @@
       <option value="spanish">ESP</option>
     </select>
 
-    <button onclick="lightMode()">
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
-  </button>
+ <button onclick="darkMode()">
+        <img src="public/icon/icon_moon.svg" alt="logo du mode clair" class="header__moonicon_moon.svg">
+    </button>
  
     </div>
 
@@ -165,8 +167,8 @@
  
   <div class="other__arrow">
     <a href="work-film.html">
-      <p>Projet suivant</p>
       <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
+      <p>Projet suivant</p>
     </a>
   </div>
 </div>
@@ -229,7 +231,8 @@
   }
   
   
-  /* Light Mode */
+  /* black
+    Mode */
   
   
   // définir la hauteur maximale de la barre de progression
@@ -254,12 +257,14 @@
   }
   
   
-  /* Light Mode */
+  /* black
+    Mode */
   
-  function lightMode() {
+  function darkMode() {
      var element = document.body;
-     element.classList.toggle("light");
+     element.classList.toggle("dark");
   }
+  
   
   
   

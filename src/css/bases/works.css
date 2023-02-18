@@ -71,15 +71,15 @@ color: var(--impure-white);
 .other {
   margin-top: 10%;
   margin-bottom: 10%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   justify-content: space-between;
 }
 
 
 .other p {
-    white-space: nowrap;
+    white-space: normal;
     text-overflow: ellipsis;
     font-size: 14px;
 }

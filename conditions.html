@@ -24,7 +24,8 @@
 
       <div class="header__bar__mobile"> 
         <a>
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
+   ">
         </a>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -52,8 +53,8 @@
       <option value="spanish">ESP</option>
     </select>
 
-    <button onclick="lightMode()">
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
+    <button onclick="darkMode()">
+      <img src="public/icon/icon_moon.svg" alt="logo du mode clair" class="header__moonicon_moon.svg">
   </button>
  
     </div>
@@ -187,15 +188,11 @@
 
 
 <script>
-function lightMode() {
-    var element = document.body;
-    element.classList.toggle("light");
- }
 
- function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark");
- }
+function blackMode() {
+   var element = document.body;
+   element.classList.toggle("black");
+}
 
 
 

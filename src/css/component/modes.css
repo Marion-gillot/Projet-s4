@@ -1,104 +1,126 @@
-/* LIGHT MODE */
-.light {
-    background-color: var(--impure-white);
-    color: var(--impure-black);
+/* black
+    MODE */
+.black
+    {
+    background-color: var(--impure-black);
+    color: var(--impure-white);
   }
   
-  .light h3 {
-    color: var(--impure-black);
-  }
-
-  .light li {
-    color: var(--impure-black);
-  }
-
-
-  .light h2 {
-    color: var(--impure-black);
-
-  }
-
-  .light h1{
-    color: var(--impure-black);
-  }
-
-  .light .text__card {
+  .black
+    h3 {
     color: var(--impure-white);
   }
 
-  .light label {
-    color: var(--impure-black);
-  }
-
-  .light input {
-    color: var(--impure-black);
-  }
-
-  .light .btn_contact {
-    border: var(--impure-black);
+  .black
+    li {
     color: var(--impure-white);
-    background: var(--impure-black);
+  }
+
+
+  .black
+    h2 {
+    color: var(--impure-white);
+
+  }
+
+  .black
+    h1{
+    color: var(--impure-white);
+  }
+
+  .black
+    .text__card {
+    color: var(--impure-black);
+  }
+
+  .black
+    label {
+    color: var(--impure-white);
+  }
+
+  .black
+    input {
+    color: var(--impure-white);
+  }
+
+  .black
+    .btn_contact {
+    border: var(--impure-white);
+    color: var(--impure-black);
+    background: var(--impure-white);
 
 }
 
-.light  .face-button .face-primary,
+.black
+     .face-button .face-primary,
 .face-button .face-secondary {
-  background-color: var(--impure-black);
-  color: var(--impure-white);
-  border: 1rem;
-  border: 1px solid  var(--impure-black);
-}
-
-.light .form__input input {
-  border-bottom: 1px solid var(--impure-black);
-}
-
-.light .form__input textarea {
-  border-bottom: 1px solid var(--impure-black);
+  background-color: var(--impure-white);
   color: var(--impure-black);
+  border: 1rem;
+  border: 1px solid  var(--impure-white);
 }
 
-.light .ligne {
-  background-color: var(--impure-black);
+.black
+    .form__input input {
+  border-bottom: 1px solid var(--impure-white);
 }
 
-.light .hero__home__text {
-color: var(--impure-white);
+.black
+    .form__input textarea {
+  border-bottom: 1px solid var(--impure-white);
+  color: var(--impure-white);
 }
 
-.light .container__card .card {
-  border: 1px  var(--impure-black);
+.black
+    .ligne {
+  background-color: var(--impure-white);
+}
+
+.black
+    .hero__home__text {
+color: var(--impure-black);
+}
+
+.black
+    .container__card .card {
+  border: 1px  var(--impure-white);
   background: var(--gray-2);
   box-shadow: 0 8px 12px var(--impure-white);
-  color: var(--impure-black);
+  color: var(--impure-white);
 }
 
-.light .container__card .card .content .contentBx h3 {
-	color: var(--impure-black);
+.black
+    .container__card .card .content .contentBx h3 {
+	color: var(--impure-white);
 }
 
-.light .container__card p  {
-	color: var(--impure-black);
+.black
+    .container__card p  {
+	color: var(--impure-white);
 }
 
-.light .fa-arrow-down:before {
-  color: var(--impure-black);
+.black
+    .fa-arrow-down:before {
+  color: var(--impure-white);
 }
 
 
 /* DARK MODE */
 .dark {
-  background-color: var(--impure-black);
-  color: var(--impure-white);
+  background-color: var(--impure-white);
+  color: var(--impure-black);
 }
 
 
 /* 
-.light .hero__video_dark {
+.black
+    .hero__video_dark {
   display: none;
  }
  
- .light .hero__video_light {
+ .black
+    .hero__video_black
+    {
    display: block;
  }
  
@@ -106,7 +128,8 @@ color: var(--impure-white);
    display: block;
  }
  
- .dark .hero__video_light {
+ .dark .hero__video_black
+    {
    display: none;
  }
  */

@@ -23,8 +23,10 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <button onclick="lightMode()">
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+        <button onclick="black
+   Mode()">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
+   ">
         </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -52,9 +54,9 @@
       <option value="spanish">ESP</option>
     </select>
 
-    <button onclick="lightMode()">
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
-  </button>
+ <button onclick="darkMode()">
+        <img src="public/icon/icon_moon.svg" alt="logo du mode clair" class="header__moonicon_moon.svg">
+    </button>
  
     </div>
 
@@ -83,48 +85,121 @@
   </span>
 
 
+			
+    <div class="content-description">
+      <div class="mini-info">
+              <ul>
+                  <li><h3 class="no-line">Année</h3>
+                  <p>2022</p></li>
+              </ul>
+              <ul>
+                  <li><h3 class="no-line">Deliverables</h3>
+                          <p>UX</p>
+                          <p>Visual Design</p>
+                          <p>Creative Direction</p>
+                  </li>
+              </ul>
+          </div>
 
-  <div class="other">
-    <div class="other__arrow">
-      <a href="work-reve.html">
-        <img src="public/icon/icon_arrow-back.svg" alt="icône de flèche : projet précèdent">
-        <p>Projet précèdent</p>
-      </a>
+          <div class="info">
+              <h2>Carte postale Cassandre</h2>
+              <p>Création d'une carte postale sur le thème de Cassandre alias, Adolphe Jean-Marie Mouron, en utilisant ses aspects graphiques 
+                et ses méthodes de dessin. Œuvre inspirée : VIN TONIQUE DUBONNET AVEC QUIQUENA</p>
+        </div>
+    </div> 
+
+
+    <img src="public/img/projets/work_carte.jpg" alt="Carte postale à la façon de Cassandre">
+
+    <div class="flex__text">
+      <div><h3>Le concept</h3></div>
+      <div><p>Le concept exprimé de l’affiche est la ville futur vivant en harmonie avec l’environnement, 
+        le bien être de la nature et des animaux, sauver des vies.</p></div>
     </div>
-   
-    <div class="other__arrow">
-      <a href="work-expo.html">
-        <p>Projet suivant</p>
-        <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
-      </a>
+
+    <div class="flex__img_text">
+      <div>
+        <p>Ce concept est exprimé grâce à la verdure mélangé à la mer, le ciel, et les être vivants pouvant vivre en harmonie avec 
+        l’homme dans sa ville écologique et respectueuse de l’environnement.</p>
+          <p class="up">Les thèmes :</p>
+            <ul>
+                <li>Connecter des vies</li> 
+                <li>Inspirer des vies</li>
+                <li>Sauver des vies</li>
+            </ul>
+      </div>
+
+        <div>
+          <img src="public/img/projets/expo-affiche.jpg">
+        </div>
     </div>
+
+
+<div class="flex__img_text">
+  <div><img src="public/img/projets/expo-logo.png" alt="les logos réalisés pour l'exposition 2025"></div>
+  <div><h3>Le logo</h3>
+ <p>En se concentrant sur le logo officiel de l’exposition 2025, j'ai pu constaté qu’il s’agissait de cellules, avec des couleurs rouges et bleu.
+    J'ai donc poursuivit le chemin du médical, et j'ai choisis l’ADN : forme en relief, connu de tous</p>
+    <p class="up">Deux versions sont proposées pour différents formats, plus ou moins sombre. Ici, c'est le logo avec des couleurs plus claires et 
+      vives qui est utilisé pour l'affiche de l'exposition.</p>
+  </div>
+</div>
+
+<div class="section__center">
+  <h3>Format d'une carte postale</h3>
+
+</div>
+
+<div class="flex__img">
+  <div><img src="public/img/projets/expo-carte.jpg" alt="carte postale de l'exposition universelle de 2025">
+  </div>
+  <div><img src="public/img/projets/expo-timbre.jpg" alt="timbre avec le logo de l'exposition 2025"></div>
+</div>
+
+<div class="other">
+  <div class="other__arrow">
+    <a href="work-carte.html">
+      <img src="public/icon/icon_arrow-back.svg" alt="icône de flèche : projet précèdent">
+      <p>Projet précèdent</p>
+    </a>
+  </div>
+ 
+  <div class="other__arrow">
+    <a href="work-film.html">
+      <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
+      <p>Projet suivant</p>
+    </a>
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+
+  <div class="footer_grid">
+  <div class="footer__contact">
+      <h4 class="footer__title">Marion Gillot</h4>
+      <p><a href="tel:0384542727">07 82 94 35 03</a></p>
+      <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
   </div>
 
+  <div class="footer__social">
+      <h4 class="footer__title">Me suivre</h4>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
+      <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
+      <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
+    </ul>
+  </div>
+  </div>
+
+    <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
+  
+</footer>
 
 
-  <footer class="footer">
-
-        <div class="footer_grid">
-        <div class="footer__contact">
-            <h4 class="footer__title">Marion Gillot</h4>
-            <p><a href="tel:0384542727">07 82 94 35 03</a></p>
-            <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
-        </div>
-    
-        <div class="footer__social">
-            <h4 class="footer__title">Me suivre</h4>
-          <ul class="footer__list list-unstyled">
-            <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
-            <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
-            <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
-          </ul>
-        </div>
-        </div>
-
-          <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
-        
-  </footer>
 
 
     </main>
@@ -155,7 +230,8 @@
   }
   
   
-  /* Light Mode */
+  /* black
+    Mode */
   
   
   // définir la hauteur maximale de la barre de progression
@@ -180,12 +256,14 @@
   }
   
   
-  /* Light Mode */
+  /* black
+    Mode */
   
-  function lightMode() {
+  function darkMode() {
      var element = document.body;
-     element.classList.toggle("light");
+     element.classList.toggle("dark");
   }
+  
   
   
   

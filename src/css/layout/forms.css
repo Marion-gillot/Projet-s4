@@ -10,10 +10,10 @@
     appearance: none;
     background: none;
     border: none;
-    border-bottom: 1px solid var(--impure-white);
+    border-bottom: 1px solid var(--impure-black);
     width: 100%;
     padding: var(--space1x) 0;
-    color: var(--impure-white);
+    color: var(--impure-black);
   }
   
   .form__input input:focus,
@@ -26,10 +26,10 @@
     appearance: none;
     background: none;
     border: none;
-    border-bottom: 1px solid var(--impure-white);
+    border-bottom: 1px solid var(--impure-black);
     width: 100%;
     padding: var(--space1x) 0;
-    color: var(--impure-white);
+    color: var(--impure-black);
   }
 
   .form__input__message {
@@ -43,7 +43,7 @@
   }
   
   .form label {
-    color: var(--impure-white);
+    color: var(--impure-black);
     margin-top: var(--space3x);
     display: block;
   }

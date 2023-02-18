@@ -77,12 +77,12 @@
   cy: 30;
   r: 20;
   stroke-width: 0;
-  fill: #f7f8fa;
+  fill: var(--impure-white);
 }
     
 /* Barre de progression au scoll */
 #progress{
-  background-color: var(--impure-white);
+  background-color: var(--impure-black);
   height: 3px;
   width: 0;
   position: fixed;
@@ -120,7 +120,7 @@
   }
 
 .an2{
-  color: var(--impure-white);
+  color: var(--impure-black);
   font-size: 2em;
   text-transform: uppercase;
   overflow: hidden;
@@ -152,7 +152,7 @@
 }
 
 .fa-arrow-down:before {
-  color: var(--impure-white);
+  color: var(--impure-black);
 }
 
 

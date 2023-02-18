@@ -16,7 +16,7 @@
   }
 
   .header--atTop {
-    background-color: var(--impure-black);
+    background-color: var(--impure-white);
   }
   
   .header__logo__mode {
@@ -36,7 +36,8 @@
     justify-content: space-between;
   }
 
-  .light .desktop-header {
+  .black
+    .desktop-header {
     background-color: var(--impure-white);
   }
 
@@ -51,13 +52,14 @@
 
   .navigation a {
     font-size: 13px;
-    color: var(--impure-white);
+    color: var(--impure-black);
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
-.light .navigation a, li {
-  color: var(--impure-black);
+.black
+    .navigation a, li {
+  color: var(--impure-white);
 }
 
   .header__start {
@@ -78,30 +80,32 @@
 
   #header__language__select {
     background-color: transparent;
-    color: var(--impure-white);
+    color: var(--impure-black);
     padding: 0.5vh;
-    border: 0.5px solid var(--impure-white);
+    border: 0.5px solid var(--impure-black);
     border-radius: 5px;
     font-size: 13px;
     cursor: none;
   }
 
-  .light   #header__language__select {
+  .black
+      #header__language__select {
     background-color: transparent;
     color: var(--impure-black);
     border: 0.5px solid var(--impure-black);
 
   }
 
-/* Light et Dark mode */
+/* black
+    et Dark mode */
 .header__sun {
   width: 80%;
-  color: var(--impure-white);
+  color: var(--impure-black);
 }
 
 .header__moon {
   width: 70%;
-  color: var(--impure-black);
+  color: var(--impure-white);
   }
 
 /* Responsive du header */
@@ -123,14 +127,6 @@
     }
   } 
 
-.header__btn__mail {
-  color: var(--impure-black);
-  background-color: var(--impure-white);
-  padding: var(--space1x);
-  border-radius: 5px;
-  border: #000;
-  font-size: 13px;
-}
 
 
 

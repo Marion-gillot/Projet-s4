@@ -24,7 +24,8 @@
 
       <div class="header__bar__mobile"> 
         <a>
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
+   ">
         </a>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -42,33 +43,33 @@
       </div>
     </div>
 
-  <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
+    <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
 
-    <div class="header__start">
-
-    <select id="header__language__select">
-      <option value="english">EN</option>
-      <option value="french">FR</option>
-      <option value="spanish">ESP</option>
-    </select>
-
-    <button onclick="lightMode()">
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
-  </button>
- 
+      <div class="header__start">
+  
+      <select id="header__language__select">
+        <option value="english">EN</option>
+        <option value="french">FR</option>
+        <option value="spanish">ESP</option>
+      </select>
+  
+      <button onclick="darkMode()">
+        <img src="public/icon/icon_moon.svg" alt="logo du mode clair" class="header__moonicon_moon.svg">
+    </button>
+   
+      </div>
+  
+      <div class="header__end">
+  
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Projets</a></li>
+            <li><a href="aboutme.html">À propos</a></li>
+          </ul>
+        </nav>
+  
+      </div>
     </div>
-
-    <div class="header__end">
-
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Projets</a></li>
-          <li><a href="aboutme.html">À propos</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </div>
       
 </header> 
 
@@ -289,15 +290,11 @@ textarea.addEventListener("input", function() {
 
 
 
-function lightMode() {
-    var element = document.body;
-    element.classList.toggle("light");
- }
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark");
+}
 
- function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark");
- }
 
 
 

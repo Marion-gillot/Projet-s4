@@ -24,8 +24,8 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <button onclick="lightMode()">
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode light">
+        <button onclick="blackMode()">
+          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black">
         </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -43,33 +43,33 @@
       </div>
     </div>
 
-  <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
+    <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
 
-    <div class="header__start">
-
-    <select id="header__language__select">
-      <option value="english">EN</option>
-      <option value="french">FR</option>
-      <option value="spanish">ESP</option>
-    </select>
-
-    <button onclick="lightMode()">
-      <img src="public/icon/icon_sun.svg" alt="logo du mode clair" class="header__sun">
-  </button>
- 
+      <div class="header__start">
+  
+      <select id="header__language__select">
+        <option value="english">EN</option>
+        <option value="french">FR</option>
+        <option value="spanish">ESP</option>
+      </select>
+  
+      <button onclick="darkMode()">
+        <img src="public/icon/icon_moon.svg" alt="logo du mode clair" class="header__moonicon_moon.svg">
+    </button>
+   
+      </div>
+  
+      <div class="header__end">
+  
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Projets</a></li>
+            <li><a href="aboutme.html">À propos</a></li>
+          </ul>
+        </nav>
+  
+      </div>
     </div>
-
-    <div class="header__end">
-
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Projets</a></li>
-          <li><a href="aboutme.html">À propos</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </div>
       
 </header> 
 
@@ -370,11 +370,11 @@ window.onload = () => {
 }
 
 
-/* Light Mode */
+/* black Mode */
 
-function lightMode() {
+function darkMode() {
    var element = document.body;
-   element.classList.toggle("light");
+   element.classList.toggle("dark");
 }
 
 
