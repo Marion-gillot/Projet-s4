@@ -26,11 +26,9 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <button onclick="black
-   Mode()">
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
-   ">
-        </button>
+    <button onclick="toggleDarkMode()">
+            <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+          </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -57,8 +55,8 @@
       <option value="spanish">ESP</option>
     </select>
 
- <button onclick="darkMode()">
-        <img src="public/icon/icon_moon.svg" alt="logo du mode sombre" class="header__moon">
+    <button onclick="toggleDarkMode()">
+      <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
     </button>
  
     </div>
@@ -163,104 +161,97 @@
 
 <script>
 
-// définir la hauteur maximale de la barre de progression
-window.onload = () => {
-    // Ecouteur d'évènement sur scroll
-    window.addEventListener("scroll", () => {
-        // Calcul de la hauteur "utile" du document
-        let hauteur = document.documentElement.scrollHeight - window.innerHeight
-
-        // Récupération de la position verticale
-        let position = window.scrollY
-
-        // Récupération de la largeur de la fenêtre
-        let largeur = document.documentElement.clientWidth
-
-        // Calcul de la largeur de la barre
-        let barre = position / hauteur * largeur
-
-        // Modification du CSS de la barre
-        document.getElementById("progress").style.width = barre+"px"
-    })
-}
-
-
-/* black
-    Mode */
-
-
-// définir la hauteur maximale de la barre de progression
-window.onload = () => {
-    // Ecouteur d'évènement sur scroll
-    window.addEventListener("scroll", () => {
-        // Calcul de la hauteur "utile" du document
-        let hauteur = document.documentElement.scrollHeight - window.innerHeight
-
-        // Récupération de la position verticale
-        let position = window.scrollY
-
-        // Récupération de la largeur de la fenêtre
-        let largeur = document.documentElement.clientWidth
-
-        // Calcul de la largeur de la barre
-        let barre = position / hauteur * largeur
-
-        // Modification du CSS de la barre
-        document.getElementById("progress").style.width = barre+"px"
-    })
-}
-
-
-/* black
-    Mode */
-
-function black
-   Mode() {
-   var element = document.body;
-   element.classList.toggle("black
-   ");
-}
-
-
-
-
-
-
-const cursor = document.getElementById('cursor');
-document.documentElement.addEventListener("mousemove", evt => {
-  cursor.style.display = 'inline-block';
-  cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
-  cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
-});
-
-document.documentElement.addEventListener("mouseleave", evt => {
-  cursor.style.display = 'none';
-});
-
-
-
-
-
-
-
-
-
-  // Wrap every letter in a span
-var textWrapper = document.querySelector('  .text__animation__cascade .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '  .text__animation__cascade .letter',
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 750,
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '  .text__animation__cascade',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+  // définir la hauteur maximale de la barre de progression
+  window.onload = () => {
+      // Ecouteur d'évènement sur scroll
+      window.addEventListener("scroll", () => {
+          // Calcul de la hauteur "utile" du document
+          let hauteur = document.documentElement.scrollHeight - window.innerHeight
+  
+          // Récupération de la position verticale
+          let position = window.scrollY
+  
+          // Récupération de la largeur de la fenêtre
+          let largeur = document.documentElement.clientWidth
+  
+          // Calcul de la largeur de la barre
+          let barre = position / hauteur * largeur
+  
+          // Modification du CSS de la barre
+          document.getElementById("progress").style.width = barre+"px"
+      })
+  }
+  
+  
+  /* Dark Mode */
+  function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+  
+    var image = document.getElementById("mode-toggle");
+    if (element.classList.contains("dark")) {
+      image.src = "public/icon/icon_sun.svg";
+      image.alt = "public/icon/icon_moon.svg";
+    } else {
+      image.src = "public/icon/icon_moon.svg";
+      image.alt = "public/icon/icon_sun.svg";
+    }
+  }
+  
+  
+  // Fonction pour changer le thème
+  function toggleTheme() {
+    var element = document.body;
+    element.classList.toggle("dark");
+  
+    // Si le thème sombre est activé, stocke-le dans le Local Storage
+    if (element.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    }
+    // Sinon, stocke le thème par défaut (clair) dans le Local Storage
+    else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+  
+  // Récupère le thème actuel à partir du Local Storage
+  var currentTheme = localStorage.getItem("theme");
+  
+  // Si le thème est défini sur "sombre", active le thème sombre
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark");
+  }
+  
+  
+  /* Curseur */
+  const cursor = document.getElementById('cursor');
+  document.documentElement.addEventListener("mousemove", evt => {
+    cursor.style.display = 'inline-block';
+    cursor.style.left = `${evt.clientX - cursor.offsetWidth / 2}px`;
+    cursor.style.top = `${evt.clientY - cursor.offsetHeight / 2}px`;
   });
-</script>
+  
+  document.documentElement.addEventListener("mouseleave", evt => {
+    cursor.style.display = 'none';
+  });
+  
+  
+      // Wrap every letter in a span
+    var textWrapper = document.querySelector('  .text__animation__cascade .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+    anime.timeline({loop: true})
+      .add({
+        targets: '  .text__animation__cascade .letter',
+        translateY: ["1.1em", 0],
+        translateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i
+      }).add({
+        targets: '  .text__animation__cascade',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>

@@ -105,20 +105,19 @@ figcaption {
 
 
 /* Photo de profil dans le hero de la page home */
-
-/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
-@media (max-width: 1000px) {
-  .img__about {
-     display: none;
-  }
-}
-
 .profil__home {
   max-width: 40%;
   float: right;
   margin-right: 10%;
   animation: fade-in 3s forwards;
 
+}
+
+/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
+@media (max-width: 800px) {
+  .profil__home {
+     display: none;
+  }
 }
 
 @keyframes fade-in {

@@ -61,17 +61,13 @@
     align-items: start;
     align-content: center;
 }
-    /* Appliquer la mise en page en deux colonnes pour les résolutions d'écran larges */
-    @media (min-width: 768px) {
-        .section__grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+
 
     /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
-    @media (max-width: 768px) {
-        .section__grid {
-            grid-template-columns: 1fr;
+    @media (max-width: 800px) {
+        .section__grid__home {
+            grid-template-columns: none;
+            margin-top: 20%;
         }
     }
 

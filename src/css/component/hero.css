@@ -67,6 +67,7 @@
   margin-top: 2%;
   opacity: 0;
   animation: fade-in-details 2s forwards;
+  font-weight: 500;
 }
 
 @keyframes fade-in-details {

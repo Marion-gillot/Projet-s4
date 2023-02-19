@@ -244,7 +244,7 @@
 
 <script>
 
-
+/* Filtrage */
 var filterButtons = document.querySelectorAll('.filter-button');
 
 filterButtons.forEach(function(button) {
@@ -271,76 +271,6 @@ document.querySelectorAll('.item').forEach(function(item) {
 });
 
 
-
-
-const sunButton = document.querySelector('.header__start button:first-of-type');
-const moonButton = document.querySelector('.header__start button:last-of-type');
-
-const icon = document.querySelector('.header__sun');
-
-function switchIcon(event) {
-  if (event.target === moonButton) {
-    icon.src = 'public/icon/icon_sun.svg';
-  } else if (event.target === sunButton) {
-    icon.src = 'public/icon/icon_moon.svg';
-  }
-}
-
-moonButton.addEventListener('click', switchIcon);
-sunButton.addEventListener('click', switchIcon);
-
-
-  // Wrap every letter in a span
-//   var textWrapper = document.querySelector(".text-wrapper");
-// var observer = new IntersectionObserver(function(entries, observer) {
-// entries.forEach(function(entry) {
-// if (entry.isIntersecting) {
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-
-
-// anime.timeline({loop: false})
-//     .add({
-//       targets: '.text__animation__cascade .letter',
-//       translateY: ["1.1em", 0],
-//       translateZ: 0,
-//       duration: 750,
-//       delay: (el, i) => 50 * i
-//     });
-
-//   observer.disconnect();
-// }
-// });
-// });
-
-// observer.observe(textWrapper);
-
-
-
-
-  /* Animation mot Projets */
-//   var title__projets = document.querySelector('.title__projets');
-
-// window.addEventListener('scroll', function () {
-//   var scrollPos = window.scrollY + window.innerHeight;
-//   var title__projetsPos = title__projets.offsetTop + title__projets.offsetHeight;
-
-//   if (scrollPos > title__projetsPos) {
-//     title__projets.classList.remove('big');
-//     title__projets.classList.add('small');
-//   } else if (scrollPos < title__projetsPos - title__projets.offsetHeight) {
-//     title__projets.classList.remove('small');
-//     title__projets.classList.remove('big');
-//   } else {
-//     title__projets.classList.remove('small');
-//     title__projets.classList.add('big');
-//   }
-// })
-
-
-
-
-
 // définir la hauteur maximale de la barre de progression
 window.onload = () => {
     // Ecouteur d'évènement sur scroll
@@ -363,8 +293,7 @@ window.onload = () => {
 }
 
 
-/* black Mode */
-
+/* Dark Mode */
 function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark");
@@ -380,10 +309,31 @@ function toggleDarkMode() {
 }
 
 
+// Fonction pour changer le thème
+function toggleTheme() {
+  var element = document.body;
+  element.classList.toggle("dark");
+
+  // Si le thème sombre est activé, stocke-le dans le Local Storage
+  if (element.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  }
+  // Sinon, stocke le thème par défaut (clair) dans le Local Storage
+  else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Récupère le thème actuel à partir du Local Storage
+var currentTheme = localStorage.getItem("theme");
+
+// Si le thème est défini sur "sombre", active le thème sombre
+if (currentTheme === "dark") {
+  document.body.classList.add("dark");
+}
 
 
-
-
+/* Curseur */
 const cursor = document.getElementById('cursor');
 document.documentElement.addEventListener("mousemove", evt => {
   cursor.style.display = 'inline-block';
@@ -396,8 +346,7 @@ document.documentElement.addEventListener("mouseleave", evt => {
 });
 
 
-
-  </script>
+</script>
 
 
 
