@@ -47,7 +47,8 @@ button {
   padding: 0;
   cursor: none;
 }
-  
+
+
 /* Pour enlever l'apparence par défaut des listes */
 .list-unstyled {
   list-style: none;

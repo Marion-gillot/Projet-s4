@@ -110,6 +110,7 @@ figcaption {
   float: right;
   margin-right: 10%;
   animation: fade-in 3s forwards;
+  z-index: -3;
 
 }
 
