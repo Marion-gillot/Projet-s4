@@ -1,49 +1,48 @@
-/* black
-    MODE */
-.black
+/* DARK MODE */
+.dark
     {
     background-color: var(--impure-black);
     color: var(--impure-white);
   }
   
-  .black
+  .dark
     h3 {
     color: var(--impure-white);
   }
 
-  .black
+  .dark
     li {
     color: var(--impure-white);
   }
 
 
-  .black
+  .dark
     h2 {
     color: var(--impure-white);
 
   }
 
-  .black
+  .dark
     h1{
     color: var(--impure-white);
   }
 
-  .black
+  .dark
     .text__card {
     color: var(--impure-black);
   }
 
-  .black
+  .dark
     label {
     color: var(--impure-white);
   }
 
-  .black
+  .dark
     input {
     color: var(--impure-white);
   }
 
-  .black
+  .dark
     .btn_contact {
     border: var(--impure-white);
     color: var(--impure-black);
@@ -51,7 +50,7 @@
 
 }
 
-.black
+.dark
      .face-button .face-primary,
 .face-button .face-secondary {
   background-color: var(--impure-white);
@@ -60,28 +59,28 @@
   border: 1px solid  var(--impure-white);
 }
 
-.black
+.dark
     .form__input input {
   border-bottom: 1px solid var(--impure-white);
 }
 
-.black
+.dark
     .form__input textarea {
   border-bottom: 1px solid var(--impure-white);
   color: var(--impure-white);
 }
 
-.black
+.dark
     .ligne {
   background-color: var(--impure-white);
 }
 
-.black
+.dark
     .hero__home__text {
 color: var(--impure-black);
 }
 
-.black
+.dark
     .container__card .card {
   border: 1px  var(--impure-white);
   background: var(--gray-2);
@@ -89,50 +88,24 @@ color: var(--impure-black);
   color: var(--impure-white);
 }
 
-.black
+.dark
     .container__card .card .content .contentBx h3 {
 	color: var(--impure-white);
 }
 
-.black
+.dark
     .container__card p  {
 	color: var(--impure-white);
 }
 
-.black
+.dark
     .fa-arrow-down:before {
   color: var(--impure-white);
 }
 
-
-/* DARK MODE */
-.dark {
-  background-color: var(--impure-white);
-  color: var(--impure-black);
+.dark
+    .title__juridique {
+    margin-bottom: 10%;
+    text-align: center;
+    color: var(--impure-white);
 }
-
-
-/* 
-.black
-    .hero__video_dark {
-  display: none;
- }
- 
- .black
-    .hero__video_black
-    {
-   display: block;
- }
- 
- .dark .hero__video_dark {
-   display: block;
- }
- 
- .dark .hero__video_black
-    {
-   display: none;
- }
- */
-
-
- 

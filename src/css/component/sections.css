@@ -51,37 +51,6 @@
   }
 
 
-  .titles__works {
-    color: var(--impure-white);
-    display: grid;
-    margin-bottom: 5%;
-    width: 100%;
-    font-weight: 800;
-    padding: var(--space5x) ;
-   }
-   
-   
-   .title_work {
-     font-size: 7vw;
-     font-family: var(--font-bebas-neue);
-     margin: 0;
-   }
-   
-   
-   @media (max-width: 530px) {
-    .title_work {
-      font-size: 30px;
-    }
-   }
-   
- 
-   .ligne {
-    background-color: var(--impure-black);
-    height: 1px;
-    width: 100%;
-   }
-   
-
 /* Page home */
 .section__grid__home {
     margin-left: 3%;

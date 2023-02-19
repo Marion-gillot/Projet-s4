@@ -104,13 +104,6 @@ text-align: center;
 color: var(--impure-black);
 }
 
-.black
-    .title__juridique {
-  margin-bottom: 10%;
-text-align: center;
-color: var(--impure-white);
-}
-
 .text__juridique {
   margin-top: 10%;
 }

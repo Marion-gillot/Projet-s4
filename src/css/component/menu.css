@@ -1,6 +1,3 @@
-/* Pour construire le menu en mobile : 
-On construit le menu tel qu'il sera une fois ouvert.
-On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
 .menu {
     visibility: hidden;
     opacity: 0;
@@ -14,14 +11,13 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     font-size: var(--h4);
     transition: all .4s ease-in-out;
   }
-  /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+
   .menu--open {
     visibility: visible;
     opacity: 1;
     z-index: 3;
   }
   
-  /* Mise en forme des éléments du menu */
   .menu__list {
     margin-top: 25vh;
     margin-left: 15vw;
@@ -68,8 +64,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 
   }
   
-  /* Technique pour transformer les 3 barres du bouton de menu en croix
-  Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+  /* Technique pour transformer les 3 barres du bouton de menu en croix */
   .menu-btn--open .menu-btn__bar,
   .menu-btn--open .menu-btn__bar::before,
   .menu-btn--open .menu-btn__bar::after {

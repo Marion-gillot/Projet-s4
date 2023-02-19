@@ -1,56 +1,11 @@
-/*Page home avec la vidéo d'animation*/
-/* video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.hero__home__video {
-  position: relative;
-  object-fit: cover;
-  
-} */
-
-/* Bulle multicolor */
-.bubble {
-  z-index: -10;
-  position: relative;
-  opacity: 1;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow:
-    inset 0 0 50px #fff,
-    inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff,
-    inset 20px 0 300px #f0f,
-    inset -20px 0 300px #0ff,
-    0 0 50px #fff,
-    -10px 0 80px #f0f,
-    10px 0 80px #0ff;
-}
-
-
-/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
-@media (min-width: 1500px) {
-  .bubble {
-     display: none;
-  }
-}
-
-
 .hero__home {
   top: 0;
   display: grid;
   grid-template-rows: 2;
-
 }
-
 
 .hero__home__text {
   line-height: 1;
-
 }
 
 .hero__home__title {
@@ -123,20 +78,35 @@
 
 /* page à propos */
 .hero__about {
-  margin:10%
+  margin-top: 5% ;
 }
 
+.headlines {
+  color: var(--impure-white);
+  display: grid;
+  margin-bottom: 5%;
+  width: 100%;
+  font-weight: 800;
+  padding: var(--space5x) ;
+ }
+ 
+ 
+ .headline {
+   font-size: 7vw;
+   font-family: var(--font-bebas-neue);
+   margin: 0;
+ }
+ 
+ 
+ @media (max-width: 530px) {
+  .headline {
+    font-size: 30px;
+  }
+ }
+ 
 
-.hero__about__title {
-  font-size: 5vw;
-  font-weight: 400;
-}
-
-
-.hero__work {
-  margin: 25%;
-  text-align: center;
-}
-
-
-
+ .ligne {
+  background-color: var(--impure-black);
+  height: 1px;
+  width: 100%;
+ }
