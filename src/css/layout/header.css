@@ -15,9 +15,9 @@
     margin-top: 3%;
   }
 
-  .header--atTop {
+  /* .header--atTop {
     background-color: var(--impure-white);
-  }
+  } */
   
   .header__logo__mode {
     display: block;
