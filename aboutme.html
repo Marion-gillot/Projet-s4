@@ -23,10 +23,9 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <a>
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black
-   ">
-        </a>
+        <button onclick="toggleDarkMode()">
+          <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -113,7 +112,7 @@
                 <div class="card">
                   <div class="content">
                     <div class="card__img">
-                      <img src="public/icon/logo_figma.svg">
+                      <img src="public/icon/logo_figma.svg" alt="logo Figma">
                     </div>
                     <div class="card__title">
                       <h3>Réaliser le design de votre projet</h3>
@@ -128,7 +127,7 @@
                 <div class="card">
                   <div class="content">
                     <div class="card__img">
-                      <img src="public/icon/logo_photoshop.svg">
+                      <img src="public/icon/logo_photoshop.svg" alt="logo d'Adobe Photoshop">
                     </div>
                     <div class="card__title">
                       <h3>Création d'affiches/cartes</h3>
@@ -142,7 +141,7 @@
                 <div class="card">
                   <div class="content">
                     <div class="card__img">
-                      <img src="public/icon/logo_premiere.svg">
+                      <img src="public/icon/logo_premiere.svg" alt="logo d'Adobe Première Pro">
                     </div>
                     <div class="card__title">
                       <h3>Réalisation de montage vidéo</h3>
@@ -156,7 +155,7 @@
                <div class="card">
                   <div class="content">
                     <div class="card__img">
-                      <img src="public/icon/logo_indesign.svg">
+                      <img src="public/icon/logo_indesign.svg" alt="logo d'Adobe Indesign">
                     </div>
                     <div class="card__title">
                       <h3>Mise en page de documents</h3>

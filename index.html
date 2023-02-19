@@ -24,8 +24,8 @@
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__bar__mobile"> 
-        <button onclick="blackMode()">
-          <img class="header__logo__mode" src="public/icon/icon_sun.svg" alt="logo du mode black">
+        <button onclick="toggleDarkMode()">
+          <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
         </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
