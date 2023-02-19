@@ -4,7 +4,7 @@
     padding: var(--space4x) var(--space4x);
   }
   
-  .footer_grid {
+  .footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 5%;
@@ -48,7 +48,7 @@
 
 
   @media (max-width: 767px) {
-    .footer_grid {
+    .footer__grid {
       grid-template-columns: 1fr;
     }
   }

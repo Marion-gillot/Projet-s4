@@ -28,7 +28,7 @@
   }
 
   .dark
-    .text__card {
+    .card__text {
     color: var(--impure-black);
   }
 
@@ -89,7 +89,7 @@ color: var(--impure-black);
 }
 
 .dark
-    .container__card .card .content .contentBx h3 {
+    .container__card .card .content .card__title h3 {
 	color: var(--impure-white);
 }
 
@@ -104,7 +104,7 @@ color: var(--impure-black);
 }
 
 .dark
-    .title__juridique {
+    .juridique__title {
     margin-bottom: 10%;
     text-align: center;
     color: var(--impure-white);
