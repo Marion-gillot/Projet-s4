@@ -23,7 +23,7 @@
 }
 
 .mini-info li {
-    color: var(--impure-white);
+    color: var(--impure-black);
 }
 
 .info {
@@ -31,7 +31,7 @@
   }
 
 .info h2 {
-    color: var(--impure-white);
+    color: var(--impure-black);
 }
 
 .no-line {
@@ -64,7 +64,7 @@
 }
 
 .flex__img_text li {
-color: var(--impure-white);
+color: var(--impure-black);
 }
 
 
@@ -90,5 +90,5 @@ color: var(--impure-white);
 }
 
 .other__arrow p {
-  color: var(--impure-white);
+  color: var(--impure-black);
 }
