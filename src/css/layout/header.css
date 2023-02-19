@@ -21,7 +21,7 @@
   
   .header__logo__mode {
     display: block;
-    width: 100%;
+    width: 75%;
     margin: 5%;
   }
 
@@ -32,13 +32,12 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: 0.5%;
+    padding: 0.2%;
     justify-content: space-between;
   }
 
-  .black
-    .desktop-header {
-    background-color: var(--impure-white);
+  .dark .desktop-header {
+    background-color: var(--impure-black);
   }
 
   .navigation {
@@ -51,13 +50,13 @@
   }
 
   .navigation a {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--impure-black);
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
-.black
+.dark
     .navigation a, li {
   color: var(--impure-white);
 }
@@ -84,29 +83,16 @@
     padding: 0.5vh;
     border: 1px solid var(--impure-black);
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
     cursor: none;
   }
 
-  .black
-      #header__language__select {
+.dark #header__language__select {
     background-color: transparent;
-    color: var(--impure-black);
-    border: 0.5px solid var(--impure-black);
-
+    color: var(--impure-white);
+    border: 0.5px solid var(--impure-white);
   }
 
-/* black
-    et Dark mode */
-.header__sun {
-  width: 80%;
-  color: var(--impure-black);
-}
-
-.header__moon {
-  width: 80%;
-  color: var(--impure-black);
-  }
 
 /* Responsive du header */
   .mobile-header {

@@ -11,13 +11,13 @@
 .hero__home__title {
   opacity: 0;
   margin: 0;
-  animation: fade-in 3s forwards;
+  animation: fade-in-title 2s forwards;
   font-size: 5vw;
   line-height: 1;
   font-weight: 600;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-title {
   from {
     opacity: 0;
   }
@@ -31,12 +31,12 @@
   float: right;
   font-size: 3.5vw;
   opacity: 0;
-  animation: fade-in 3s forwards;
+  animation: fade-in-chapo 2s forwards;
   color: var(--impure-black);
   margin: 0;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-chapo {
   from {
     opacity: 0;
   }
@@ -51,10 +51,25 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 12%;
-  animation: fade-in 3s forwards;
+  animation: fade-in-down 2s forwards;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero__details {
+  margin-top: 2%;
+  opacity: 0;
+  animation: fade-in-details 2s forwards;
+}
+
+@keyframes fade-in-details {
   from {
     opacity: 0;
   }
@@ -77,10 +92,6 @@
   }
 }
 
-.hero__details {
-  margin-top: 2%;
-
-}
 
 /* page à propos */
 .hero__about {

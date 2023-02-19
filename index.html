@@ -52,8 +52,8 @@
             <option value="spanish">ESP</option>
           </select>
       
-          <button onclick="darkMode()">
-            <img src="public/icon/icon_moon.svg" alt="logo du mode sombre" class="header__moon">
+          <button onclick="toggleDarkMode()">
+            <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
           </button>
       </div>
   
@@ -365,9 +365,18 @@ window.onload = () => {
 
 /* black Mode */
 
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark");
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark");
+
+  var image = document.getElementById("mode-toggle");
+  if (element.classList.contains("dark")) {
+    image.src = "public/icon/icon_sun.svg";
+    image.alt = "public/icon/icon_moon.svg";
+  } else {
+    image.src = "public/icon/icon_moon.svg";
+    image.alt = "public/icon/icon_sun.svg";
+  }
 }
 
 
