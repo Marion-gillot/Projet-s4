@@ -117,7 +117,7 @@ figcaption {
 /* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
 @media (max-width: 800px) {
   .profil__home {
-     display: none;
+   margin: auto;
   }
 }
 

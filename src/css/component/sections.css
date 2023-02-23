@@ -57,8 +57,8 @@
     margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    z-index: 2;
     align-items: start;
+    z-index: -5;
     align-content: center;
 }
 
@@ -67,7 +67,8 @@
     @media (max-width: 800px) {
         .section__grid__home {
             grid-template-columns: none;
-            margin-top: 20%;
+            margin-top: 25%;
+            z-index: -5;
         }
     }
 

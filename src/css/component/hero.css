@@ -17,6 +17,14 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .headlines {
+    padding-top: var(--space5x);
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+  }
+ }
+ 
 @keyframes fade-in-title {
   from {
     opacity: 0;
@@ -102,12 +110,23 @@
 .headlines {
   color: var(--impure-white);
   display: grid;
-  margin-bottom: 5%;
+
   width: 100%;
   font-weight: 800;
   padding: var(--space5x) ;
  }
  
+
+  @media (max-width: 768px) {
+  .headlines {
+    padding-top: var(--space5x);
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+  }
+ }
+ 
+
+
  
  .headline {
    font-size: 7vw;
@@ -118,7 +137,7 @@
  
  @media (max-width: 530px) {
   .headline {
-    font-size: 30px;
+    font-size: 35px;
   }
  }
  

@@ -71,6 +71,26 @@ button {
   margin: 30%;
 }
 
+#filter {
+  margin-top: 2%;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: var(--gray-2);
+  border: none;
+  border-radius: 5px;
+}
+
+.item {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 
 /* Page à propos */
 .about__description {
