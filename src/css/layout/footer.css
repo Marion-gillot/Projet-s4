@@ -50,6 +50,8 @@
   @media (max-width: 767px) {
     .footer__grid {
       grid-template-columns: 1fr;
+      gap: 10%;
+      margin-bottom: 20%;
     }
   }
 

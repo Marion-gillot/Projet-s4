@@ -83,6 +83,16 @@ button {
   border-radius: 5px;
 }
 
+@media (max-width: 464px) {
+  .filter-button {
+    padding: 10px 14px;
+    margin: 0 5px;
+    background-color: var(--gray-2);
+    border: none;
+    border-radius: 5px;
+  }
+}
+
 .item {
   display: none;
 }
