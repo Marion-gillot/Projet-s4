@@ -112,3 +112,10 @@ color: var(--impure-black);
 .other__arrow p {
   color: var(--impure-black);
 }
+
+.works__padding {
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px; /*ajuster la valeur selon vos besoins*/
+}
