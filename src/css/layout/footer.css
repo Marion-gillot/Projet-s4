@@ -3,6 +3,7 @@
     color: var(--impure-white);
     padding: var(--space4x) var(--space4x);
   }
+
   
   .footer__grid {
     display: grid;

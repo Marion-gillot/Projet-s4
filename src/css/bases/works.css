@@ -83,6 +83,12 @@
   align-items: center;
 }
 
+@media (max-width: 790px) {
+  .flex__img_text {
+    grid-template-columns: 1fr ;
+  }
+}
+
 .flex__img_text li {
 color: var(--impure-black);
 }
@@ -117,5 +123,14 @@ color: var(--impure-black);
   margin: 10%;
   display: flex;
   flex-wrap: wrap;
-  gap: 200px; /*ajuster la valeur selon vos besoins*/
+  gap: 20vw; 
+}
+
+@media (max-width: 790px) {
+  .works__padding {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw; 
+  }
 }
