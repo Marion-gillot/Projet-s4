@@ -81,8 +81,9 @@
 }
     
 
-* {
-  touch-action: none;
+.touch * {
+  cursor: none;
+  /* styles personnalisés */
 }
 
 /* Barre de progression au scoll */
