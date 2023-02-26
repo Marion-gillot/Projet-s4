@@ -80,6 +80,11 @@
   fill: var(--impure-white);
 }
     
+
+* {
+  touch-action: none;
+}
+
 /* Barre de progression au scoll */
 #progress{
   background-color: var(--impure-black);
