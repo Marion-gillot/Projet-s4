@@ -20,7 +20,7 @@
 <body>
 
   <header>
-    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" >
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
@@ -37,6 +37,11 @@
           <ul class="menu__list list-unstyled">
             <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
             <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
+            <select id="header__language__select">
+              <option value="english">EN</option>
+              <option value="french">FR</option>
+              <option value="spanish">ESP</option>
+            </select>
           </ul>
         </nav>
       </div>
@@ -115,7 +120,7 @@
                       <img src="public/icon/logo_figma.svg" alt="logo Figma">
                     </div>
                     <div class="card__title">
-                      <h3>Réaliser le design de votre projet</h3>
+                      <h3>Le design de votre projet</h3>
                     </div>
                   </div>
                   <div class="card__sci">
@@ -130,7 +135,7 @@
                       <img src="public/icon/logo_photoshop.svg" alt="logo d'Adobe Photoshop">
                     </div>
                     <div class="card__title">
-                      <h3>Création d'affiches/cartes</h3>
+                      <h3>Affiches et Cartes</h3>
                     </div>
                   </div>
                   <div class="card__sci">
@@ -144,7 +149,7 @@
                       <img src="public/icon/logo_premiere.svg" alt="logo d'Adobe Première Pro">
                     </div>
                     <div class="card__title">
-                      <h3>Réalisation de montage vidéo</h3>
+                      <h3>Montage vidéo</h3>
                     </div>
                   </div>
                   <div class="card__sci">
@@ -220,36 +225,37 @@
                 <p>Si vous êtes à la recherche d'une designer passionnée et talentueuse pour aider à amener votre marque ou votre entreprise au niveau supérieur, 
                   n'hésitez pas à me contacter pour discuter de vos projets. Je suis impatiente de travailler avec vous pour <span class="boldface"> donner vie à vos idées et à vos visions.</span></p>
     
-                    <div class="form__contact">
-                      <form class="form container" action="contact.php" method="post">
-                        <div class="form__input">
-                            <label for="lastname">Nom
-                              <input type="text" id="lastname" name="last-name" placeholder="Saissisez votre nom">
-                            </label>
-                        </div>
-            
-                          <div class="form__input">
-                          <label for="firstname">Prénom
-                            <input type="text" id="firstname" name="first-name" placeholder="Saisissez votre prénom">
+                  <div class="form__contact">
+                    <form class="form container" action="contact.php" method="post">
+                      <div class="form__input">
+                          <label for="lastname">Nom
+                            <input type="text" id="lastname" name="last_name" placeholder="Saisissez votre nom">
                           </label>
-                        </div>
-            
-                        <div class="form__input">
-                          <label for="e-mail">E-mail
-                            <input type="email" id="email" name="email" placeholder="Saisissez votre e-mail">
-                          </label>
-                        </div>
-            
-                        <div class="form__input">
-                          <label for="message" >Message</label>
-                          <textarea id="message" name="message" class="form__input__message" placeholder="Écrivez votre message ici..."></textarea>
-                        </div>
-            
-                        <div class="button__contact">
-                          <button class="btn_contact" type="button">ENVOYEZ</button>
-                        </div>
-                      </form>
-                    </div>
+                      </div>
+                  
+                      <div class="form__input">
+                        <label for="firstname">Prénom
+                          <input type="text" id="firstname" name="first_name" placeholder="Saisissez votre prénom">
+                        </label>
+                      </div>
+                  
+                      <div class="form__input">
+                        <label for="email">E-mail
+                          <input type="email" id="email" name="email" placeholder="Saisissez votre e-mail">
+                        </label>
+                      </div>
+                  
+                      <div class="form__input">
+                        <label for="message" >Message</label>
+                        <textarea id="message" name="message" class="form__input__message" placeholder="Écrivez votre message ici..."></textarea>
+                      </div>
+                  
+                      <div class="button__contact">
+                        <button class="btn_contact" type="submit">ENVOYEZ</button>
+                      </div>
+                    </form>
+                  </div>
+                  
             </div>
           </div>   
       

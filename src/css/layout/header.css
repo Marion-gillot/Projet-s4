@@ -14,10 +14,6 @@
     justify-content: inherit;
     margin-top: 3%;
   }
-
-  /* .header--atTop {
-    background-color: var(--impure-white);
-  } */
   
   .header__logo__mode {
     display: block;
@@ -27,6 +23,7 @@
 
 /* Header desktop */
   .desktop-header {
+    background-color: var(--impure-white);
     top: 0;
     display: flex;
     position: fixed;

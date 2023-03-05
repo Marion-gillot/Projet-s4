@@ -20,7 +20,7 @@ figcaption {
 
 /* Page projets */
 .container__works {
-  margin-top: 5%;
+  margin: 10px;
   display: flex;
   justify-content: center;
 }

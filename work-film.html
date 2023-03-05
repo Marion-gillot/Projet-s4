@@ -21,7 +21,7 @@
 <body x-data="{ atTop: true }" >
 
   <header>
-    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+    <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" >
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
@@ -38,12 +38,17 @@
           <ul class="menu__list list-unstyled">
             <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
             <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
+            <select id="header__language__select">
+              <option value="english">EN</option>
+              <option value="french">FR</option>
+              <option value="spanish">ESP</option>
+            </select>
           </ul>
         </nav>
       </div>
     </div>
 
-  <div class="desktop-header" :class="{ 'header--atTop' : !atTop }">
+  <div class="desktop-header">
 
     <div class="header__start">
 

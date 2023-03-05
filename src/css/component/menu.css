@@ -29,8 +29,9 @@
   }
   
   .menu__item {
-    margin-top: 30%;
-  }
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
   
   .menu__link {
     color: var(--impure-black);
