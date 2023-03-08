@@ -34,7 +34,6 @@
 }
 
 @media (min-width: 768px) {
-  
   #cursor {
     pointer-events: none;
     display: none;
@@ -61,12 +60,7 @@
     stroke-width: 0;
     fill: var(--impure-white);
   }
-
 }
-
-
-    
-
 
 /* Barre de progression au scoll */
 #progress{
@@ -99,7 +93,6 @@
   line-height: 1em;
 }
 
-
 .animation__title {
   text-align: center;
   margin-top: 60%;
@@ -117,7 +110,6 @@
   display: inline-block;
   line-height: 1em;
 }
-
 
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -142,13 +134,11 @@
   color: var(--impure-black);
 }
 
-
 .arrow__text {
   text-transform: uppercase;
   font-weight: 600;
   float: left;
 }
-
 
 /* Style des lignes noires */
  .black-line {
@@ -159,7 +149,6 @@
   border: 2px solid var(--impure-black);
   z-index: 2;
 } 
-
 
 /* Animation du texte défilant */
  @keyframes marquee {
