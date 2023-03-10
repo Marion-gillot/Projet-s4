@@ -112,7 +112,7 @@
         <h3>Ce que je fais</h3>
 
         </div>
-            <section>
+            <div class="fade fade-delay-3 reval">
               <div class="container__card">
                 <div class="card">
                   <div class="content">
@@ -199,10 +199,11 @@
                   </div>
                 </div> -->
               </div>
-            </section>
+            </div>
 
         <div class="section__margin">
 
+          <div class="fade fade-delay-3 reval">
             <div class="about__anectodes">
               <h3>3 Choses à savoir sur moi</h3>
                 <div class="about__number">
@@ -218,8 +219,10 @@
                   <p>Je suis très perfectionniste.</p>
                 </div>
             </div>
+          </div>
 
 
+          <div class="fade fade-delay-3 reval">
             <div class="about__contact">
               <h3>Prenons rendez-vous !</h3>
                 <p>Si vous êtes à la recherche d'une designer passionnée et talentueuse pour aider à amener votre marque ou votre entreprise au niveau supérieur, 
@@ -258,7 +261,7 @@
                   
             </div>
           </div>   
-      
+      </div>
 
        
 
@@ -293,6 +296,26 @@
 
 
 <script>
+
+
+window.addEventListener("scroll", reval);
+
+function reval() {
+  var revals = document.querySelectorAll(".reval");
+
+  for (var i = 0; i < revals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revaltop = revals[i].getBoundingClientRect().top;
+    var revealpoint = 50;
+
+    if (revaltop < windowheight - revealpoint) {
+      revals[i].classList.add("active");
+    } else {
+      revals[i].classList.remove("active");
+    }
+  }
+}
+
 
 /* Champ de text message */
 const textarea = document.getElementById("message");
