@@ -233,6 +233,24 @@
       image.alt = "public/icon/icon_sun.svg";
     }
   }
+  window.addEventListener("load", function() {
+  var currentTheme = localStorage.getItem("theme");
+  var imageMobile = document.getElementById("mode-toggle");
+  var imageDesktop = document.getElementById("mode-toggle-desktop");
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark");
+    imageMobile.src = "public/icon/icon_sun.svg";
+    imageMobile.alt = "public/icon/icon_moon.svg";
+    imageDesktop.src = "public/icon/icon_sun.svg";
+    imageDesktop.alt = "public/icon/icon_moon.svg";
+  } else {
+    imageMobile.src = "public/icon/icon_moon.svg";
+    imageMobile.alt = "public/icon/icon_sun.svg";
+    imageDesktop.src = "public/icon/icon_moon.svg";
+    imageDesktop.alt = "public/icon/icon_sun.svg";
+  }
+});
+
   
 /* Dark Mode desktop  */
 function toggleDarkMode() {
