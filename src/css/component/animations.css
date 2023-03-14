@@ -163,8 +163,6 @@
 
 
 
-
-
 .fade {
   transition: opacity 1.5s ease, transform 0.5s ease;
   opacity: 0;

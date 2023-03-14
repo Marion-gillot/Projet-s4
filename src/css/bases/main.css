@@ -49,7 +49,6 @@ button {
   text-decoration: none;
 }
 
-
 /* Pour enlever l'apparence par défaut des listes */
 .list-unstyled {
   list-style: none;
@@ -64,14 +63,10 @@ button {
 }
 
 .boldface {
-  font-weight: 700;
-}
-/* Page Projets */
-.intro {
-  text-align: center;
-  margin: 30%;
+  font-weight: 700;  /* Mots gras */
 }
 
+/* Page projets */
 #filter {
   margin-top: 2%;
 }
@@ -93,15 +88,6 @@ button {
     border-radius: 5px;
   }
 }
-
-.item {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 
 /* Page à propos */
 .about__description {
@@ -127,12 +113,11 @@ button {
   color: var(--gray);
 }
 
-
 /* Page conditions */
 .juridique__title {
-margin-bottom: 10%;
-text-align: center;
-color: var(--impure-black);
+  margin-bottom: 10%;
+  text-align: center;
+  color: var(--impure-black);
 }
 
 .juridique__text {

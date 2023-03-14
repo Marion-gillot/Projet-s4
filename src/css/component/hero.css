@@ -162,9 +162,6 @@
   }
  }
  
-
-
- 
  .headline {
    font-size: 7vw;
    font-family: var(--font-bebas-neue);
@@ -178,7 +175,6 @@
   }
  }
  
-
  .ligne {
   background-color: var(--impure-black);
   height: 1px;

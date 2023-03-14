@@ -8,7 +8,6 @@
     font-weight: 700;
 }
 
-
 .btn-details-works {
   width: 220px;
   height: 50px;
@@ -19,8 +18,6 @@
   font-weight: 700;
   margin-top: 5%;
 }
-
-
 
 .face-button {
     border: 1px solid  var(--impure-black);
@@ -54,7 +51,4 @@
   }
   .face-button:hover .face-primary {
     margin-top: -64px;
-  }
-  
-
-  
+  }  

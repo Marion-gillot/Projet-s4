@@ -18,7 +18,7 @@ figcaption {
     box-sizing: border-box;
 }
 
-/* Page projets */
+/* Projets présentés dans la page projet */
 .container__works {
   margin: 10px;
   display: flex;
@@ -104,17 +104,15 @@ figcaption {
 }
 
 
-/* Photo de profil dans le hero de la page home */
+/* Photo de profil dans le hero de la page projet */
 .profil__home {
   max-width: 40%;
   float: right;
   margin-right: 10%;
   animation: fade-in 3s forwards;
   z-index: -3;
-
 }
 
-/* Appliquer la mise en page en une seule colonne pour les résolutions de téléphone */
 @media (max-width: 800px) {
   .profil__home {
    margin: auto;
@@ -130,7 +128,7 @@ figcaption {
   }
 }
 
-/* Disposition des images dans les pages de présentations des projets */
+/* Disposition des images dans les pages de présentations */
 .flex__img {
   display: flex;
   align-items: center;

@@ -1,3 +1,4 @@
+/* Introduction des projets dans le hero */
 .content-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -56,8 +57,7 @@
   font-size: 18px;
 }
 
-
-
+/* Disposition des éléments */
 .flex__text {
   margin: 10%;
   display: grid;
@@ -71,7 +71,6 @@
   }
 }
 
-  
 .flex__img_text {
   margin: 5%;
   display: grid;
@@ -90,32 +89,6 @@
 color: var(--impure-black);
 }
 
-
-.other {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.other p {
-    white-space: normal;
-    text-overflow: ellipsis;
-    font-size: 14px;
-}
-
-.other__arrow {
-  display: flex;
-  gap: 6%;
-}
-
-.other__arrow p {
-  color: var(--impure-black);
-}
-
 .works__padding {
   margin: 10%;
   display: flex;
@@ -130,4 +103,29 @@ color: var(--impure-black);
     flex-wrap: wrap;
     gap: 10vw; 
   }
+}
+
+/* Proposition d'autres projets en bas de page */
+.other {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other p {
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.other__arrow {
+  display: flex;
+  gap: 6%;
+}
+
+.other__arrow p {
+  color: var(--impure-black);
 }

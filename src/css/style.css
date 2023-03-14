@@ -12,7 +12,6 @@ La règle @import permet d'importer ici tous les fichiers css utilisés.
 
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères : Work sans et Anton */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Vendors */
