@@ -83,7 +83,7 @@ color: var(--impure-black);
 .dark
     .container__card .card {
   border: 1px  var(--impure-white);
-  background: var(--gray-2);
+  background: var(--immpure-black);
   box-shadow: 0 8px 12px var(--impure-white);
   color: var(--impure-white);
 }
@@ -108,4 +108,8 @@ color: var(--impure-black);
     margin-bottom: 10%;
     text-align: center;
     color: var(--impure-white);
+}
+
+.dark .content-title {
+   color: var(--impure-black);
 }

@@ -24,8 +24,8 @@
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
-          <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
-        </button>
+        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+      </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -57,8 +57,8 @@
         <option value="spanish">ESP</option>
       </select>
   
-      <button onclick="toggleDarkMode()">
-        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+      <button onclick="toggleDarkMode()" class="mode-toggle-button">
+        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logo du mode dark">
       </button>
    
       </div>
@@ -297,6 +297,95 @@
 
 <script>
 
+/* Dark Mode desktop  */
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark");
+
+  var image = document.getElementById("mode-toggle");
+  if (element.classList.contains("dark")) {
+    image.src = "public/icon/icon_sun.svg";
+    image.alt = "public/icon/icon_moon.svg";
+  } else {
+    image.src = "public/icon/icon_moon.svg";
+    image.alt = "public/icon/icon_sun.svg";
+  }
+}
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark");
+
+  // Si le thème sombre est activé, stocke-le dans le Local Storage
+  if (element.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  }
+  // Sinon, stocke le thème par défaut (clair) dans le Local Storage
+  else {
+    localStorage.setItem("theme", "light");
+  }
+
+  /* Change l'icône du bouton en fonction du thème */
+  var imageMobile = document.getElementById("mode-toggle");
+  var imageDesktop = document.getElementById("mode-toggle-desktop");
+  if (element.classList.contains("dark")) {
+    imageMobile.src = "public/icon/icon_sun.svg";
+    imageMobile.alt = "public/icon/icon_moon.svg";
+    imageDesktop.src = "public/icon/icon_sun.svg";
+    imageDesktop.alt = "public/icon/icon_moon.svg";
+  }
+  else {
+    imageMobile.src = "public/icon/icon_moon.svg";
+    imageMobile.alt = "public/icon/icon_sun.svg";
+    imageDesktop.src = "public/icon/icon_moon.svg";
+    imageDesktop.alt = "public/icon/icon_sun.svg";
+  }
+}
+
+/* Récupère le thème actuel à partir du Local Storage */
+var currentTheme = localStorage.getItem("theme");
+
+/* Si le thème est défini sur "sombre", active le thème sombre */
+if (currentTheme === "dark") {
+  document.body.classList.add("dark");
+
+  /* Change l'icône du bouton en mode sombre */
+  var image = document.getElementById("mode-toggle");
+  image.src = "public/icon/icon_sun.svg";
+  image.alt = "public/icon/icon_moon.svg";
+}
+else {
+  /* Change l'icône du bouton en mode clair */
+  var image = document.getElementById("mode-toggle");
+  image.src = "public/icon/icon_moon.svg";
+  image.alt = "public/icon/icon_sun.svg";
+}
+
+/* Applique le thème sauvegardé lorsqu'une nouvelle page est chargée */
+window.addEventListener("load", function() {
+  var currentTheme = localStorage.getItem("theme");
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark");
+
+    /* Change l'icône du bouton en mode sombre */
+    var image = document.getElementById("mode-toggle");
+    image.src = "public/icon/icon_sun.svg";
+    image.alt = "public/icon/icon_moon.svg";
+  }
+  else {
+    /* Change l'icône du bouton en mode clair */
+    var image = document.getElementById("mode-toggle");
+    image.src = "public/icon/icon_moon.svg";
+    image.alt = "public/icon/icon_sun.svg";
+  }
+});
+
+
+
+
+
+
+
+
 
 window.addEventListener("scroll", reval);
 
@@ -348,44 +437,8 @@ window.onload = () => {
 }
 
 
-/* Dark Mode */
-function toggleDarkMode() {
-  var element = document.body;
-  element.classList.toggle("dark");
-
-  var image = document.getElementById("mode-toggle");
-  if (element.classList.contains("dark")) {
-    image.src = "public/icon/icon_sun.svg";
-    image.alt = "public/icon/icon_moon.svg";
-  } else {
-    image.src = "public/icon/icon_moon.svg";
-    image.alt = "public/icon/icon_sun.svg";
-  }
-}
 
 
-// Fonction pour changer le thème
-function toggleTheme() {
-  var element = document.body;
-  element.classList.toggle("dark");
-
-  // Si le thème sombre est activé, stocke-le dans le Local Storage
-  if (element.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  }
-  // Sinon, stocke le thème par défaut (clair) dans le Local Storage
-  else {
-    localStorage.setItem("theme", "light");
-  }
-}
-
-// Récupère le thème actuel à partir du Local Storage
-var currentTheme = localStorage.getItem("theme");
-
-// Si le thème est défini sur "sombre", active le thème sombre
-if (currentTheme === "dark") {
-  document.body.classList.add("dark");
-}
 
 
 /* Curseur */
