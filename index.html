@@ -20,13 +20,13 @@
 
 <body x-data="{ atTop: true }" >
 
- <header>
+  <header>
     <div class="mobile-header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" >
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
-          <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
-        </button>
+        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+      </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @pointerdown="menuIsOpen = !menuIsOpen" 
@@ -48,29 +48,34 @@
       </div>
     </div>
 
-    <div class="desktop-header">
+    <div class="desktop-header"  :class="{ 'header--atTop' : !atTop }">
 
       <div class="header__start">
-          <select id="header__language__select">
-            <option value="english">EN</option>
-            <option value="french">FR</option>
-            <option value="spanish">ESP</option>
-          </select>
-      
-          <button onclick="toggleDarkMode()">
-            <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
-          </button>
+  
+      <select id="header__language__select">
+        <option value="english">EN</option>
+        <option value="french">FR</option>
+        <option value="spanish">ESP</option>
+      </select>
+  
+      <button onclick="toggleDarkMode()" class="mode-toggle-button">
+        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+      </button>
+   
       </div>
   
       <div class="header__end">
+  
         <nav>
           <ul class="navigation">
             <li><a href="index.html">Projets</a></li>
             <li><a href="apropos.html">À propos</a></li>
           </ul>
         </nav>
+  
       </div>
     </div>
+      
 </header> 
 
 
@@ -322,7 +327,7 @@ window.onload = () => {
 }
 
 
-/* Dark Mode */
+/* Dark Mode desktop  */
 function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark");
@@ -336,8 +341,6 @@ function toggleDarkMode() {
     image.alt = "public/icon/icon_sun.svg";
   }
 }
-
-/* Fonction pour basculer en mode sombre */
 function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark");
@@ -352,14 +355,19 @@ function toggleDarkMode() {
   }
 
   /* Change l'icône du bouton en fonction du thème */
-  var image = document.getElementById("mode-toggle");
+  var imageMobile = document.getElementById("mode-toggle");
+  var imageDesktop = document.getElementById("mode-toggle-desktop");
   if (element.classList.contains("dark")) {
-    image.src = "public/icon/icon_sun.svg";
-    image.alt = "Icon for switching to light mode";
+    imageMobile.src = "public/icon/icon_sun.svg";
+    imageMobile.alt = "public/icon/icon_moon.svg";
+    imageDesktop.src = "public/icon/icon_sun.svg";
+    imageDesktop.alt = "public/icon/icon_moon.svg";
   }
   else {
-    image.src = "public/icon/icon_moon.svg";
-    image.alt = "Icon for switching to dark mode";
+    imageMobile.src = "public/icon/icon_moon.svg";
+    imageMobile.alt = "public/icon/icon_sun.svg";
+    imageDesktop.src = "public/icon/icon_moon.svg";
+    imageDesktop.alt = "public/icon/icon_sun.svg";
   }
 }
 
@@ -373,13 +381,13 @@ if (currentTheme === "dark") {
   /* Change l'icône du bouton en mode sombre */
   var image = document.getElementById("mode-toggle");
   image.src = "public/icon/icon_sun.svg";
-  image.alt = "Icon for switching to light mode";
+  image.alt = "public/icon/icon_moon.svg";
 }
 else {
   /* Change l'icône du bouton en mode clair */
   var image = document.getElementById("mode-toggle");
   image.src = "public/icon/icon_moon.svg";
-  image.alt = "Icon for switching to dark mode";
+  image.alt = "public/icon/icon_sun.svg";
 }
 
 /* Applique le thème sauvegardé lorsqu'une nouvelle page est chargée */
@@ -391,13 +399,13 @@ window.addEventListener("load", function() {
     /* Change l'icône du bouton en mode sombre */
     var image = document.getElementById("mode-toggle");
     image.src = "public/icon/icon_sun.svg";
-    image.alt = "Icon for switching to light mode";
+    image.alt = "public/icon/icon_moon.svg";
   }
   else {
     /* Change l'icône du bouton en mode clair */
     var image = document.getElementById("mode-toggle");
     image.src = "public/icon/icon_moon.svg";
-    image.alt = "Icon for switching to dark mode";
+    image.alt = "public/icon/icon_sun.svg";
   }
 });
 
