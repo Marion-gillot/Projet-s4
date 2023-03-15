@@ -151,9 +151,9 @@
       à la cover.</p>
   </div>
 
-    <div>
-      <img src="public/img/projets/album-typo.jpg" alt="Typographie de l'album Gamze Aydemir">
-    </div>
+  <div>
+    <img id="myImage" src="" alt="Typographie de l'album Gamze Aydemir">
+</div>
 </div>
 
 
@@ -217,6 +217,25 @@
 </html>
 
 <script>
+
+
+const myImage = document.getElementById('myImage');
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+
+function toggleImageSrc() {
+  if (darkModeMediaQuery.matches) {
+    myImage.src = 'public/img/projets/album-typo-dark.jpg';
+  } else {
+    myImage.src = 'public/img/projets/album-typo-light.jpg';
+  }
+}
+
+toggleImageSrc();
+darkModeMediaQuery.addEventListener('change', toggleImageSrc);
+lightModeMediaQuery.addEventListener('change', toggleImageSrc);
+
+
 
   // définir la hauteur maximale de la barre de progression
   window.onload = () => {

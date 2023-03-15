@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="es" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
-    <title>Affiche The psychopath</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
-    <meta name="keywords" content="portfolio, design, webdesigner, graphit, web">
-    
-    <link rel="shortcut icon" href="src/favicon.ico">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
-    <link rel="stylesheet" type="text/css" href="src/scss/main.css">
-    <link src="src/js/index.js"></link>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  <title>Cover album</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Marion Gillot, estudiante de 2º curso de MMi Multimedia e Internet" />
+  <meta name="keywords" content="portafolio, diseño, diseñador web, graphit, web">
+  
+  <link rel="shortcut icon" href="src/favicon.ico">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
+  <link rel="stylesheet" type="text/css" href="src/scss/main.css">
+
+  <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <body x-data="{ atTop: true }" >
@@ -25,7 +24,7 @@
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
-        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="icono modo oscuro">
       </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -36,8 +35,8 @@
 
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
-            <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="index-es.html">Proyectos</a></li>
+            <li class="menu__item"><a class="menu__link" href="apropos-es.html">Sobre mí</a></li>
             <select id="header__language__select">
               <option value="english">EN</option>
               <option value="french">FR</option>
@@ -59,7 +58,7 @@
       </select>
   
       <button onclick="toggleDarkMode()" class="mode-toggle-button">
-        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="icono modo oscuro">
       </button>
    
       </div>
@@ -68,8 +67,8 @@
   
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Projets</a></li>
-            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="index-es.html">Proyectos</a></li>
+            <li><a href="apropos-es.html">Sobre mí</a></li>
           </ul>
         </nav>
   
@@ -80,6 +79,7 @@
 
 
 <main>
+
   <div id="progress"></div>
 
   <span id="cursor">
@@ -93,121 +93,125 @@
   <div class="content-description">
     <div class="mini-info">
             <ul>
-                <li><h3 class="no-line">Année</h3>
-                <p>2021</p></li>
+                <li><h3 class="no-line">Año</h3>
+                <p>2023</p></li>
             </ul>
             <ul>
-                <li><h3 class="no-line">Logiciels</h3>
+                <li><h3 class="no-line">Software</h3>
                   <p>Photoshop</p>
-                  <p>Figma</p>
+                  <p>Illustrator</p>
+        
                 </li>
             </ul>
         </div>
 
         <div class="info">
-            <h2>Affiche de film</h2>
-            <p>L'objectif était d'inventer un film, un scénario tout en créant son identité visuelle, son affiche pour sa sortie au cinéma.</p>
-      </div>
-  </div> 
+            <h2>Gamze Aydemir</h2>
+            <p>El proyecto consistía en crear una portada para un álbum de música titulado "Gamze Aydemir". 
+              El objetivo era representar la atmósfera melancólica y poética del álbum, creando al mismo tiempo una elegante y 
+              e intemporal imagen visual.</p>
+       </div>
+</div> 
 
 
-<img src="public/img/projets/film-illustration-1.jpg" alt="affiche de film sur un panneau de grand format à l'exterieur">
 
+<img src="public/img/projets/album-illustration-1.jpg" alt="cartel del álbum Gamze Aydemir">
 
 <div class="flex__text">
-  <div><h3>L'objectif</h3></div>
-  <div><p>Le but était de créer une affiche de film sur Adobe Photoshop, sur un thème imaginé de toute pièce. 
-    Le genre de ce film intitulé 'The psychopath' est l'horreur, se basant sur le mystère...
-  </p></div>
+  <div><h3>El concepto</h3></div>
+  <div><p>La elección del álbum "Gamze Aydemir" estuvo motivada por el deseo de crear una portada para un proyecto musical atemporal, 
+    que tiene una atmósfera melancólica pero también romántica. Las canciones de Gamze Aydemir suelen ser suaves y llenas de emoción, 
+    lo que inspiró la creación de una portada que evocara estos sentimientos.</p></div>
 </div>
 
 <div class="flex__img_text">
   <div>
-    <p class="boldface">Résumé</p>
-      <p class="up">
-        Le caméléon, un animal pouvant se camoufler dans la nature, et passant inaperçu sans éveiller aucun soupçon. C’est ce surnom la, que la police lui a donné. 
-        Sa haine et son sadisme se forgent grâce à ses actes épouvantables, dont encore personne ne connaît l’origine. Ses victimes sont uniquement des femmes aux caractères bien précis, jeune, élégante, 
-        brune, et disparaissent peu à peu en ville. On ne retrouve jamais ne serait-ce qu’un morceau de leur cadavre. </p>
+    <p>La portada se diseñó en blanco y negro para reflejar el ambiente nostálgico y romántico del álbum. Los trazos de agua fluyendo 
+      en la parte derecha de la portada evocan la idea de fluidez y paso del tiempo. La imagen de una mujer en 
+      La imagen de una mujer en blanco y negro dentro de las marcas de agua añade una dimensión poética y enigmática a la portada...</p>
 
-      <p class="up">Mais le jour où il posera ses yeux sur elle, Angela Urker, tout changera. Qu’arrive-t-il lorsqu’un tueur invisible rencontre un âme plus puissante que lui ? Sera-t-il démasqué ? Une chose est sûr, c’est qu’il faut rester sur ses gardes pour survivre...
+      <p class="up">La imagen de la mujer se eligió para representar la poesía y la dulzura del álbum, y se trabajó en blanco y negro para crear un efecto clásico y elegante. 
+        y blanco para crear un efecto clásico y elegante.
       </p>
-    
   </div>
 
     <div>
-      <img src="public/img/projets/film-affiche.jpg" alt="affiche The pyschopath>
+      <img src="public/img/projets/album-cover.jpg" alt="Portada del álbum de Gamze Aydemir">
     </div>
 </div>
 
+<div class="section__center">
+  <h3>Tipografía</h3>
+</div>
 
 <div class="flex__img_text">
   <div>
-    <img src="public/img/projets/film-illustration-2.jpg" alt="affiche de film sur un panneau de grand format à l'exterieur">
+    <p>El título del álbum, "Gamze Aydemir", está escrito en mayúsculas blancas, en contraste con el fondo negro de la portada. 
+      El texto "Just friends." está escrito en negro en la parte superior de la portada, creando un equilibrio visual y añadiendo un elemento de misterio a la portada. 
+      a la portada.</p>
   </div>
 
   <div>
-      <p>La technique utilisée pour restranscrire l'atmosphère d'horreur, de mystère et d'inconnu, est de camouffler comme 
-        le principe d'un caméléon, la victime du tueur, lui aussi inconnu dos à celui qui le regarde.</p>
-
-      <p class="up">On aperçoit des mains aux proportions démeusurées qui accentuent davantage la monstruosité, la confusion. 
-        Ces mains au niveau du personnage inconnu établit un lien entre eux mystérieux et inquétiant.</p>
-        
-      <p class="up">Le titre en rouge fait référence au sang de ses victimes, qui se contraste avec le fond sombre, sans émotion.
-      </p>
-    
-  </div>
+    <img id="myImage" src="" alt="Tipografía del álbum Gamze Aydemir">
 </div>
-
-<div class="section__center">
-  <h3>Format d'un livre</h3>
-
-  <img src="public/img/projets/film-livre.jpg" alt="livre du film The Psychoptah">
 </div>
 
 
+<div class="flex__text">
+  <div><h3>Los colores</h3></div>
+  <div><p>La elección del blanco y negro para la portada refleja el ambiente melancólico y nostálgico del álbum. 
+    El contraste entre los dos colores añade profundidad y textura a la imagen, al tiempo que crea una atmósfera atemporal...
+  </p></div>
+</div>
+
+
+
+<img src="public/img/projets/album-illustration-2.jpg" alt="Álbum CD" > 
 
 
 
 <div class="other">
   <div class="other__arrow">
-    <a href="work-expo.html">
-      <img src="public/icon/icon_arrow-back.svg" alt="icône de flèche : projet précèdent">
-      <p>Projet précèdent</p>
+    <a href="work-lumei.html">
+      <img src="public/icon/icon_arrow-back.svg" alt="icono de flecha: proyecto anterior">
+      <p>Proyecto anterior</p>
     </a>
   </div>
  
   <div class="other__arrow">
-    <a href="work-lumei.html">
-      <p>Projet suivant</p>
-      <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
+    <a href="work-reve.html">
+      <img src="public/icon/icon_arrow-after.svg" alt="icono de flecha: proyecto siguiente">
+      <p>Próximo proyecto</p>
     </a>
   </div>
+
 </div>
 
-  <footer class="footer">
 
-        <div class="footer__grid">
-        <div class="footer__contact">
-            <h4 class="footer__title">Marion Gillot</h4>
-            <p><a href="tel:0384542727">07 82 94 35 03</a></p>
-            <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
-        </div>
-    
-        <div class="footer__social">
-            <h4 class="footer__title">Me suivre</h4>
-          <ul class="footer__list list-unstyled">
-            <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
-            <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
-            <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
-          </ul>
-        </div>
-        </div>
 
-          <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
-        
-  </footer>
+<footer class="footer">
 
+  <div class="footer__grid">
+  <div class="footer__contact">
+      <h4 class="footer__title">Marion Gillot</h4>
+      <p><a href="tel:0384542727">07 82 94 35 03</a></p>
+      <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
+  </div>
+
+  <div class="footer__social">
+      <h4 class="footer__title">Sígueme</h4>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
+      <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
+      <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
+    </ul>
+  </div>
+  </div>
+
+    <a href="conditions-es.html"><span class="footer__license">©mariongillot | Todos los derechos reservados.</span></a>
+  
+</footer>
 
     </main>
 </body>
@@ -216,23 +220,23 @@
 <script>
 
 
-window.addEventListener("load", function() {
-  var currentTheme = localStorage.getItem("theme");
-  var imageMobile = document.getElementById("mode-toggle");
-  var imageDesktop = document.getElementById("mode-toggle-desktop");
-  if (currentTheme === "dark") {
-    document.body.classList.add("dark");
-    imageMobile.src = "public/icon/icon_sun.svg";
-    imageMobile.alt = "public/icon/icon_moon.svg";
-    imageDesktop.src = "public/icon/icon_sun.svg";
-    imageDesktop.alt = "public/icon/icon_moon.svg";
+const myImage = document.getElementById('myImage');
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+
+function toggleImageSrc() {
+  if (darkModeMediaQuery.matches) {
+    myImage.src = 'public/img/projets/album-typo-dark.jpg';
   } else {
-    imageMobile.src = "public/icon/icon_moon.svg";
-    imageMobile.alt = "public/icon/icon_sun.svg";
-    imageDesktop.src = "public/icon/icon_moon.svg";
-    imageDesktop.alt = "public/icon/icon_sun.svg";
+    myImage.src = 'public/img/projets/album-typo-light.jpg';
   }
-});
+}
+
+toggleImageSrc();
+darkModeMediaQuery.addEventListener('change', toggleImageSrc);
+lightModeMediaQuery.addEventListener('change', toggleImageSrc);
+
+
 
   // définir la hauteur maximale de la barre de progression
   window.onload = () => {
@@ -270,6 +274,24 @@ window.addEventListener("load", function() {
       image.alt = "public/icon/icon_sun.svg";
     }
   }
+  window.addEventListener("load", function() {
+  var currentTheme = localStorage.getItem("theme");
+  var imageMobile = document.getElementById("mode-toggle");
+  var imageDesktop = document.getElementById("mode-toggle-desktop");
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark");
+    imageMobile.src = "public/icon/icon_sun.svg";
+    imageMobile.alt = "public/icon/icon_moon.svg";
+    imageDesktop.src = "public/icon/icon_sun.svg";
+    imageDesktop.alt = "public/icon/icon_moon.svg";
+  } else {
+    imageMobile.src = "public/icon/icon_moon.svg";
+    imageMobile.alt = "public/icon/icon_sun.svg";
+    imageDesktop.src = "public/icon/icon_moon.svg";
+    imageDesktop.alt = "public/icon/icon_sun.svg";
+  }
+});
+
   
 /* Dark Mode desktop  */
 function toggleDarkMode() {

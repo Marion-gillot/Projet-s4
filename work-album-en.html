@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
-    <title>Affiche The psychopath</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
-    <meta name="keywords" content="portfolio, design, webdesigner, graphit, web">
-    
-    <link rel="shortcut icon" href="src/favicon.ico">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
-    <link rel="stylesheet" type="text/css" href="src/scss/main.css">
-    <link src="src/js/index.js"></link>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+  <title>Cover album</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Marion Gillot, 2nd year student in MMi Multimedia and Internet" />
+  <meta name="keywords" content="portfolio, design, webdesigner, graphist, web">
+  
+  <link rel="shortcut icon" href="src/favicon.ico">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" type="text/css" href="src/scss/main.scss">
+  <link rel="stylesheet" type="text/css" href="src/scss/main.css">
+
+  <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
 <body x-data="{ atTop: true }" >
@@ -25,7 +24,7 @@
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
-        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="icon dark mode">
       </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -36,8 +35,8 @@
 
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
-            <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="index-en.html">Projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="apropos-en.html">About me</a></li>
             <select id="header__language__select">
               <option value="english">EN</option>
               <option value="french">FR</option>
@@ -59,7 +58,7 @@
       </select>
   
       <button onclick="toggleDarkMode()" class="mode-toggle-button">
-        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="icon dark mode">
       </button>
    
       </div>
@@ -68,8 +67,8 @@
   
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Projets</a></li>
-            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="index-en.html">Projetcs</a></li>
+            <li><a href="apropos-en.html">About me</a></li>
           </ul>
         </nav>
   
@@ -80,6 +79,7 @@
 
 
 <main>
+
   <div id="progress"></div>
 
   <span id="cursor">
@@ -93,121 +93,125 @@
   <div class="content-description">
     <div class="mini-info">
             <ul>
-                <li><h3 class="no-line">Année</h3>
-                <p>2021</p></li>
+                <li><h3 class="no-line">Year</h3>
+                <p>2023</p></li>
             </ul>
             <ul>
-                <li><h3 class="no-line">Logiciels</h3>
+                <li><h3 class="no-line">Software</h3>
                   <p>Photoshop</p>
-                  <p>Figma</p>
+                  <p>Illustrator</p>
+        
                 </li>
             </ul>
         </div>
 
         <div class="info">
-            <h2>Affiche de film</h2>
-            <p>L'objectif était d'inventer un film, un scénario tout en créant son identité visuelle, son affiche pour sa sortie au cinéma.</p>
-      </div>
-  </div> 
+            <h2>Gamze Aydemir</h2>
+            <p>The project was to create a cover for a music album called "Gamze Aydemir". 
+              The objective was to represent the melancholic and poetic atmosphere of the album, while creating an elegant and 
+              and timeless visual image.</p>
+       </div>
+</div> 
 
 
-<img src="public/img/projets/film-illustration-1.jpg" alt="affiche de film sur un panneau de grand format à l'exterieur">
 
+<img src="public/img/projets/album-illustration-1.jpg" alt="affiche de l'album Gamze Aydemir">
 
 <div class="flex__text">
-  <div><h3>L'objectif</h3></div>
-  <div><p>Le but était de créer une affiche de film sur Adobe Photoshop, sur un thème imaginé de toute pièce. 
-    Le genre de ce film intitulé 'The psychopath' est l'horreur, se basant sur le mystère...
-  </p></div>
+  <div><h3>The concept</h3></div>
+  <div><p>The choice of the album "Gamze Aydemir" was motivated by the desire to create a cover for a timeless music project, 
+    which has a melancholic but also romantic atmosphere. Gamze Aydemir's songs are often soft and full of emotion, 
+    which inspired the creation of a cover that evokes these feelings.</p></div>
 </div>
 
 <div class="flex__img_text">
   <div>
-    <p class="boldface">Résumé</p>
-      <p class="up">
-        Le caméléon, un animal pouvant se camoufler dans la nature, et passant inaperçu sans éveiller aucun soupçon. C’est ce surnom la, que la police lui a donné. 
-        Sa haine et son sadisme se forgent grâce à ses actes épouvantables, dont encore personne ne connaît l’origine. Ses victimes sont uniquement des femmes aux caractères bien précis, jeune, élégante, 
-        brune, et disparaissent peu à peu en ville. On ne retrouve jamais ne serait-ce qu’un morceau de leur cadavre. </p>
+    <p>The cover was designed in black and white to reflect the nostalgic and romantic mood of the album. The traces of water flowing 
+      on the right side of the cover evoke the idea of fluidity and the passing of time. The image of a woman in 
+      The image of a woman in black and white within the water marks adds a poetic and enigmatic dimension to the cover...</p>
 
-      <p class="up">Mais le jour où il posera ses yeux sur elle, Angela Urker, tout changera. Qu’arrive-t-il lorsqu’un tueur invisible rencontre un âme plus puissante que lui ? Sera-t-il démasqué ? Une chose est sûr, c’est qu’il faut rester sur ses gardes pour survivre...
+      <p class="up">The image of the woman was chosen to represent the poetry and sweetness of the album, and was worked in black and white to create a classic and elegant effect. 
+        and white to create a classic and elegant effect.
       </p>
-    
   </div>
 
     <div>
-      <img src="public/img/projets/film-affiche.jpg" alt="affiche The pyschopath>
+      <img src="public/img/projets/album-cover.jpg" alt="Couverture de l'album Gamze Aydemir">
     </div>
 </div>
 
+<div class="section__center">
+  <h3>Typography</h3>
+</div>
 
 <div class="flex__img_text">
   <div>
-    <img src="public/img/projets/film-illustration-2.jpg" alt="affiche de film sur un panneau de grand format à l'exterieur">
+    <p>The album title "Gamze Aydemir" is written in white capital letters, contrasting with the black background of the cover. 
+      The text "Just friends." is written in black at the top of the cover, creating a visual balance and adding an element of mystery to the cover. 
+      to the cover.</p>
   </div>
 
   <div>
-      <p>La technique utilisée pour restranscrire l'atmosphère d'horreur, de mystère et d'inconnu, est de camouffler comme 
-        le principe d'un caméléon, la victime du tueur, lui aussi inconnu dos à celui qui le regarde.</p>
-
-      <p class="up">On aperçoit des mains aux proportions démeusurées qui accentuent davantage la monstruosité, la confusion. 
-        Ces mains au niveau du personnage inconnu établit un lien entre eux mystérieux et inquétiant.</p>
-        
-      <p class="up">Le titre en rouge fait référence au sang de ses victimes, qui se contraste avec le fond sombre, sans émotion.
-      </p>
-    
-  </div>
+    <img id="myImage" src="" alt="Typographie de l'album Gamze Aydemir">
 </div>
-
-<div class="section__center">
-  <h3>Format d'un livre</h3>
-
-  <img src="public/img/projets/film-livre.jpg" alt="livre du film The Psychoptah">
 </div>
 
 
+<div class="flex__text">
+  <div><h3>The colors</h3></div>
+  <div><p>The choice of black and white for the cover reflects the melancholic and nostalgic mood of the album. 
+    The contrast between the two colours adds depth and texture to the image, while creating a timeless atmosphere..
+  </p></div>
+</div>
+
+
+
+<img src="public/img/projets/album-illustration-2.jpg" alt="Album en cd" > 
 
 
 
 <div class="other">
   <div class="other__arrow">
-    <a href="work-expo.html">
-      <img src="public/icon/icon_arrow-back.svg" alt="icône de flèche : projet précèdent">
-      <p>Projet précèdent</p>
+    <a href="work-lumei.html">
+      <img src="public/icon/icon_arrow-back.svg" alt="arrow icon: previous project">
+      <p>Previous project</p>
     </a>
   </div>
  
   <div class="other__arrow">
-    <a href="work-lumei.html">
-      <p>Projet suivant</p>
-      <img src="public/icon/icon_arrow-after.svg" alt="icône de flèche : projet suivant">
+    <a href="work-reve.html">
+      <img src="public/icon/icon_arrow-after.svg" alt="arrow icon: next project">
+      <p>Next project</p>
     </a>
   </div>
+
 </div>
 
-  <footer class="footer">
 
-        <div class="footer__grid">
-        <div class="footer__contact">
-            <h4 class="footer__title">Marion Gillot</h4>
-            <p><a href="tel:0384542727">07 82 94 35 03</a></p>
-            <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
-        </div>
-    
-        <div class="footer__social">
-            <h4 class="footer__title">Me suivre</h4>
-          <ul class="footer__list list-unstyled">
-            <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
-            <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
-            <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
-          </ul>
-        </div>
-        </div>
 
-          <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
-        
-  </footer>
+<footer class="footer">
 
+  <div class="footer__grid">
+  <div class="footer__contact">
+      <h4 class="footer__title">Marion Gillot</h4>
+      <p><a href="tel:0384542727">07 82 94 35 03</a></p>
+      <p><a href="mailto:mgillot.pro@gmail.com" target="_blank">mgillot.pro@gmail.com</a></p>
+  </div>
+
+  <div class="footer__social">
+      <h4 class="footer__title">Follow me</h4>
+    <ul class="footer__list list-unstyled">
+      <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
+      <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
+      <li><a href="https://twitter.com/marion_082" target="_blank" aria-label="twitter"><img src="public/icon/icon_twitter.svg" alt="icone twitter"></a></li>
+      <li><a href="https://www.linkedin.com/in/marion-gillot-8133a7224/" target="_blank" aria-label="linkedin"><img src="public/icon/icon_linkedin.svg" alt="icone linkedin"></a></li>
+    </ul>
+  </div>
+  </div>
+
+  <a href="conditions-en.html"><span class="footer__license">©mariongillot | All rights reserved.</span></a>
+  
+</footer>
 
     </main>
 </body>
@@ -216,23 +220,23 @@
 <script>
 
 
-window.addEventListener("load", function() {
-  var currentTheme = localStorage.getItem("theme");
-  var imageMobile = document.getElementById("mode-toggle");
-  var imageDesktop = document.getElementById("mode-toggle-desktop");
-  if (currentTheme === "dark") {
-    document.body.classList.add("dark");
-    imageMobile.src = "public/icon/icon_sun.svg";
-    imageMobile.alt = "public/icon/icon_moon.svg";
-    imageDesktop.src = "public/icon/icon_sun.svg";
-    imageDesktop.alt = "public/icon/icon_moon.svg";
+const myImage = document.getElementById('myImage');
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+
+function toggleImageSrc() {
+  if (darkModeMediaQuery.matches) {
+    myImage.src = 'public/img/projets/album-typo-dark.jpg';
   } else {
-    imageMobile.src = "public/icon/icon_moon.svg";
-    imageMobile.alt = "public/icon/icon_sun.svg";
-    imageDesktop.src = "public/icon/icon_moon.svg";
-    imageDesktop.alt = "public/icon/icon_sun.svg";
+    myImage.src = 'public/img/projets/album-typo-light.jpg';
   }
-});
+}
+
+toggleImageSrc();
+darkModeMediaQuery.addEventListener('change', toggleImageSrc);
+lightModeMediaQuery.addEventListener('change', toggleImageSrc);
+
+
 
   // définir la hauteur maximale de la barre de progression
   window.onload = () => {
@@ -270,6 +274,24 @@ window.addEventListener("load", function() {
       image.alt = "public/icon/icon_sun.svg";
     }
   }
+  window.addEventListener("load", function() {
+  var currentTheme = localStorage.getItem("theme");
+  var imageMobile = document.getElementById("mode-toggle");
+  var imageDesktop = document.getElementById("mode-toggle-desktop");
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark");
+    imageMobile.src = "public/icon/icon_sun.svg";
+    imageMobile.alt = "public/icon/icon_moon.svg";
+    imageDesktop.src = "public/icon/icon_sun.svg";
+    imageDesktop.alt = "public/icon/icon_moon.svg";
+  } else {
+    imageMobile.src = "public/icon/icon_moon.svg";
+    imageMobile.alt = "public/icon/icon_sun.svg";
+    imageDesktop.src = "public/icon/icon_moon.svg";
+    imageDesktop.alt = "public/icon/icon_sun.svg";
+  }
+});
+
   
 /* Dark Mode desktop  */
 function toggleDarkMode() {

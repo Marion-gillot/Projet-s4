@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="es" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
 <head>
-  <title>Projets</title>
+  <title>Proyectos</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Marion Gillot, étudiante en 2ème année en MMi Métier du Multimédia et de l'Internet" />
-  <meta name="keywords" content="portfolio, design, webdesigner, graphist, web">
+  <meta name="description" content="Portafolio de Marion Gillot, estudiante de 2º curso de MMi Multimedia e Internet" />
+  <meta name="keywords" content="portafolio, diseño, diseñador web, graphit, web">
   
   <link rel="shortcut icon" href="src/favicon.ico">
   <link rel="stylesheet" href="src/css/style.css">
@@ -25,7 +25,7 @@
 
       <div class="header__bar__mobile"> 
         <button onclick="toggleDarkMode()">
-        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle" src="public/icon/icon_moon.svg" alt="logotipo en modo oscuro">
       </button>
         
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -36,8 +36,8 @@
 
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list list-unstyled">
-            <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
-            <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__link" href="index-es.html">Proyectos</a></li>
+            <li class="menu__item"><a class="menu__link" href="apropos-es.html">Sobre mí</a></li>
             <select id="header__language__select">
               <option value="english">EN</option>
               <option value="french">FR</option>
@@ -59,7 +59,7 @@
       </select>
   
       <button onclick="toggleDarkMode()" class="mode-toggle-button">
-        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logo du mode dark">
+        <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="logotipo en modo oscuro">
       </button>
    
       </div>
@@ -68,8 +68,8 @@
   
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Projets</a></li>
-            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="index-es.html">Proyectos</a></li>
+            <li><a href="apropos-es.html">Sobre mí</a></li>
           </ul>
         </nav>
   
@@ -92,9 +92,9 @@
       <div class="hero__home">
           <div class="section__grid__home">
                 <div class="hero_up">
-                  <h1 class="hero__home__title">GRAPHISTE<br> WEB/DESIGNER</h1>
-                  <p class="hero__details">[ Spécialisée dans la création d'identité visuelle et de designs web uniques et innovants. ]</p></div>
-                  <div><img src="public/img/profil-home.jpg" class="profil__home" alt="image de profil de marion gillot"></div>
+                  <h1 class="hero__home__title">GRAFISTA<br> WEB/DISEÑADOR</h1>
+                  <p class="hero__details">[ Especializados en la creación de identidad visual y diseños web únicos e innovadores. ]</p></div>
+                  <div><img src="public/img/profil-home.jpg" class="profil__home" alt="profile picture of marion gillot"></div>
                 </div>
 
               <div class="hero__home__down">
@@ -106,7 +106,7 @@
                 </div>
             
                 <div>
-                  <p class="hero__details">[ Située en France ]</p>
+                  <p class="hero__details">[ Situado en Francia ]</p>
                   <h2 class="hero__home__chapo">Marion Gillot</h2></div>
                 </div>
           </div>
@@ -114,13 +114,13 @@
     
 
        <div class="headlines">
-             <h3 class="headline">Projets.</h3>
+             <h3 class="headline">Proyectos.</h3>
              <span class="ligne"></span>
              <div id="filter">
-              <button class="filter-button" data-filter="all">Tout</button>
-              <button class="filter-button" data-filter="category1">Carte</button>
-              <button class="filter-button" data-filter="category2">Affiche</button>
-              <button class="filter-button" data-filter="category3">Dessin</button>
+              <button class="filter-button" data-filter="all">Todos</button>
+              <button class="filter-button" data-filter="category1">Tarjeta</button>
+              <button class="filter-button" data-filter="category2">Cartel</button>
+              <button class="filter-button" data-filter="category3">Dibujo</button>
             </div>
       </div>
 
@@ -205,17 +205,17 @@
 
 
       <div class="section__center">
-        <h3>Téléchargez mon portfolio en 1 click !</h3>
+        <h3>Descargue mi portafolio en 1 clic</h3>
           <div>
               <a href="public/portfolio.pdf" download>
                  <div class="face-button">
 
                  <div class="face-primary">
-                  Télécharger PDF
+                  Descargar PDF
                  </div>
                 
                  <div class="face-secondary">
-                  Taille : 52,3 Mo 
+                  Tamaño : 52,3 Mo 
                  </div>
               </a>
           </div>
@@ -235,7 +235,7 @@
         </div>
     
         <div class="footer__social">
-            <h4 class="footer__title">Me suivre</h4>
+            <h4 class="footer__title">Sígueme</h4>
           <ul class="footer__list list-unstyled">
             <li><a href="https://www.instagram.com/marion_gillot/" target="_blank" aria-label="instagram"><img src="public/icon/icon_insta.svg" alt="icone instagram"></a></li>
             <li><a href="https://www.behance.net/tc_1820gillot" target="_blank" aria-label="behance"><img src="public/icon/icon_behance.svg" alt="icone behance"></a></li>
@@ -245,7 +245,7 @@
         </div>
         </div>
 
-          <a href="conditions.html"><span class="footer__license">©mariongillot | Tous droits réservés.</span></a>
+          <a href="conditions-es.html"><span class="footer__license">©mariongillot | Todos los derechos reservados.</span></a>
         
   </footer>
 
