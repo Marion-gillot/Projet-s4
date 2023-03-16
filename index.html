@@ -39,9 +39,8 @@
             <li class="menu__item"><a class="menu__link" href="index.html">Projets</a></li>
             <li class="menu__item"><a class="menu__link" href="apropos.html">À propos</a></li>
             <select id="header__language__select">
-
-              <option value="english">EN</option>
               <option value="french">FR</option>
+              <option value="english">EN</option>
               <option value="spanish">ESP</option>
             </select>
           </ul>
@@ -260,22 +259,34 @@
 <script>
 
 
-document.getElementById("header__language__select").addEventListener("change", function() {
-    var lang = this.value;
-    var url;
-    switch(lang) {
-      case "english":
-        url = "index-en.html";
-        break;
-      case "french":
-        url = "index.html";
-        break;
-      case "spanish":
-        url = "index-es.html";
-        break;
-    }
-    window.location.href = url;
-  });
+// Sélectionnez le menu déroulant de langue
+const languageSelect = document.querySelector('#header__language__select');
+
+// Écoutez les changements dans la sélection de langue
+languageSelect.addEventListener('change', function() {
+  // Récupérez la valeur de la langue sélectionnée
+  const selectedLanguage = languageSelect.value;
+
+  // Redirigez l'utilisateur vers la page dans la langue sélectionnée
+  switch (selectedLanguage) {
+    case 'english':
+      window.location.href = 'src/../index-en.html';
+      break;
+    case 'french':
+      window.location.href = 'src/../index.html';
+      break;
+    case 'spanish':
+      window.location.href = 'src/../index-es.html';
+      break;
+    default:
+      // Redirigez l'utilisateur vers la page par défaut
+      window.location.href = 'path/to/default/page.html';
+  }
+});
+
+
+
+
 
 
 window.addEventListener("load", function() {
