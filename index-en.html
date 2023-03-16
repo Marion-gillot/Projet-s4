@@ -38,8 +38,8 @@
             <li class="menu__item"><a class="menu__link" href="index-en.html">Projects</a></li>
             <li class="menu__item"><a class="menu__link" href="apropos-en.html">About me</a></li>
             <select id="header__language__select">
-              <option value="english">EN</option>
               <option value="french">FR</option>
+              <option value="english">EN</option>
               <option value="spanish">ESP</option>
             </select>
           </ul>
@@ -52,8 +52,8 @@
       <div class="header__start">
   
       <select id="header__language__select">
-        <option value="english">EN</option>
         <option value="french">FR</option>
+        <option value="english">EN</option>
         <option value="spanish">ESP</option>
       </select>
   
@@ -256,6 +256,25 @@
 
 
 <script>
+
+
+document.getElementById("header__language__select").addEventListener("change", function() {
+    var lang = this.value;
+    var url;
+    switch(lang) {
+      case "english":
+        url = "index-en.html";
+        break;
+      case "french":
+        url = "index.html";
+        break;
+      case "spanish":
+        url = "index-es.html";
+        break;
+    }
+    window.location.href = url;
+  });
+  
 
 window.addEventListener("load", function() {
   var currentTheme = localStorage.getItem("theme");

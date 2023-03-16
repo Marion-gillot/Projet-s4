@@ -37,11 +37,13 @@
           <ul class="menu__list list-unstyled">
             <li class="menu__item"><a class="menu__link" href="index-en.html">Projects</a></li>
             <li class="menu__item"><a class="menu__link" href="apropos-en.html">About me</a></li>
+            
             <select id="header__language__select">
-              <option value="english">EN</option>
-              <option value="french">FR</option>
-              <option value="spanish">ESP</option>
+              <option><a href="apropos.html"></a>FR</option>
+              <option><a href="apropos-en.html"></a>EN</option>
+              <option><a href="apropos-es.html"></a>ESP</option>
             </select>
+
           </ul>
         </nav>
       </div>
@@ -51,11 +53,11 @@
 
       <div class="header__start">
   
-      <select id="header__language__select">
-        <option value="english">EN</option>
-        <option value="french">FR</option>
-        <option value="spanish">ESP</option>
-      </select>
+        <select id="header__language__select">
+          <option><a href="apropos.html"></a>FR</option>
+          <option><a href="apropos-en.html"></a>EN</option>
+          <option><a href="apropos-es.html"></a>ESP</option>
+        </select>
   
       <button onclick="toggleDarkMode()" class="mode-toggle-button">
         <img class="header__logo__mode" id="mode-toggle-desktop" src="public/icon/icon_moon.svg" alt="icon dark mode">
@@ -229,7 +231,7 @@
                   please do not hesitate to contact me to discuss your projects. I look forward to working with you to<span class="boldface"> donner vie à vos idées et à vos visions.</span></p>
     
                   <div class="form__contact">
-                    <form class="form container" action="contact.php" method="post">
+                    <form class="form container" action="https://formspree.io/f/xoqzlypl" method="POST">
                       <div class="form__input">
                           <label for="lastname">Name
                             <input type="text" id="lastname" name="last_name" placeholder="Enter your name">
